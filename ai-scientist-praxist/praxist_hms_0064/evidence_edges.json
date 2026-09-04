@@ -1,0 +1,135 @@
+[
+  {
+    "from": "I01",
+    "to": "I02",
+    "edge_type": "background_lineage",
+    "evidence": "声明的模型/组合器演化；不代表一次单变量实验",
+    "scope": "curated process evidence; not a randomized architecture effect"
+  },
+  {
+    "from": "I02",
+    "to": "I03",
+    "edge_type": "baseline_for_probe",
+    "evidence": "gen2 保留 gen1 incumbent 作为探针对照",
+    "scope": "curated process evidence; not a randomized architecture effect"
+  },
+  {
+    "from": "I02",
+    "to": "I04",
+    "edge_type": "model_lineage",
+    "evidence": "同组合器家族引入 nonlinear head",
+    "scope": "curated process evidence; not a randomized architecture effect"
+  },
+  {
+    "from": "I04",
+    "to": "I05",
+    "edge_type": "challenged_by",
+    "evidence": "peer4 检查既有 head 的验证方式与 lambda 排名",
+    "scope": "curated process evidence; not a randomized architecture effect"
+  },
+  {
+    "from": "I05",
+    "to": "I06",
+    "edge_type": "accepted_correction",
+    "evidence": "owner 的公开 share_finding 接受纠错；日志 session_002:1143",
+    "scope": "curated process evidence; not a randomized architecture effect"
+  },
+  {
+    "from": "I06",
+    "to": "I07",
+    "edge_type": "decision_to_execution",
+    "evidence": "逐折确认、构建命令和官方评分衔接",
+    "scope": "curated process evidence; not a randomized architecture effect"
+  },
+  {
+    "from": "I04",
+    "to": "I07",
+    "edge_type": "explicit_score_comparator",
+    "evidence": "同 lineage head 的 .402→.38818",
+    "scope": "curated process evidence; not a randomized architecture effect"
+  },
+  {
+    "from": "I07",
+    "to": "I09",
+    "edge_type": "ablation_recipe",
+    "evidence": "从 head 去掉两个 patient-prior 成员并重拟合",
+    "scope": "curated process evidence; not a randomized architecture effect"
+  },
+  {
+    "from": "I07",
+    "to": "I10",
+    "edge_type": "null_control",
+    "evidence": "保持 head 方案但破坏行级 logit 对应",
+    "scope": "curated process evidence; not a randomized architecture effect"
+  },
+  {
+    "from": "I07",
+    "to": "I11",
+    "edge_type": "seed_control",
+    "evidence": "同成员方案不同 seed pair",
+    "scope": "curated process evidence; not a randomized architecture effect"
+  },
+  {
+    "from": "I09",
+    "to": "I12",
+    "edge_type": "seed_control",
+    "evidence": "C1 配方不同 seed pair",
+    "scope": "curated process evidence; not a randomized architecture effect"
+  },
+  {
+    "from": "I07",
+    "to": "I13",
+    "edge_type": "multi_change",
+    "evidence": "cnfm10 + 初始化链共同改变",
+    "scope": "curated process evidence; not a randomized architecture effect"
+  },
+  {
+    "from": "I12",
+    "to": "I14",
+    "edge_type": "read_and_recombine",
+    "evidence": "g4p3 session_001:649 读取 C1 结果；代码删除指定两成员",
+    "scope": "curated process evidence; not a randomized architecture effect"
+  },
+  {
+    "from": "I13",
+    "to": "I14",
+    "edge_type": "read_and_recombine",
+    "evidence": "继承 c10 栈，另加删除成员与指定 seed pair",
+    "scope": "curated process evidence; not a randomized architecture effect"
+  },
+  {
+    "from": "I14",
+    "to": "I15",
+    "edge_type": "later_correction",
+    "evidence": "MIXED 修订覆盖旧的区域归因标签",
+    "scope": "curated process evidence; not a randomized architecture effect"
+  },
+  {
+    "from": "I14",
+    "to": "I16",
+    "edge_type": "replication_check",
+    "evidence": "第三方检查环境敏感性",
+    "scope": "curated process evidence; not a randomized architecture effect"
+  },
+  {
+    "from": "I16",
+    "to": "I17",
+    "edge_type": "accepted_correction",
+    "evidence": "owner 接受运行环境限制并修订交接",
+    "scope": "curated process evidence; not a randomized architecture effect"
+  },
+  {
+    "from": "I14",
+    "to": "I18",
+    "edge_type": "plan_constraint",
+    "evidence": "末期无新充分理由则不追加提交",
+    "scope": "curated process evidence; not a randomized architecture effect"
+  },
+  {
+    "from": "I18",
+    "to": "I19",
+    "edge_type": "decision_maintained",
+    "evidence": "再次租约并未触发重复试验",
+    "scope": "curated process evidence; not a randomized architecture effect"
+  }
+]

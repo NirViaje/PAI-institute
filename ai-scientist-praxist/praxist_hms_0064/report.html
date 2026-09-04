@@ -1,0 +1,161 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src 'self' data:; base-uri 'none'; form-action 'none'; object-src 'none'">
+<title>PRAXIST 0064 · HMS 轨迹分析</title><style>
+:root{color-scheme:light;--ink:#233445;--muted:#526675;--line:#dae2e7;--accent:#14627b}*{box-sizing:border-box}body{margin:0;background:#f4f6f7;color:var(--ink);font:16px/1.8 'Segoe UI','Microsoft YaHei',sans-serif}main{max-width:1060px;margin:30px auto;padding:42px 50px;background:#fff}h1{font-size:30px;line-height:1.4;margin:12px 0 24px}h2{font-size:23px;margin:48px 0 18px;scroll-margin-top:20px}p{margin:14px 0}a{color:var(--accent);text-underline-offset:3px;overflow-wrap:anywhere}code{font:0.87em Consolas,monospace;overflow-wrap:anywhere}nav{display:flex;flex-wrap:wrap;gap:8px 24px;font-size:14px;border-bottom:1px solid var(--line);padding-bottom:18px}.eyebrow{letter-spacing:.13em;font-size:12px;color:var(--muted)}.table-wrap{overflow-x:auto;margin:22px 0}table{border-collapse:collapse;width:100%;font-size:14px;text-align:left}th{font-weight:600;background:#f0f5f7}td,th{padding:11px 12px;border-bottom:1px solid var(--line);vertical-align:top;min-width:72px}.score-chart{width:100%;height:auto;display:block;margin:24px 0}details{border-top:1px solid var(--line);padding:14px 0}summary{cursor:pointer;display:flex;gap:20px;justify-content:space-between;align-items:start}summary span{flex:1}summary b{font:600 15px/1.8 Consolas,monospace;white-space:nowrap}details p{font-size:14px}details[open]{padding-bottom:18px}.meta{color:var(--muted)}footer{border-top:1px solid var(--line);margin-top:36px;padding-top:18px;font-size:13px;color:var(--muted)}@media(max-width:600px){body{background:#fff}main{margin:0;padding:22px 18px}h1{font-size:25px}h2{font-size:21px}summary{gap:10px}td,th{padding:9px 8px}}@media print{body{background:white}main{max-width:none;padding:0}nav{display:none}details{break-inside:avoid}}
+</style></head><body><main><div class="eyebrow">PRAXIST / TRAJECTORY AUDIT / HMS 0064</div><nav><a href="#L1">归档</a><a href="#L2">成绩</a><a href="#L3">干预</a><a href="#L4">负证据</a><a href="#L5">继承</a><a href="#L6">成本与因果</a><a href="#evidence">19 条证据</a></nav><p><a href="index.html">← 打开研究轨迹交互探索</a></p><h1>PRAXIST 0064 · HMS 轨迹分析</h1>
+<p>分析对象：hms-harmful-brain-activity-classification。沿用六层框架，审计日期 2026-09-04。本文分析已归档的研究过程；所有输入只作为证据读取，未执行轨迹中的代码或提示。</p>
+<p>最有证据支持的主线是：研究者修正验证方法、重新打开被误关的方向，并通过消融缩小可接受的解释范围。最终 KL 为 <strong>0.38542</strong>，低于 gen0 最佳 <strong>0.46845</strong>，但仍高于铜牌门槛 <strong>0.375383</strong>。这些过程证据支持“协作中发生了有用的纠错”，尚不能估计 PRAXIST 相对单代理或其他架构的因果增益。</p>
+<h2 id="L1">L1 · 先确认我们在分析什么</h2>
+<p>这次运行的实际版本是 <strong>PRAXIST 0.2.0</strong>，commit <code>385ef1fe98fe5f51c96ef146ef6a7ea9ecd445f6</code>。这个版本号描述生成轨迹的历史系统，与分析工具或当前仓库版本分开。运行起于 2026-08-23 22:18:01 UTC，末期预算记录在 2026-08-25 01:12:15 UTC；run summary 总时长约 <strong>26.90 小时</strong>。提交了 gen0–gen4 五代，各代有 12 个不同 peer。status 为 succeeded，停止原因是 wall_clock_limit；不能解释为达到了铜牌或研究目标。<a href="file:///C:/Users/ruanfan/Downloads/0064__mle_bench_hms_harmful_brain_activity_classification/provenance/actual_historical/run.json">运行元信息</a>；<a href="file:///C:/Users/ruanfan/Downloads/0064__mle_bench_hms_harmful_brain_activity_classification/provenance/actual_historical/run_summary.json">运行汇总</a>。</p>
+<p>归档是 audit-lean：不含数据集与完整运行环境，不能从此包完整重放训练。清单 <strong>1,543/1,543</strong> 个条目的大小、SHA-256 全部匹配；这验证的是所提供脱敏包的内部完整性。最终 CSV 哈希也与 package、grade 一致。独立检查 CSV 有 9,850 行、六个概率列，值有限且每行和接近 1；含 1,693 个不同 eeg_id。缺少 sample submission 和标签，本次没有重新核定行对齐、重复 ID 契约或重算 KL。</p>
+<div class="table-wrap"><table>
+<tr><th>观察单位</th><th>数量</th><th>可以如何解释</th></tr>
+<tr><td>safe trajectory 事件</td><td>2,014</td><td>被筛选保留的事件，不等于完整工具轨迹</td></tr>
+<tr><td>agent.run_started / finished</td><td>674 / 674</td><td>agent 调用次数，不是训练或提交次数</td></tr>
+<tr><td>finding</td><td>1,310</td><td>327 result、894 insight、28 error、59 hypothesis、2 late_result_signal</td></tr>
+<tr><td>带官方 attempt ID 的 finding</td><td>191</td><td>多条 finding 可以指向同一次提交</td></tr>
+<tr><td>finding 引用的不同 attempt ID</td><td>175</td><td>引用范围，不等于归档里保留了 175 份评分记录</td></tr>
+<tr><td>保留的不同 attempt ID</td><td>145</td><td>145 份均有成绩；仅为可审计子集，不是全程实验总数</td></tr>
+</table></div>
+<p>全部 findings 标记 legacy_weak；其 source_event 引用在筛选后的 safe trajectory 中不可逐条闭合。这降低原始来源可验证性，但不能据此判定原始运行损坏。175 个被引用的 attempt ID 与 145 个保留日志中的 ID 只有 <strong>70 个重合</strong>：105 个被引用 ID 缺独立日志，另有 75 个保留 ID 未被当前索引引用。这两个集合不是包含关系，不能只用 175−145 估算缺失数量。有独立 attempt 日志的交集内未发现分数冲突；没有独立日志的分数仍保留为较弱层级。尤其 gen2 frontier 的 0.40613 来自 finding/frontier，其独立 attempt 未保留，保留日志中该代最低分为 0.40649；两者的证据覆盖范围不同。</p>
+<h2 id="L2">L2 · 分开呈现当代结果和全程最佳</h2>
+<img class="score-chart" src="generation-scores.svg" alt="五代 frontier 与累计最佳成绩曲线"/>
+<p>KL 越低越好。表中“当代最佳”采用每代提交时保存的 top_1 frontier；“累计最佳”是这五个 frontier 点的累计最小值，不伪装成全部提交的逐秒曲线。</p>
+<div class="table-wrap"><table>
+<tr><th>代</th><th>当代 frontier 最佳</th><th>累计最佳</th><th>Finding</th><th>保留 attempt</th><th>主要变化</th></tr>
+<tr><td>gen0</td><td>0.46845</td><td>0.46845</td><td>198</td><td>109</td><td>基础成员、校准、组合器与 fold-mean 升级</td></tr>
+<tr><td>gen1</td><td>0.40522</td><td>0.40522</td><td>240</td><td>17</td><td>修正准入规则，完整重拟合组合器</td></tr>
+<tr><td>gen2</td><td>0.40613</td><td>0.40522</td><td>332</td><td>7</td><td>探针与验证；没有刷新 incumbent</td></tr>
+<tr><td>gen3</td><td>0.38818</td><td>0.38818</td><td>230</td><td>6</td><td>重新开放 lambda 轴，正则化 head 改善</td></tr>
+<tr><td>gen4</td><td>0.38542</td><td>0.38542</td><td>310</td><td>6</td><td>消融、种子对照与最终组合</td></tr>
+</table></div>
+<p>gen0 最佳到最终下降 <strong>0.08303（17.72%）</strong>；相对铜牌还差 <strong>0.010037</strong>。这不是相对初始模型的净提升，也不是 PRAXIST 架构的净贡献。评分来自 official_grader_live，标注 experimental_private_feedback：它是经历反馈选择后的官方成绩，不是一次未触碰测试集的独立泛化估计。<a href="file:///C:/Users/ruanfan/Downloads/0064__mle_bench_hms_harmful_brain_activity_classification/submission/grade.json">最终评分</a>。</p>
+<p>gen2 是重要的反例：小权重 probe 从 0.40522 变成 0.40613，恶化 0.00091，但几乎精确命中预注册预测 +0.0009。记录里的 PASS 是“命中允许的预测区间”，不是“新模型更好”。将其画成持续进步会抹去真正的负证据。执行者是 gen2_peer6，gen2_peer7 是核验和转述者。<a href="file:///C:/Users/ruanfan/Downloads/0064__mle_bench_hms_harmful_brain_activity_classification/research/keynodes/findings/findings.jsonl">8f69b354</a>。</p>
+<h2 id="L3">L3 · 把干预、验证和重组拆开</h2>
+<p>第一条强链是 <strong>质疑验证方式 → owner 修订 → 逐折确认 → 新成绩</strong>。gen3_peer11 原先以训练内 mirror 排名关闭 lambda 轴；peer4 的第三方检查指出逐折 CV 的排序相反。owner 随后公开接受纠错、重新开放方向。lambda=3e-3 的确认 CV 均值相对线性头约 -0.01723，10/10 折改善，通过事先给出的 -0.016 与至少 7 折门槛，随后构建并取得 0.38818。<a href="file:///C:/Users/ruanfan/Downloads/0064__mle_bench_hms_harmful_brain_activity_classification/research/keynodes/findings/findings.jsonl">第三方质疑</a> → <a href="file:///C:/Users/ruanfan/Downloads/0064__mle_bench_hms_harmful_brain_activity_classification/research/keynodes/findings/findings.jsonl">接受并重开</a> → <a href="file:///C:/Users/ruanfan/Downloads/0064__mle_bench_hms_harmful_brain_activity_classification/research/keynodes/findings/findings.jsonl">新成绩</a>；<a href="file:///C:/Users/ruanfan/Downloads/0064__mle_bench_hms_harmful_brain_activity_classification/research/logs/gen_3/gen3_peer11/session_002_20260824_154759.log">公开修订工具记录</a>。</p>
+<p>这里有两种必须分开的对照：0.402→0.38818 是同 head lineage 的改善 <strong>-0.01382</strong>；0.40522→0.38818 是相对先前线性基线的改善 <strong>-0.01704</strong>。原 frontier 把 -0.01382 也写成相对 0.40522，并使用 -0.01404 计算转移比例，算术不一致。本文保留官方分数、重算差值，不采用其“正则化增益转移约 3 倍”的定律式结论。</p>
+<p>第二条强链是 <strong>把归因写成可失败的消融</strong>。C1 删除 patient_prior 与 patient_prior320 两个成员，并重拟合 head；两组 seed pair 下均优于各自的 9 成员结果。</p>
+<div class="table-wrap"><table>
+<tr><th>初始化种子</th><th>9 成员 head</th><th>C1（删除两成员）</th><th>C1 − 9 成员</th></tr>
+<tr><td>0 / 1</td><td>0.38818</td><td>0.38622</td><td>-0.00196</td></tr>
+<tr><td>123 / 456</td><td>0.38715</td><td>0.38545</td><td>-0.00170</td></tr>
+</table></div>
+<p>这是两组同种子配方对照，增强“当前配方中的两个 patient-prior 成员没有带来净收益”的证据。它仍不是完全隔离变量的因果实验：删除成员会伴随初始化参数裁剪与重拟合，原 anchor 和复核代码的线程环境也需要对齐；同次重拟合 anchor 没有另行官方评分。不能扩大成“患者先验一般无用”或“去掉了所有 prior”。knnprior 仍保留。<a href="file:///C:/Users/ruanfan/Downloads/0064__mle_bench_hms_harmful_brain_activity_classification/research/keynodes/findings/findings.jsonl">C1 初次评分</a>；<a href="file:///C:/Users/ruanfan/Downloads/0064__mle_bench_hms_harmful_brain_activity_classification/research/keynodes/findings/findings.jsonl">9 成员种子对照</a>；<a href="file:///C:/Users/ruanfan/Downloads/0064__mle_bench_hms_harmful_brain_activity_classification/research/keynodes/findings/findings.jsonl">C1 种子对照</a>；<a href="file:///C:/Users/ruanfan/Downloads/0064__mle_bench_hms_harmful_brain_activity_classification/research/code/variants/gen4_peer0/attr_controls_build.py">消融构建代码</a>。</p>
+<p>打乱 logit 行对应关系的空对照 KL 为 1.40367，相对 .38818 恶化 <strong>1.01549</strong>。它支持行级输入信号的重要性，不能单独证明模型无患者泄漏，也不能把全部 head 收益归到特定机制。<a href="file:///C:/Users/ruanfan/Downloads/0064__mle_bench_hms_harmful_brain_activity_classification/research/keynodes/findings/findings.jsonl">0b60dc0f</a>。</p>
+<p>第三条链是 <strong>确实发生了重组，但收益不能因此归于重组</strong>。最终 c10np 结合 C1 删除成员的做法、cnfm10 栈以及 seed 123/456。日志中能看到 owner 读取 C1 结果，代码也实际删除对应列。最终 0.38542 仅比同种子的 C1 0.38545 好 <strong>0.00003</strong>。观察到的换种子变化分别是 0.00103 与 0.00077，远大于这点差距；它们是模型拟合扰动，不是官方评分器的随机噪声、置信区间或等效性检验。<a href="file:///C:/Users/ruanfan/Downloads/0064__mle_bench_hms_harmful_brain_activity_classification/research/logs/gen_4/gen4_peer3/session_001_20260824_212059.log">读取 C1 结果</a>；<a href="file:///C:/Users/ruanfan/Downloads/0064__mle_bench_hms_harmful_brain_activity_classification/research/code/peer_workspaces/gen4_peer3/build_c10np_head.py">实际组合代码</a>。</p>
+<p>最终代码有 <strong>7 个成员合计</strong>，42 个 logit 输入列：gbmv2、speccnn、lgbm、knnprior、p11、enb0、cnfm10；不是“7 个成员再加 cnfm10”。MLP h=48，lambda=3e-3，seed=123/456；按 restricted→linear→MLP 链初始化，最终 maxiter=400，裁剪后归一化写出。cnfm10 名字中的 10 不代表最终有十个成员。</p>
+<p>最终相对 c10 head .38763 的 -0.00221 也不能直接叫“纯消融增益”：c10 head 调用默认 fit_mlp，而最终显式改用 123/456；现有代码记录表明默认 head 采用 0/1。此外 C1 与最终的初始化链不同，需另做一致控制才可辨认 cnfm10 的边际贡献。</p>
+<h2 id="L4">L4 · 负证据是否改变了下一步行动</h2>
+<p>负结果至少呈现三种不同作用。gen2 探针帮助校准预测而没有刷新最佳；gen3 的 head-as-member 嫁接虽然报告 OOF 10/10 折改善，官方却从 .39732 恶化到 .40330，说明该训练/测试构造中的局部改善没有可靠迁移；末期 owner 两次明确拒绝没有充分依据的新增提交，即便还有空闲租约。<a href="file:///C:/Users/ruanfan/Downloads/0064__mle_bench_hms_harmful_brain_activity_classification/research/keynodes/findings/findings.jsonl">嫁接失败</a>；<a href="file:///C:/Users/ruanfan/Downloads/0064__mle_bench_hms_harmful_brain_activity_classification/research/keynodes/findings/findings.jsonl">第一次不提交</a>；<a href="file:///C:/Users/ruanfan/Downloads/0064__mle_bench_hms_harmful_brain_activity_classification/research/keynodes/findings/findings.jsonl">再次不提交</a>。</p>
+<p>这些是负知识影响具体决策的案例。不能把所有 insight 当成发现、把 variant 标签数量当作实验多样性，或把记录中的 no-submit 一律算成节省了一次失败训练。要估计“避免了多少失败”，还缺一个可观察或随机化的反事实提交政策。</p>
+<p>后续审计还修改了最终 frontier 的解释：</p>
+<div class="table-wrap"><table>
+<tr><th>初始说法</th><th>后来的证据</th><th>本次采用的解释</th></tr>
+<tr><td>最终 CV 改善 ZERO-FILL-DOMINATED</td><td>fold0–5 均值 -.004208，越过既定 -.004 阈值；owner 改成 MIXED</td><td>late folds 改善幅度更大，但不能沿用旧分类</td></tr>
+<tr><td>最终构建完全确定、逐字节可复现</td><td>第三方两个环境均未逐字节复现；owner 承认原环境未写入 meta</td><td>保存的已评分 CSV 可核验；重新生成的数值环境未完全闭合</td></tr>
+<tr><td>CV gate 通过证明删除 prior 有效</td><td>gate 主要比较最终组合与 9 成员；c10 内消融 CV +.000756、仅 4/10 改善</td><td>gate 对组合方案给出准入，未独立验证每个组成改动</td></tr>
+</table></div>
+<p><a href="file:///C:/Users/ruanfan/Downloads/0064__mle_bench_hms_harmful_brain_activity_classification/research/keynodes/findings/findings.jsonl">MIXED 修订</a>；<a href="file:///C:/Users/ruanfan/Downloads/0064__mle_bench_hms_harmful_brain_activity_classification/research/keynodes/findings/findings.jsonl">环境复核</a>；<a href="file:///C:/Users/ruanfan/Downloads/0064__mle_bench_hms_harmful_brain_activity_classification/research/keynodes/findings/findings.jsonl">owner 接受环境限制</a>。此外，最终 CV 的 MLP maxiter=200，部署构建为 400，不能称作完全相同的训练预算。<a href="file:///C:/Users/ruanfan/Downloads/0064__mle_bench_hms_harmful_brain_activity_classification/research/code/peer_workspaces/gen4_peer3/cv_np_screen.py">CV 代码</a>；<a href="file:///C:/Users/ruanfan/Downloads/0064__mle_bench_hms_harmful_brain_activity_classification/research/code/peer_workspaces/gen4_peer3/build_c10np_head.py">部署代码</a>。</p>
+<h2 id="L5">L5 · 协作信息是否真的被继承</h2>
+<p>本案最值得保留的证据图，是上面的“第三方质疑→接受→重开→代码→评分”，以及“C1 结果被读取→删除列→新组合”。它们比自动图中的普通引用边更能说明知识进入了行动。随附 evidence_edges.json 将 challenged_by、accepted_correction、decision_to_execution、seed_control 与 read_and_recombine 分开；这是人工核验的局部图，不把全部自动连边当作学习或贡献。</p>
+<p>PI/Chair 交接也不能只看表面成功。五次边界都记为 failed_non_strict，但前两次 validation 的 valid 为 true、没有 schema blocking issue；失败来自 audit 中退役结论缺少适用边界或 revive_if。后三次同时缺少下一代 peer 合同。</p>
+<div class="table-wrap"><table>
+<tr><th>交接</th><th>validation</th><th>audit</th><th>主要缺口</th></tr>
+<tr><td>gen0→1</td><td>valid</td><td>fail</td><td>8 条退役结论缺 boundary 或 revive_if</td></tr>
+<tr><td>gen1→2</td><td>valid</td><td>fail</td><td>10 条退役结论缺 boundary 或 revive_if</td></tr>
+<tr><td>gen2→3</td><td>invalid</td><td>fail</td><td>缺 gen3 peer9/10/11，9/12 合同，另有退役条件缺口</td></tr>
+<tr><td>gen3→4</td><td>invalid</td><td>fail</td><td>缺 gen4 peer10/11，10/12 合同，另有退役条件缺口</td></tr>
+<tr><td>gen4→5</td><td>invalid</td><td>fail</td><td>缺 gen5 peer11，11/12 合同；gen5 未执行</td></tr>
+</table></div>
+<p>来源为各 synth_gen*_to_* 下的 validation.json 与 audit.json。自动警告不是对 Chair 捏造的事实裁定。更稳妥的结论是：局部协作纠错链可见，面向全体下一代的结构化交接并未稳定通过审计。缺少 revive_if 也使负知识难以区分“永久否定”和“条件变化时值得重试”。</p>
+<h2 id="L6">L6 · 经济性与因果结论的边界</h2>
+<p>预算账本最后一笔 usage 记录 <strong>4,173,097,830 tokens</strong>，批准量为 <strong>60,000,000</strong>，budget_overrun=true，原因标注 usage_partial；另有 usage_unknown 明确把 gpu_hours 记为未知。这个异常不能忽略，也不能直接当作已核实账单。需先对齐 provider 用量、缓存口径、父子调用、重复累计与计费价格，再评价经济性。26.90 小时是墙钟时间；674 次 agent 调用不是 GPU 工作量。<a href="file:///C:/Users/ruanfan/Downloads/0064__mle_bench_hms_harmful_brain_activity_classification/provenance/actual_historical/budget_ledger.jsonl">预算记录</a>。</p>
+<p>因此，本包能支持研究过程与结果审计，不能可靠计算美元成本、GPU 小时收益率或“每 token 的真实收益”。末期不训练仍可能消耗模型调用、调度与审计成本。</p>
+<div class="table-wrap"><table>
+<tr><th>研究问题</th><th>本案回答</th><th>还不能推出什么</th></tr>
+<tr><td>RQ1 是否在学习、纠错？</td><td>有明确的验证方式纠错与重新实验链；gen2 的信息增益与成绩增益需分开</td><td>finding 数、引用数或熵变化本身不能证明学习</td></tr>
+<tr><td>RQ2 是否产生新方案与有效重组？</td><td>有 nonlinear head 和 c10np 的可执行组合证据</td><td>最终比 C1 好 .00003，不能认定重组带来独立收益</td></tr>
+<tr><td>RQ3 负知识是否约束行动？</td><td>有失效边界、失败嫁接和两次 no-submit 行动记录</td><td>缺完整反事实，不能估计避免失败率</td></tr>
+<tr><td>RQ4 协作/记忆是否有效？</td><td>第三方纠错被 owner 采纳，随后出现新成绩</td><td>单次观察不能量化多代理、PI、共享记忆各自贡献；交接 audit 也未通过</td></tr>
+<tr><td>RQ5 是否经济？</td><td>可见预算超额标记与未知 GPU 用量</td><td>账本未对账，无法给出可信效率或架构成本优势</td></tr>
+</table></div>
+<p>若下一步做研究性比较，应把同一任务、初始资产、模型、评分反馈额度与计算预算锁定，比较单代理、共享记忆、验证者和 PI 等条件，多随机种子重复。局部机制上，优先补齐“cnfm6/cnfm10 × 保留/删除两 prior × seed pair”的统一初始化与固定数值环境对照，用独立于调参反馈的评估集评判。这样的设计才能把当前的过程证据推进到更强的因果结论。</p>
+<h2 id="证据与交付文件">证据与交付文件</h2>
+<p>随附 19 个干预条目，每条保留父版本/对照、机制、分数、明确差值、attempt 留存状态及来源。intervention_table.json 不是自动声称的完整实验树；evidence_edges.json 是局部过程证据图；generation_summary.json 区分每代 frontier 与累计最佳；analysis_checks.json 保存 CSV 检查、缺失 attempt 引用和成本原始字段。</p>
+<p>audit_summary.json、finding_index.json 与 retained_official_attempts.json 提供更完整的机器可读索引。report.html 是六层报告阅读版；analysis.html 是带代次筛选、研究谱系、发现检索和基线对照的交互探索版。没有公开发布新的 HMS 数据。</p><h2 id="evidence">可展开的干预证据</h2><details><summary><span>I01 · gen0 · res50 单成员升级</span><b>0.46845</b></summary>
+<p><strong>对照：</strong>0.46948 的 v41d　<strong>差值：</strong>-0.00103</p>
+<p>固定权重与温度，将 res50 fold0 成员替换为 6-fold 均值</p><p>局部官方 A/B 支持 -0.00103；fold0 mirror 对这个升级不独立。</p>
+<p class="meta">gen0_peer4 · narrow_ab · scored_attempt_retained</p>
+<p><a href="file:///C:/Users/ruanfan/Downloads/0064__mle_bench_hms_harmful_brain_activity_classification/research/keynodes/findings/findings.jsonl">Finding e1023d4c · 第 1087 行</a> <a href="file:///C:/Users/ruanfan/Downloads/0064__mle_bench_hms_harmful_brain_activity_classification/research/keynodes/official_attempts/peer_workspaces/gen0_peer4/submissions/official_attempts.audit.jsonl">独立 attempt 日志 · 第 16 行</a> </p></details><details><summary><span>I02 · gen1 · 修正准入规则并完整重拟合</span><b>0.40522</b></summary>
+<p><strong>对照：</strong>LORO-C1 组合器　<strong>差值：</strong>-0.01433</p>
+<p>重建基线，加入 cnfm6 并完整重拟合；改用 all-em/disjoint/per-fold 规则</p><p>改善 -0.01433；规则和拟合方式一起改变，不能把全部增益归于讨论机制。</p>
+<p class="meta">gen1_peer4 · multi_change_with_replication · scored_attempt_retained</p>
+<p><a href="file:///C:/Users/ruanfan/Downloads/0064__mle_bench_hms_harmful_brain_activity_classification/research/keynodes/findings/findings.jsonl">Finding d0f19b37 · 第 1008 行</a> <a href="file:///C:/Users/ruanfan/Downloads/0064__mle_bench_hms_harmful_brain_activity_classification/research/keynodes/official_attempts/peer_workspaces/gen1_peer4/submissions/official_attempts.audit.jsonl">独立 attempt 日志 · 第 5 行</a> </p></details><details><summary><span>I03 · gen2 · c6 小权重探针</span><b>0.40613</b></summary>
+<p><strong>对照：</strong>gen1 incumbent　<strong>差值：</strong>+0.00091</p>
+<p>在既有 logit 上加入 0.02 × v3blend</p><p>成绩变差 +0.00091；PASS 指预测区间命中，不指胜过基线。执行者 peer6，peer7 转述。</p>
+<p class="meta">gen2_peer7 · negative_probe · finding_and_frontier</p>
+<p><a href="file:///C:/Users/ruanfan/Downloads/0064__mle_bench_hms_harmful_brain_activity_classification/research/keynodes/findings/findings.jsonl">Finding 8f69b354 · 第 694 行</a> </p></details><details><summary><span>I04 · gen3 · 第一版 MLP head</span><b>0.40200</b></summary>
+<p><strong>对照：</strong>线性组合器　<strong>差值：</strong>-0.00322</p>
+<p>采用 48 隐层、lambda=1e-3 的 MLP head</p><p>官方 .402；是后续正则化比较的直接父版本。</p>
+<p class="meta">gen3_peer11 · scored_result · scored_attempt_retained</p>
+<p><a href="file:///C:/Users/ruanfan/Downloads/0064__mle_bench_hms_harmful_brain_activity_classification/research/keynodes/findings/findings.jsonl">Finding b2a23506 · 第 858 行</a> <a href="file:///C:/Users/ruanfan/Downloads/0064__mle_bench_hms_harmful_brain_activity_classification/research/keynodes/official_attempts/peer_workspaces/gen3_peer11/submissions/official_attempts.audit.jsonl">独立 attempt 日志 · 第 1 行</a> </p></details><details><summary><span>I05 · gen3 · 第三方验证纠错</span><b>无官方分数</b></summary>
+<p><strong>对照：</strong>已经关闭的 lambda 轴　<strong>差值：</strong>—</p>
+<p>peer4 用逐折 CV 质疑 in-sample 排名，提出重新检查 lambda=3e-3</p><p>独立验证报告和后续 owner 接受记录支持知识被采用；不是架构因果消融。</p>
+<p class="meta">gen3_peer4 · diagnostic_challenge · recorded_claim_or_decision</p>
+<p><a href="file:///C:/Users/ruanfan/Downloads/0064__mle_bench_hms_harmful_brain_activity_classification/research/keynodes/findings/findings.jsonl">Finding 9b36b8c7 · 第 750 行</a> </p></details><details><summary><span>I06 · gen3 · 接受质疑并重新开放搜索</span><b>无官方分数</b></summary>
+<p><strong>对照：</strong>in-sample closeout　<strong>差值：</strong>—</p>
+<p>owner 公开修订结论，锁定逐折确认门槛后继续实验</p><p>纠错先于新成绩；后续代码和评分形成行动链。</p>
+<p class="meta">gen3_peer11 · decision_update · recorded_claim_or_decision</p>
+<p><a href="file:///C:/Users/ruanfan/Downloads/0064__mle_bench_hms_harmful_brain_activity_classification/research/keynodes/findings/findings.jsonl">Finding 279e5f30 · 第 191 行</a> </p></details><details><summary><span>I07 · gen3 · 正则化 head 改善</span><b>0.38818</b></summary>
+<p><strong>对照：</strong>同 lineage 的 .402 head　<strong>差值：</strong>-0.01382</p>
+<p>lambda 从 1e-3 调为 3e-3，h=48；逐折 CV 确认后官方评分</p><p>直接父版本差值 -0.01382；相对 .40522 线性基线差值是 -0.01704。</p>
+<p class="meta">gen3_peer11 · narrow_protocol_contrast · scored_attempt_retained</p>
+<p><a href="file:///C:/Users/ruanfan/Downloads/0064__mle_bench_hms_harmful_brain_activity_classification/research/keynodes/findings/findings.jsonl">Finding 13c51135 · 第 89 行</a> <a href="file:///C:/Users/ruanfan/Downloads/0064__mle_bench_hms_harmful_brain_activity_classification/research/keynodes/official_attempts/peer_workspaces/gen3_peer11/submissions/official_attempts.audit.jsonl">独立 attempt 日志 · 第 2 行</a> </p></details><details><summary><span>I08 · gen3 · head 作为新成员的嫁接失败</span><b>0.40330</b></summary>
+<p><strong>对照：</strong>cnfm10 基线　<strong>差值：</strong>+0.00598</p>
+<p>把 head 输出作为成员嫁接回组合器</p><p>官方 .40330，变差 +0.00598，尽管报告逐折 OOF 10/10 改善。</p>
+<p class="meta">gen3_peer11 · negative_transfer · scored_attempt_retained</p>
+<p><a href="file:///C:/Users/ruanfan/Downloads/0064__mle_bench_hms_harmful_brain_activity_classification/research/keynodes/findings/findings.jsonl">Finding 13efab4c · 第 90 行</a> <a href="file:///C:/Users/ruanfan/Downloads/0064__mle_bench_hms_harmful_brain_activity_classification/research/keynodes/official_attempts/peer_workspaces/gen3_peer11/submissions/official_attempts.audit.jsonl">独立 attempt 日志 · 第 4 行</a> </p></details><details><summary><span>I09 · gen4 · C1 去掉两个 patient-prior 成员</span><b>0.38622</b></summary>
+<p><strong>对照：</strong>9 成员 head，seed 0/1　<strong>差值：</strong>-0.00196</p>
+<p>删除 patient_prior 和 patient_prior320 对应 12 个 logit 列并重拟合；保留 knnprior</p><p>同种子名义对照改善 -0.00196；线程与初始化处理需一起核对，非完全隔离变量的因果试验。</p>
+<p class="meta">gen4_peer0 · ablation_recipe · scored_attempt_retained</p>
+<p><a href="file:///C:/Users/ruanfan/Downloads/0064__mle_bench_hms_harmful_brain_activity_classification/research/keynodes/findings/findings.jsonl">Finding 65b82c31 · 第 479 行</a> <a href="file:///C:/Users/ruanfan/Downloads/0064__mle_bench_hms_harmful_brain_activity_classification/research/keynodes/official_attempts/peer_workspaces/gen4_peer0/submissions/official_attempts.audit.jsonl">独立 attempt 日志 · 第 1 行</a> </p></details><details><summary><span>I10 · gen4 · 逐列打乱 logit 行的空对照</span><b>1.40367</b></summary>
+<p><strong>对照：</strong>9 成员 head　<strong>差值：</strong>+1.01549</p>
+<p>打乱训练和测试 logit 列中的行对应关系</p><p>恶化 +1.01549，支持行级信号重要；不能证明无患者泄漏。</p>
+<p class="meta">gen4_peer0 · null_control · scored_attempt_retained</p>
+<p><a href="file:///C:/Users/ruanfan/Downloads/0064__mle_bench_hms_harmful_brain_activity_classification/research/keynodes/findings/findings.jsonl">Finding 0b60dc0f · 第 56 行</a> <a href="file:///C:/Users/ruanfan/Downloads/0064__mle_bench_hms_harmful_brain_activity_classification/research/keynodes/official_attempts/peer_workspaces/gen4_peer0/submissions/official_attempts.audit.jsonl">独立 attempt 日志 · 第 2 行</a> </p></details><details><summary><span>I11 · gen4 · 9 成员换种子对照</span><b>0.38715</b></summary>
+<p><strong>对照：</strong>9 成员 head，seed 0/1　<strong>差值：</strong>-0.00103</p>
+<p>MLP 初始化种子改为 123/456</p><p>改善 -0.00103；这是换种子后模型的变化，不能当作官方评分器噪声估计。</p>
+<p class="meta">gen4_peer1 · seed_control · scored_attempt_retained</p>
+<p><a href="file:///C:/Users/ruanfan/Downloads/0064__mle_bench_hms_harmful_brain_activity_classification/research/keynodes/findings/findings.jsonl">Finding 142dfb88 · 第 92 行</a> <a href="file:///C:/Users/ruanfan/Downloads/0064__mle_bench_hms_harmful_brain_activity_classification/research/keynodes/official_attempts/peer_workspaces/gen4_peer1/submissions/official_attempts.audit.jsonl">独立 attempt 日志 · 第 1 行</a> </p></details><details><summary><span>I12 · gen4 · C1 换种子对照</span><b>0.38545</b></summary>
+<p><strong>对照：</strong>C1，seed 0/1　<strong>差值：</strong>-0.00077</p>
+<p>相同 C1 配方，初始化种子改为 123/456</p><p>改善 -0.00077；与同种子 9 成员 .38715 比，C1 改善 -0.00170。</p>
+<p class="meta">gen4_peer0 · seed_control · scored_attempt_retained</p>
+<p><a href="file:///C:/Users/ruanfan/Downloads/0064__mle_bench_hms_harmful_brain_activity_classification/research/keynodes/findings/findings.jsonl">Finding 1963f342 · 第 118 行</a> <a href="file:///C:/Users/ruanfan/Downloads/0064__mle_bench_hms_harmful_brain_activity_classification/research/keynodes/official_attempts/peer_workspaces/gen4_peer0/submissions/official_attempts.audit.jsonl">独立 attempt 日志 · 第 3 行</a> </p></details><details><summary><span>I13 · gen4 · c10 head</span><b>0.38763</b></summary>
+<p><strong>对照：</strong>gen3 9 成员 head　<strong>差值：</strong>-0.00055</p>
+<p>cnfm6 换成 cnfm10，并改为 restricted→linear→MLP 初始化链</p><p>改善 -0.00055；这是组合改动，不是纯 member-swap 实验。</p>
+<p class="meta">gen4_peer3 · multi_change · scored_attempt_retained</p>
+<p><a href="file:///C:/Users/ruanfan/Downloads/0064__mle_bench_hms_harmful_brain_activity_classification/research/keynodes/findings/findings.jsonl">Finding 37b3d096 · 第 255 行</a> <a href="file:///C:/Users/ruanfan/Downloads/0064__mle_bench_hms_harmful_brain_activity_classification/research/keynodes/official_attempts/peer_workspaces/gen4_peer3/submissions/official_attempts.audit.jsonl">独立 attempt 日志 · 第 1 行</a> </p></details><details><summary><span>I14 · gen4 · 最终 c10np</span><b>0.38542</b></summary>
+<p><strong>对照：</strong>C1，seed 123/456　<strong>差值：</strong>-0.00003</p>
+<p>c10 栈删除两个 patient-prior 成员，使用 seed 123/456、lambda=3e-3、h=48</p><p>官方 .38542，仅比 C1 好 .00003；初始化链/环境尚有差异，不能识别重组的独立收益。</p>
+<p class="meta">gen4_peer3 · final_composite · scored_attempt_retained</p>
+<p><a href="file:///C:/Users/ruanfan/Downloads/0064__mle_bench_hms_harmful_brain_activity_classification/research/keynodes/findings/findings.jsonl">Finding e092b4cc · 第 1085 行</a> <a href="file:///C:/Users/ruanfan/Downloads/0064__mle_bench_hms_harmful_brain_activity_classification/research/keynodes/official_attempts/peer_workspaces/gen4_peer3/submissions/official_attempts.audit.jsonl">独立 attempt 日志 · 第 2 行</a> </p></details><details><summary><span>I15 · gen4 · 区域标签更正</span><b>无官方分数</b></summary>
+<p><strong>对照：</strong>最终 frontier 的 ZERO-FILL-DOMINATED 叙述　<strong>差值：</strong>—</p>
+<p>owner 接受复核，按原阈值改为 MIXED</p><p>fold0–5 均值 -.004208 已越过 -.004 门槛；不能继续复述旧标签。</p>
+<p class="meta">gen4_peer3 · correction · recorded_claim_or_decision</p>
+<p><a href="file:///C:/Users/ruanfan/Downloads/0064__mle_bench_hms_harmful_brain_activity_classification/research/keynodes/findings/findings.jsonl">Finding 2b1db068 · 第 201 行</a> </p></details><details><summary><span>I16 · gen4 · 环境敏感性复核</span><b>无官方分数</b></summary>
+<p><strong>对照：</strong>最终构建完全确定的声明　<strong>差值：</strong>—</p>
+<p>第三方在两个环境下重建 c10np，报告均非逐字节一致</p><p>区分已保存 CSV 哈希一致与从源代码重新生成一致。</p>
+<p class="meta">gen4_peer5 · replication_limit · recorded_claim_or_decision</p>
+<p><a href="file:///C:/Users/ruanfan/Downloads/0064__mle_bench_hms_harmful_brain_activity_classification/research/keynodes/findings/findings.jsonl">Finding 98a74adf · 第 733 行</a> </p></details><details><summary><span>I17 · gen4 · 接受环境敏感性结论</span><b>无官方分数</b></summary>
+<p><strong>对照：</strong>旧的完全确定叙述　<strong>差值：</strong>—</p>
+<p>owner 承认原环境未写入元信息，修订后续交接</p><p>已评分 CSV 仍有效；不升级为完整可复现结论。</p>
+<p class="meta">gen4_peer3 · correction · recorded_claim_or_decision</p>
+<p><a href="file:///C:/Users/ruanfan/Downloads/0064__mle_bench_hms_harmful_brain_activity_classification/research/keynodes/findings/findings.jsonl">Finding b2d04c30 · 第 861 行</a> </p></details><details><summary><span>I18 · gen4 · 拒绝无依据的新增提交</span><b>无官方分数</b></summary>
+<p><strong>对照：</strong>末期空闲算力租约　<strong>差值：</strong>—</p>
+<p>owner 记录 no-submit 决策，保持已锁定计划</p><p>可见约束行动；不能计算全局避免失败率或把零 GPU 消耗等同零成本。</p>
+<p class="meta">gen4_peer3 · negative_knowledge_action · recorded_claim_or_decision</p>
+<p><a href="file:///C:/Users/ruanfan/Downloads/0064__mle_bench_hms_harmful_brain_activity_classification/research/keynodes/findings/findings.jsonl">Finding f85de106 · 第 1194 行</a> </p></details><details><summary><span>I19 · gen4 · 再次拒绝无依据的新增提交</span><b>无官方分数</b></summary>
+<p><strong>对照：</strong>第二次空闲算力租约　<strong>差值：</strong>—</p>
+<p>决策依据未变，继续 no-submit</p><p>再次行动记录；不另计为一次训练实验。</p>
+<p class="meta">gen4_peer3 · negative_knowledge_action · recorded_claim_or_decision</p>
+<p><a href="file:///C:/Users/ruanfan/Downloads/0064__mle_bench_hms_harmful_brain_activity_classification/research/keynodes/findings/findings.jsonl">Finding 22f36add · 第 168 行</a> </p></details><footer>本地审计成果 · 2026-09-04 · <a href="分析报告.md">Markdown 报告</a> · <a href="intervention_table.json">干预数据</a> · <a href="evidence_edges.json">证据关系</a> · <a href="analysis_checks.json">核验结果</a></footer></main></body></html>
