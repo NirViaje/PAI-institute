@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="后AI研究所 AI 科学家研究档案：探索 PRAXIST 在 IceCube、HMS 脑电分类与 Rocket 控制任务中的研究谱系、实验发现和证据边界。">
+  <meta name="theme-color" content="#071315">
+  <title>AI 科学家 · 后AI研究所</title>
+  <link rel="icon" href="../assets/logo-icon.png" type="image/png">
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #071315;
+      --panel: #0d1d1f;
+      --text: #eff8f4;
+      --muted: #a5bbb7;
+      --gold: #e7a23a;
+      --line: #29403f;
+      font-family: Inter, "Noto Sans SC", "Microsoft YaHei", system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 2rem; }
+    body {
+      margin: 0;
+      color: var(--text);
+      background: radial-gradient(ellipse at 85% 0%, #143338 0, transparent 42%), var(--bg);
+      font-size: 1rem;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+    a:focus-visible, summary:focus-visible {
+      outline: 2px solid var(--gold);
+      outline-offset: 6px;
+      border-radius: 2px;
+    }
+    .skip-link {
+      position: absolute;
+      top: -6rem;
+      left: 1rem;
+      z-index: 10;
+      padding: .7rem 1rem;
+      color: var(--bg);
+      background: var(--gold);
+    }
+    .skip-link:focus { top: 1rem; }
+    .site-header { border-bottom: 1px solid var(--line); background: #071315b3; }
+    .header-inner, main, .footer-inner { width: min(1320px, 88%); margin-inline: auto; }
+    .header-inner {
+      min-height: 86px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+      padding-block: 1rem;
+    }
+    .brand { display: inline-flex; align-items: center; gap: .8rem; flex-shrink: 0; }
+    .brand img { width: 44px; height: 44px; border-radius: 50%; }
+    .brand-name { display: block; font-size: 1.125rem; font-weight: 700; line-height: 1.5; }
+    .brand-en { display: block; color: var(--muted); font-size: .75rem; letter-spacing: .1em; }
+    .site-nav { display: flex; align-items: center; flex-wrap: wrap; gap: 1.8rem; }
+    .site-nav a { color: var(--muted); font-size: .875rem; padding-block: .5rem; }
+    .site-nav a:hover { color: var(--text); }
+    .site-nav [aria-current="page"] { color: var(--gold); }
+    .intro { padding: 3.5rem 0 2.4rem; }
+    .eyebrow { color: var(--gold); font-size: .75rem; letter-spacing: .17em; font-weight: 600; }
+    .intro-line { display: flex; align-items: flex-end; justify-content: space-between; gap: 2rem; }
+    h1 { font-size: clamp(2rem, 3.7vw, 3.25rem); line-height: 1.25; letter-spacing: -.04em; margin: .9rem 0 1rem; }
+    h1 span { color: #96d6ca; }
+    .intro p { margin: 0; color: var(--muted); max-width: 45rem; }
+    .archive-mark { text-align: right; flex-shrink: 0; color: var(--muted); font-size: .875rem; padding-bottom: .25rem; }
+    .archive-mark strong { color: var(--text); font-size: 2.5rem; line-height: 1; font-weight: 500; letter-spacing: -.05em; margin-right: .4rem; }
+    .archive-mark small { display: block; font-size: .75rem; letter-spacing: .09em; margin-top: .7rem; }
+    .section-heading { display: flex; align-items: center; justify-content: space-between; gap: 1rem; border-top: 1px solid var(--line); padding: 1.15rem 0; }
+    .section-heading h2 { font-size: 1rem; font-weight: 500; margin: 0; }
+    .section-heading p { margin: 0; color: var(--muted); font-size: .8125rem; }
+    .case-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.2rem; align-items: start; }
+    .case {
+      --accent: #96d6ca;
+      background: linear-gradient(155deg, #132a2c, var(--panel) 58%);
+      border: 1px solid var(--line);
+      border-top: 2px solid var(--accent);
+      border-radius: 4px;
+      min-width: 0;
+      padding: 1.6rem;
+      transition: border-color .18s;
+    }
+    .case:hover { border-color: var(--accent); }
+    .case-hms { --accent: #89bdec; }
+    .case-rocket { --accent: #edb35e; }
+    .case-top { display: flex; justify-content: space-between; align-items: center; gap: .75rem; color: var(--accent); font-size: .75rem; letter-spacing: .08em; }
+    .case-number { font-variant-numeric: tabular-nums; color: var(--muted); }
+    .case h3 { font-size: 2.1rem; line-height: 1.2; font-weight: 500; letter-spacing: -.03em; margin: 1.6rem 0 .35rem; }
+    .case h3 a:hover { color: var(--accent); }
+    .case-subtitle { margin: 0; font-size: .875rem; color: var(--accent); }
+    .case-description { color: var(--muted); margin: 1.15rem 0 1.4rem; min-height: 5.1em; }
+    .result { padding: 1.15rem 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .result-label { display: block; font-size: .8125rem; color: var(--muted); }
+    .result-value { font-size: clamp(2rem, 3vw, 2.6rem); letter-spacing: -.05em; line-height: 1.4; font-variant-numeric: tabular-nums; font-weight: 500; }
+    .result-unit { color: var(--muted); font-size: .875rem; margin-left: .45rem; }
+    .result-context { display: block; color: var(--muted); font-size: .8125rem; }
+    .case-stats { display: grid; grid-template-columns: 1fr 1fr 1.2fr; gap: .75rem; margin: 1.3rem 0; }
+    .case-stats div { min-width: 0; }
+    .case-stats dt { font-size: .75rem; color: var(--muted); }
+    .case-stats dd { font-size: .9375rem; margin: .25rem 0 0; font-variant-numeric: tabular-nums; }
+    .caveat { margin: 0 0 1.4rem; color: var(--muted); font-size: .875rem; min-height: 5.1em; }
+    .caveat strong { color: var(--text); font-weight: 500; }
+    .case-link { display: flex; align-items: center; justify-content: space-between; gap: .75rem; min-height: 48px; padding: .7rem 1rem; border: 1px solid var(--line); background: #ffffff05; font-size: .9375rem; font-weight: 500; }
+    .case-link:hover { background: #ffffff0b; border-color: var(--accent); color: var(--accent); }
+    .case-link .arrow { color: var(--accent); }
+    .resources { margin-top: 1rem; border-top: 1px solid var(--line); padding-top: .6rem; }
+    .resources summary { cursor: pointer; color: var(--muted); font-size: .875rem; padding-block: .35rem; }
+    .resources summary:hover { color: var(--text); }
+    .resource-list { list-style: none; padding: 0; margin: .5rem 0 0; }
+    .resource-list li + li { border-top: 1px solid var(--line); }
+    .resource-list a { display: flex; justify-content: space-between; align-items: center; gap: .8rem; padding: .65rem 0; font-size: .875rem; }
+    .resource-list a:hover { color: var(--accent); }
+    .resource-list span { color: var(--muted); font-size: .75rem; flex-shrink: 0; }
+    .reading-note { display: grid; grid-template-columns: 9rem minmax(0, 1fr); gap: 1.25rem; margin: 2rem 0 3.5rem; padding: 1.25rem 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .reading-note h2 { font-size: .875rem; font-weight: 500; margin: .1rem 0 0; }
+    .reading-note p { margin: 0; color: var(--muted); font-size: .875rem; max-width: 64rem; }
+    .site-footer { border-top: 1px solid var(--line); }
+    .footer-inner { display: flex; justify-content: space-between; gap: 1.5rem; align-items: center; padding-block: 1.5rem; font-size: .8125rem; color: var(--muted); }
+    .footer-inner p { margin: 0; }
+    .footer-inner a { padding-block: .5rem; }
+    .footer-inner a:hover { color: var(--gold); }
+    @media (min-width: 1500px) { .case-description { min-height: 3.4em; } }
+    @media (max-width: 1050px) {
+      .header-inner, main, .footer-inner { width: 92%; }
+      .case-grid { gap: .8rem; }
+      .case { padding: 1.2rem; }
+      .site-nav { gap: 1.2rem; }
+      .case-stats { grid-template-columns: 1fr 1fr; }
+      .case-stats div:last-child { grid-column: 1 / -1; display: flex; justify-content: space-between; align-items: baseline; }
+      .case-stats div:last-child dd { margin: 0; }
+    }
+    @media (max-width: 780px) {
+      .header-inner { align-items: flex-start; flex-direction: column; gap: .7rem; }
+      .site-nav { width: 100%; justify-content: space-between; gap: .5rem; }
+      .intro { padding-top: 2.2rem; }
+      .intro-line { align-items: flex-start; }
+      .archive-mark { display: none; }
+      .section-heading { align-items: flex-start; flex-direction: column; gap: .2rem; }
+      .case-grid { grid-template-columns: 1fr; gap: 1.25rem; }
+      .case { padding: 1.5rem; }
+      .case h3 { margin-top: 1.1rem; }
+      .case-description, .caveat { min-height: auto; }
+      .case-stats { grid-template-columns: 1fr 1fr 1.2fr; }
+      .case-stats div:last-child { display: block; grid-column: auto; }
+      .case-stats div:last-child dd { margin-top: .25rem; }
+      .reading-note { grid-template-columns: 1fr; gap: .6rem; margin-bottom: 2rem; }
+      .footer-inner { flex-direction: column; align-items: flex-start; gap: .25rem; }
+    }
+    @media (max-width: 360px) {
+      .case { padding: 1.15rem; }
+      .brand-en { font-size: .75rem; letter-spacing: 0; }
+      .case-stats { gap: .4rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .case { transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#cases">跳转到研究案例</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="../index.html" aria-label="后AI研究所首页">
+        <img src="../assets/logo-icon.png" alt="" width="44" height="44">
+        <span><span class="brand-name">后AI研究所</span><span class="brand-en" lang="en">POST-AI RESEARCH INSTITUTE</span></span>
+      </a>
+      <nav class="site-nav" aria-label="主导航">
+        <a href="../index.html#atlas">研究图谱</a>
+        <a href="./index.html" aria-current="page">AI 科学家</a>
+        <a href="../index.html">返回主站 <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro" aria-labelledby="page-title">
+      <div class="eyebrow" lang="en">AI SCIENTIST / RESEARCH ARCHIVE</div>
+      <div class="intro-line">
+        <div>
+          <h1 id="page-title">AI 科学家<span>研究档案</span></h1>
+          <p>沿着 PRAXIST 的研究轨迹，追踪方案如何演化、证据如何被继承，以及结论在哪里需要保留。</p>
+        </div>
+        <div class="archive-mark"><strong>03</strong> 个案例<small>PRAXIST · 历史运行分析</small></div>
+      </div>
+    </section>
+
+    <section id="cases" aria-labelledby="cases-title">
+      <div class="section-heading">
+        <h2 id="cases-title">研究案例</h2>
+        <p>研究谱系 / 发现与实验 / 搜索与证据 / 因果与成本</p>
+      </div>
+      <div class="case-grid">
+        <!-- 摘要来自各案例的本地分析页；分数与记录数并非跨任务排行榜。 -->
+        <article class="case" aria-labelledby="icecube-title">
+          <div class="case-top"><span>PRAXIST v0.2.0</span><span class="case-number">01 / 0039</span></div>
+          <h3 id="icecube-title"><a href="./praxist-icecube-trace.html">IceCube</a></h3>
+          <p class="case-subtitle">中微子方向重建</p>
+          <p class="case-description">追踪多成员集成与分区配方的继承，检视成绩改善背后的验证重叠与审计反证。</p>
+          <div class="result">
+            <span class="result-label">最终官方角误差 · 越低越好</span>
+            <strong class="result-value">1.05626</strong><span class="result-unit">rad</span>
+            <span class="result-context">较 gen0 最佳下降 6.90% · 无奖牌</span>
+          </div>
+          <dl class="case-stats">
+            <div><dt>研究代次</dt><dd>4 代</dd></div>
+            <div><dt>发现记录</dt><dd>488 条</dd></div>
+            <div><dt>运行墙钟</dt><dd>26.57 小时</dd></div>
+          </dl>
+          <p class="caveat"><strong>证据边界</strong> · 13 个定向核查节点并非完整实验树；验证批次仍存在重叠反证。</p>
+          <a class="case-link" href="./praxist-icecube-trace.html" aria-label="查看 IceCube 研究谱系">查看研究谱系 <span class="arrow" aria-hidden="true">↗</span></a>
+        </article>
+
+        <article class="case case-hms" aria-labelledby="hms-title">
+          <div class="case-top"><span>PRAXIST v0.2.0</span><span class="case-number">02 / 0064</span></div>
+          <h3 id="hms-title"><a href="./praxist_hms_0064/index.html">HMS</a></h3>
+          <p class="case-subtitle">有害脑活动分类</p>
+          <p class="case-description">从第三方质疑到重开实验，追踪验证纠错、成员消融与最终组合中的证据继承。</p>
+          <div class="result">
+            <span class="result-label">最终官方 KL · 越低越好</span>
+            <strong class="result-value">0.38542</strong><span class="result-unit">KL</span>
+            <span class="result-context">较 gen0 最佳下降 17.72% · 未达铜牌</span>
+          </div>
+          <dl class="case-stats">
+            <div><dt>研究代次</dt><dd>5 代</dd></div>
+            <div><dt>发现记录</dt><dd>1,310 条</dd></div>
+            <div><dt>运行墙钟</dt><dd>26.90 小时</dd></div>
+          </dl>
+          <p class="caveat"><strong>证据边界</strong> · 最终组合仅比同种子 C1 好 0.00003，不能据此认定独立的重组收益。</p>
+          <a class="case-link" href="./praxist_hms_0064/index.html" aria-label="查看 HMS 研究谱系">查看研究谱系 <span class="arrow" aria-hidden="true">↗</span></a>
+          <details class="resources">
+            <summary>报告与审计资料</summary>
+            <ul class="resource-list">
+              <li><a href="./praxist_hms_0064/report.html">完整六层报告 <span>HTML ↗</span></a></li>
+              <li><a href="./praxist_hms_0064/分析报告.md" download>分析报告原文 <span>MD ↓</span></a></li>
+              <li><a href="./praxist_hms_0064/intervention_table.json" download>研究干预表 <span>JSON ↓</span></a></li>
+              <li><a href="./praxist_hms_0064/evidence_edges.json" download>证据关系 <span>JSON ↓</span></a></li>
+              <li><a href="./praxist_hms_0064/analysis_checks.json" download>分析核查记录 <span>JSON ↓</span></a></li>
+              <li><a href="./praxist_hms_0064/generation-scores.svg">代际成绩图 <span>SVG ↗</span></a></li>
+            </ul>
+          </details>
+        </article>
+
+        <article class="case case-rocket" aria-labelledby="rocket-title">
+          <div class="case-top"><span>PRAXIST v0.3.0</span><span class="case-number">03 / SF-CAC</span></div>
+          <h3 id="rocket-title"><a href="./praxist_rocket/index.html">Rocket</a></h3>
+          <p class="case-subtitle">火箭着陆控制</p>
+          <p class="case-description">从燃料管理、姿态与尾部修复，到零失败后的控制优化，追踪多指标收益与代价。</p>
+          <div class="result">
+            <span class="result-label">固定完整评测着陆成功率 · 越高越好</span>
+            <strong class="result-value">100<span style="font-size: .65em">%</span></strong>
+            <span class="result-context">Gen9 首次全通过 · 12,288 / 12,288</span>
+          </div>
+          <dl class="case-stats">
+            <div><dt>已封账代次</dt><dd>Gen0–11</dd></div>
+            <div><dt>发现记录</dt><dd>1,220 条</dd></div>
+            <div><dt>运行墙钟</dt><dd>14.40 小时</dd></div>
+          </dl>
+          <p class="caveat"><strong>证据边界</strong> · Gen12 已评分、未封账；运行后扩展评测仍有 2 次失败，100% 不等于全面泛化。</p>
+          <a class="case-link" href="./praxist_rocket/index.html" aria-label="查看 Rocket 研究谱系">查看研究谱系 <span class="arrow" aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+    </section>
+
+    <aside class="reading-note" aria-labelledby="reading-title">
+      <h2 id="reading-title">关于这些分析</h2>
+      <p>分数来自历史归档，未在本次分析中重跑训练或模拟。发现记录不等于独立实验，研究谱系中的连线不等于因果效应，墙钟时间也不等于 GPU 用量。不同任务的分数不可直接比较；具体证据与局限请查阅各案例。</p>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>后AI研究所 <span aria-hidden="true">/</span> AI 科学家研究档案</p>
+      <a href="../index.html">返回后AI研究所 <span aria-hidden="true">↗</span></a>
+    </div>
+  </footer>
+</body>
+</html>
