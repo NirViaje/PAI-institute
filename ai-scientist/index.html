@@ -4,18 +4,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="后AI研究所 AI 科学家研究档案：探索 PRAXIST 在 IceCube、HMS 脑电分类与 Rocket 控制任务中的研究谱系、实验发现和证据边界。">
-  <meta name="theme-color" content="#071315">
+  <meta name="theme-color" content="#f4f8fc">
   <title>AI 科学家 · 后AI研究所</title>
   <link rel="icon" href="../assets/logo-icon.png" type="image/png">
   <style>
     :root {
-      color-scheme: dark;
-      --bg: #071315;
-      --panel: #0d1d1f;
-      --text: #eff8f4;
-      --muted: #a5bbb7;
-      --gold: #e7a23a;
-      --line: #29403f;
+      color-scheme: light;
+      --bg: #f4f8fc;
+      --panel: #ffffff;
+      --text: #173042;
+      --muted: #516477;
+      --gold: #a14f0b;
+      --line: #cfdae4;
       font-family: Inter, "Noto Sans SC", "Microsoft YaHei", system-ui, sans-serif;
     }
     * { box-sizing: border-box; }
@@ -23,7 +23,7 @@
     body {
       margin: 0;
       color: var(--text);
-      background: radial-gradient(ellipse at 85% 0%, #143338 0, transparent 42%), var(--bg);
+      background: radial-gradient(ellipse at 85% 0%, #dcecff 0, transparent 42%), var(--bg);
       font-size: 1rem;
       line-height: 1.7;
       -webkit-font-smoothing: antialiased;
@@ -40,11 +40,11 @@
       left: 1rem;
       z-index: 10;
       padding: .7rem 1rem;
-      color: var(--bg);
+      color: #ffffff;
       background: var(--gold);
     }
     .skip-link:focus { top: 1rem; }
-    .site-header { border-bottom: 1px solid var(--line); background: #071315b3; }
+    .site-header { border-bottom: 1px solid var(--line); background: #ffffffed; }
     .header-inner, main, .footer-inner { width: min(1320px, 88%); margin-inline: auto; }
     .header-inner {
       min-height: 86px;
@@ -66,7 +66,7 @@
     .eyebrow { color: var(--gold); font-size: .75rem; letter-spacing: .17em; font-weight: 600; }
     .intro-line { display: flex; align-items: flex-end; justify-content: space-between; gap: 2rem; }
     h1 { font-size: clamp(2rem, 3.7vw, 3.25rem); line-height: 1.25; letter-spacing: -.04em; margin: .9rem 0 1rem; }
-    h1 span { color: #96d6ca; }
+    h1 span { color: #087768; }
     .intro p { margin: 0; color: var(--muted); max-width: 45rem; }
     .archive-mark { text-align: right; flex-shrink: 0; color: var(--muted); font-size: .875rem; padding-bottom: .25rem; }
     .archive-mark strong { color: var(--text); font-size: 2.5rem; line-height: 1; font-weight: 500; letter-spacing: -.05em; margin-right: .4rem; }
@@ -76,18 +76,20 @@
     .section-heading p { margin: 0; color: var(--muted); font-size: .8125rem; }
     .case-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.2rem; align-items: start; }
     .case {
-      --accent: #96d6ca;
-      background: linear-gradient(155deg, #132a2c, var(--panel) 58%);
+      --accent: #087768;
+      --tint: #edf9f6;
+      background: linear-gradient(155deg, var(--tint), var(--panel) 58%);
       border: 1px solid var(--line);
       border-top: 2px solid var(--accent);
       border-radius: 4px;
       min-width: 0;
       padding: 1.6rem;
+      box-shadow: 0 8px 28px #153d590a;
       transition: border-color .18s;
     }
     .case:hover { border-color: var(--accent); }
-    .case-hms { --accent: #89bdec; }
-    .case-rocket { --accent: #edb35e; }
+    .case-hms { --accent: #245fce; --tint: #edf4ff; }
+    .case-rocket { --accent: #a34c09; --tint: #fff5e9; }
     .case-top { display: flex; justify-content: space-between; align-items: center; gap: .75rem; color: var(--accent); font-size: .75rem; letter-spacing: .08em; }
     .case-number { font-variant-numeric: tabular-nums; color: var(--muted); }
     .case h3 { font-size: 2.1rem; line-height: 1.2; font-weight: 500; letter-spacing: -.03em; margin: 1.6rem 0 .35rem; }
@@ -105,9 +107,9 @@
     .case-stats dd { font-size: .9375rem; margin: .25rem 0 0; font-variant-numeric: tabular-nums; }
     .caveat { margin: 0 0 1.4rem; color: var(--muted); font-size: .875rem; min-height: 5.1em; }
     .caveat strong { color: var(--text); font-weight: 500; }
-    .case-link { display: flex; align-items: center; justify-content: space-between; gap: .75rem; min-height: 48px; padding: .7rem 1rem; border: 1px solid var(--line); background: #ffffff05; font-size: .9375rem; font-weight: 500; }
-    .case-link:hover { background: #ffffff0b; border-color: var(--accent); color: var(--accent); }
-    .case-link .arrow { color: var(--accent); }
+    .case-link { display: flex; align-items: center; justify-content: space-between; gap: .75rem; min-height: 48px; padding: .7rem 1rem; border: 1px solid var(--accent); background: var(--tint); color: var(--accent); font-size: .9375rem; font-weight: 500; }
+    .case-link:hover { background: var(--accent); border-color: var(--accent); color: #ffffff; }
+    .case-link .arrow { color: inherit; }
     .resources { margin-top: 1rem; border-top: 1px solid var(--line); padding-top: .6rem; }
     .resources summary { cursor: pointer; color: var(--muted); font-size: .875rem; padding-block: .35rem; }
     .resources summary:hover { color: var(--text); }
