@@ -1,0 +1,70 @@
+{
+  "batch": 0,
+  "hash": "59e00811daf9beb97dd198e90a151212ac95850f43ba268736bf9ebdaec9b094",
+  "turn_count": 7,
+  "files": [
+    "turn_0000.mp3",
+    "turn_0001.mp3",
+    "turn_0002.mp3",
+    "turn_0003.mp3",
+    "turn_0004.mp3",
+    "turn_0005.mp3",
+    "turn_0006.mp3"
+  ],
+  "roles": [
+    "narrator",
+    "narrator",
+    "narrator",
+    "narrator",
+    "narrator",
+    "narrator",
+    "narrator"
+  ],
+  "voices": [
+    "zh_male_liufei_v2_saturn_bigtts",
+    "zh_male_liufei_v2_saturn_bigtts",
+    "zh_male_liufei_v2_saturn_bigtts",
+    "zh_male_liufei_v2_saturn_bigtts",
+    "zh_male_liufei_v2_saturn_bigtts",
+    "zh_male_liufei_v2_saturn_bigtts",
+    "zh_male_liufei_v2_saturn_bigtts"
+  ],
+  "seconds": 82.39,
+  "usage": [
+    {
+      "input_text_tokens": 0,
+      "output_audio_tokens": 300,
+      "total_tokens": 300
+    },
+    {
+      "input_text_tokens": 0,
+      "output_audio_tokens": 357,
+      "total_tokens": 357
+    },
+    {
+      "input_text_tokens": 0,
+      "output_audio_tokens": 310,
+      "total_tokens": 310
+    },
+    {
+      "input_text_tokens": 0,
+      "output_audio_tokens": 235,
+      "total_tokens": 235
+    },
+    {
+      "input_text_tokens": 0,
+      "output_audio_tokens": 245,
+      "total_tokens": 245
+    },
+    {
+      "input_text_tokens": 0,
+      "output_audio_tokens": 253,
+      "total_tokens": 253
+    },
+    {
+      "input_text_tokens": 0,
+      "output_audio_tokens": 345,
+      "total_tokens": 345
+    }
+  ]
+}

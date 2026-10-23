@@ -1,0 +1,83 @@
+{
+  "snapshot": "2026-10-23",
+  "recovery": "indexed workbook text; original binary materialization unavailable",
+  "population_scope_billion": {
+    "南亚（含伊朗）": 2.085,
+    "东南亚": 0.7,
+    "撒哈拉以南非洲": 1.274
+  },
+  "prior_models": [
+    {
+      "id": "P01",
+      "type": "既有情景模型",
+      "topic": "项目模型",
+      "author": "后AI研究所 / 本账号既有研究",
+      "year": "2026-10-22",
+      "title": "40亿人智能基础设施估算.xlsx",
+      "url": "",
+      "claim": "恢复云端token、功率、用地、端侧与机器人分项口径；基准40亿人、10万输出token/人/日得到约92.59万张卡、12.17TWh/年。",
+      "limit": "吞吐与服务强度是工程假设；不含训练、视频、视觉和全部工业仿真。原文件检索可读，未能获取原始字节。"
+    },
+    {
+      "id": "P02",
+      "type": "既有情景模型",
+      "topic": "项目模型",
+      "author": "后AI研究所 / 本账号既有研究",
+      "year": "2026-10-22",
+      "title": "工业自举_百万人路径与成本模型.xlsx",
+      "url": "",
+      "claim": "十年增量建设：每百万人约74.23亿美元，包含新增2TWh/年电量、500万m²住宅及所列配套；进口含量约28.68亿美元。",
+      "limit": "不是完整工业化总价；未含全部运营、土地和融资成本。与P03的资本篮子不能混用。原文件检索可读。"
+    },
+    {
+      "id": "P03",
+      "type": "既有情景模型",
+      "topic": "项目模型",
+      "author": "后AI研究所 / 本账号既有研究",
+      "year": "2026-10-22",
+      "title": "40亿人_区域工业自举_资源与现金流模型_v01.xlsx",
+      "url": "",
+      "claim": "25年、六类原型、每百万人243.705亿美元目标资本篮子；资金与外汇双约束；前五年赠款2.5亿和贷款5亿美元。",
+      "limit": "本系统据可读表格重建并回归核对六条基准；原始xlsx/zip字节未能获取，故不附原工作簿。非国别可研、非投资承诺。"
+    }
+  ],
+  "baseline": [
+    {
+      "id": "CU",
+      "name": "中南非铜矿—农业型",
+      "completion_expected": 0.3242700268704231
+    },
+    {
+      "id": "WA",
+      "name": "西非矿业—农业型",
+      "completion_expected": 0.2834858765634922
+    },
+    {
+      "id": "EA",
+      "name": "东非农业—服务型",
+      "completion_expected": 0.19275256709303842
+    },
+    {
+      "id": "LAND",
+      "name": "低收入内陆型",
+      "completion_expected": 0.05457958283408967
+    },
+    {
+      "id": "SA",
+      "name": "南亚制造—农业型",
+      "completion_expected": 0.659956398008777
+    },
+    {
+      "id": "SEA",
+      "name": "东南亚加工—出口型",
+      "completion_expected": 1
+    }
+  ],
+  "limitations": [
+    "conditional archetypes, not country forecasts",
+    "no empirical calibration",
+    "no probability assigned to futures",
+    "source dates retained",
+    "no browser persistence validation across restarts in this environment"
+  ]
+}

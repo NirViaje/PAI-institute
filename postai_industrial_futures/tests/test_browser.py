@@ -1,0 +1,126 @@
+"""Browser checks of the standalone document, injected without network navigation.
+The execution environment blocks file:// and localhost navigation by policy.
+This test exercises the real document via set_content, including its no-storage
+fallback; it does NOT claim to test browser-persistent localStorage across reloads.
+Requires playwright and Chromium. Set CHROMIUM_PATH for a different binary.
+"""
+from pathlib import Path
+from playwright.sync_api import sync_playwright
+import json, csv, os
+ROOT=Path(__file__).resolve().parents[1]
+report={'mode':'Chromium document injection; network navigation unavailable by environment policy','checks':[],'errors':[],'screenshots':[]}
+
+def check(name, value):
+    assert value, name
+    report['checks'].append(name)
+
+with sync_playwright() as p:
+    browser=p.chromium.launch(executable_path=os.getenv('CHROMIUM_PATH','/usr/bin/chromium'),headless=True,args=['--no-sandbox'])
+    context=browser.new_context(viewport={'width':1440,'height':1000},accept_downloads=True)
+    page=context.new_page()
+    page.on('pageerror',lambda e: report['errors'].append(str(e)))
+    page.on('dialog',lambda d:d.accept())
+    page.set_content((ROOT/'index.html').read_text(encoding='utf-8'),wait_until='load')
+    check('nine sections rendered',page.locator('.page').count()==9)
+    check('no-storage fallback displayed', '持久存储' in page.locator('#storage-status').inner_text())
+    def nav(id):
+        page.locator(f'#nav [data-nav="{id}"]').click()
+        check('navigate '+id,page.locator(f'#page-{id}').is_visible())
+    def set_range(group,key,val):
+        page.locator(f'#{group}-{key}').evaluate('(el,v)=>{el.value=v;el.dispatchEvent(new Event("input",{bubbles:true}));}',str(val))
+    def shot(name):
+        path=ROOT/'tests'/name;page.wait_for_timeout(350);page.screenshot(path=str(path));report['screenshots'].append(name)
+    shot('desktop-overview.png')
+    nav('leverage')
+    before=page.locator('#compute-metrics').inner_text()
+    set_range('compute','price',6)
+    check('price does not change physical compute quantities',page.locator('#compute-metrics').inner_text()==before)
+    page.locator('#compute-burden').select_option('100')
+    check('compute burden changes result',page.locator('#compute-metrics').inner_text()!=before)
+    set_range('cost','realized',0)
+    check('zero realization gives zero cost savings','0.0%' in page.locator('#cost-result').inner_text())
+    nav('africa')
+    page.locator('#map-buttons [data-case="NORTH"]').click()
+    check('North Africa qualitative only','不进入数值模型' in page.locator('#case-detail').inner_text())
+    page.locator('#map-buttons [data-case="EA"]').click()
+    page.locator('[data-maplayer="capacity"]').click()
+    check('map layer interactive','冷链 / 机电' in page.locator('#africa-map').inner_text())
+    shot('desktop-africa.png')
+    page.locator('[data-run-case="EA"]').click()
+    check('map routes selected archetype into finance',page.locator('#finance-region').input_value()=='EA')
+    check('EA baseline 19.3 percent','19.3%' in page.locator('#finance-metrics').inner_text())
+    page.locator('[data-preset="cost"]').click()
+    improved=page.locator('#finance-metrics').inner_text()
+    check('cost preset recomputes target',page.locator('#finance-costCut').input_value()=='30')
+    page.locator('#pin-scenario').click()
+    check('scenario pinned',page.locator('.pin-card').count()==1)
+    page.locator('[data-preset="base"]').click()
+    check('baseline resets result',page.locator('#finance-metrics').inner_text()!=improved)
+    page.locator('[data-load-pin="0"]').click()
+    check('scenario reload restores result',page.locator('#finance-metrics').inner_text()==improved)
+    page.locator('#finance-year').evaluate('(e)=>{e.value=8;e.dispatchEvent(new Event("input",{bubbles:true}));}')
+    check('annual view 2034',page.locator('#year-output').inner_text()=='2034')
+    page.locator('#finance-region').select_option('CU')
+    page.locator('[data-preset="base"]').click()
+    page.evaluate('window.scrollTo(0,0)');shot('desktop-finance.png')
+    with page.expect_download() as download_info: page.locator('#export-csv').click()
+    csvfile=download_info.value.path()
+    rows=list(csv.reader(Path(csvfile).read_text(encoding='utf-8-sig').splitlines()))
+    check('CSV has header and 25 years',len(rows)==26 and rows[1][0]=='2027' and rows[-1][0]=='2051')
+    nav('capability')
+    page.locator('[data-stage="3"]').click();page.locator('[data-gate="0"]').check()
+    check('capability check persists within document','1 / 3' in page.locator('.gate-status').inner_text())
+    nav('physical')
+    before=page.locator('#mineral-result').inner_text();set_range('mineral','price',4000)
+    check('mineral losses explicitly warned','自由现金流为负' in page.locator('#mineral-result').inner_text())
+    page.locator('[data-group="ag"][data-key="exports"]').uncheck()
+    check('agriculture does not invent export revenue','未售余量 47.5kt' in page.locator('#ag-result').inner_text())
+    set_range('ag','waterBudget',50)
+    check('water failure flagged','水预算不通过' in page.locator('#ag-result').inner_text())
+    before=page.locator('#energy-balance').inner_text();page.locator('#energy-weather').select_option('cloud')
+    check('cloudy-week stress updates adequacy',page.locator('#energy-balance').inner_text()!=before)
+    page.locator('#energy-chart').scroll_into_view_if_needed();shot('desktop-energy.png')
+    nav('life');before=page.locator('#social-metrics').inner_text();set_range('social','labor',10)
+    check('distribution controls update household proxy',page.locator('#social-metrics').inner_text()!=before)
+    nav('futures');page.locator('[data-future="enclave"]').click()
+    check('future branch updates','高效飞地型' in page.locator('#future-detail').inner_text())
+    nav('research')
+    page.locator('#source-search').fill('EITI')
+    check('source search',page.locator('#source-list .source-card').count()==1)
+    page.locator('#source-list [data-bookmark]').click()
+    page.locator('#source-search').fill('');page.locator('#saved-filter').click()
+    check('bookmarks filter',page.locator('#source-list .source-card').count()==1)
+    page.locator('#saved-filter').click()
+    page.locator('#note-title').fill('浏览器验证记录')
+    page.locator('#note-body').fill('测试事实、反例与后续现场数据。<script>window.XSS=1</script>')
+    page.locator('#add-note').click()
+    check('notebook saves and escapes user text',page.locator('.journal-item').count()==1 and not page.evaluate('!!window.XSS'))
+    with page.expect_download() as info: page.locator('#export-state').click()
+    backup=Path(info.value.path()).read_text(encoding='utf-8');obj=json.loads(backup)
+    check('JSON contains notes and pins',len(obj['state']['notes'])==1 and len(obj['state']['pins'])==1)
+    with page.expect_download() as info: page.locator('#export-brief').click()
+    check('Markdown contains research record','浏览器验证记录' in Path(info.value.path()).read_text())
+    obj['state']['finance']['rate']=9
+    page.locator('#import-file').set_input_files({'name':'backup.json','mimeType':'application/json','buffer':json.dumps(obj,ensure_ascii=False).encode()})
+    page.wait_for_timeout(150)
+    check('JSON import restores notebook',page.locator('.journal-item').count()==1)
+    nav('finance');check('JSON import changes valid parameter',page.locator('#finance-rate').input_value()=='9')
+    page.locator('[data-mode="research"]').click()
+    check('research mode reveals assumptions',page.locator('#finance-localization').locator('xpath=ancestor::details').is_visible())
+    # Render every chapter at a narrow viewport; fail on document-level overflow.
+    mobile=browser.new_context(viewport={'width':390,'height':844},device_scale_factor=1,is_mobile=True,has_touch=True)
+    m=mobile.new_page();m.on('pageerror',lambda e:report['errors'].append(str(e)))
+    m.set_content((ROOT/'index.html').read_text(encoding='utf-8'),wait_until='load')
+    m.wait_for_timeout(350);m.screenshot(path=str(ROOT/'tests/mobile-overview.png'))
+    for id in ['overview','leverage','africa','capability','finance','physical','life','futures','research']:
+        m.locator(f'#mobile-nav [data-nav="{id}"]').click()
+        width=m.evaluate('({w:document.documentElement.clientWidth,s:document.documentElement.scrollWidth})')
+        check('mobile no horizontal overflow '+id,width['s']<=width['w']+1)
+    m.locator('#mobile-nav [data-nav="finance"]').click()
+    m.wait_for_timeout(350);m.screenshot(path=str(ROOT/'tests/mobile-finance.png'))
+    report['screenshots']+=['mobile-overview.png','mobile-finance.png']
+    check('no uncaught JavaScript errors',not report['errors'])
+    browser.close()
+report['passed']=True
+(ROOT/'tests/browser_results.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
+print(json.dumps(report,ensure_ascii=False,indent=2))

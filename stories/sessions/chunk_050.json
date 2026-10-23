@@ -1,0 +1,30 @@
+{
+  "batch": 50,
+  "hash": "1805e6b0072dab023392db9cb8d25cea07da70bed869da4e3be96b8bab369d31",
+  "turn_count": 2,
+  "files": [
+    "turn_0155.mp3",
+    "turn_0156.mp3"
+  ],
+  "roles": [
+    "narrator",
+    "mi"
+  ],
+  "voices": [
+    "zh_male_liufei_v2_saturn_bigtts",
+    "zh_male_dayixiansheng_v2_saturn_bigtts"
+  ],
+  "seconds": 11.98,
+  "usage": [
+    {
+      "input_text_tokens": 0,
+      "output_audio_tokens": 232,
+      "total_tokens": 232
+    },
+    {
+      "input_text_tokens": 0,
+      "output_audio_tokens": 63,
+      "total_tokens": 63
+    }
+  ]
+}

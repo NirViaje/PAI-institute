@@ -1,0 +1,38 @@
+{
+  "batch": 47,
+  "hash": "b757f161e164c553f1493804c75d0d1c6912de69e1ac37204bc96bc3b2fe4f9d",
+  "turn_count": 3,
+  "files": [
+    "turn_0147.mp3",
+    "turn_0148.mp3",
+    "turn_0149.mp3"
+  ],
+  "roles": [
+    "ye",
+    "shen",
+    "ye"
+  ],
+  "voices": [
+    "zh_male_liufei_v2_saturn_bigtts",
+    "zh_male_xiaolei_v2_saturn_bigtts",
+    "zh_male_liufei_v2_saturn_bigtts"
+  ],
+  "seconds": 31.51,
+  "usage": [
+    {
+      "input_text_tokens": 0,
+      "output_audio_tokens": 217,
+      "total_tokens": 217
+    },
+    {
+      "input_text_tokens": 0,
+      "output_audio_tokens": 290,
+      "total_tokens": 290
+    },
+    {
+      "input_text_tokens": 0,
+      "output_audio_tokens": 275,
+      "total_tokens": 275
+    }
+  ]
+}

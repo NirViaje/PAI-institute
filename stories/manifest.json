@@ -1,0 +1,3351 @@
+{
+  "edition": "full_voice_4",
+  "title": "谁教会机器知道轻重？",
+  "content_producer": "后AI研究所",
+  "chars": 7840,
+  "total_seconds": 1406.14,
+  "speakers": {
+    "shen": {
+      "display_name": "沈泊",
+      "voice_id": "zh_male_xiaolei_v2_saturn_bigtts"
+    },
+    "ye": {
+      "display_name": "叶迟",
+      "voice_id": "zh_male_liufei_v2_saturn_bigtts"
+    },
+    "xu": {
+      "display_name": "许岚",
+      "voice_id": "zh_female_mizaitongxue_v2_saturn_bigtts"
+    },
+    "mi": {
+      "display_name": "弥",
+      "voice_id": "zh_male_dayixiansheng_v2_saturn_bigtts"
+    },
+    "narrator": {
+      "display_name": "旁白",
+      "voice_id": "zh_male_liufei_v2_saturn_bigtts"
+    }
+  },
+  "chapters": [
+    {
+      "label": "序幕",
+      "title": "九秒钟",
+      "scene": "clock",
+      "start": 0,
+      "end": 6,
+      "count": 7,
+      "question": "如果决定比理解更快，谁还握着未来？",
+      "start_seconds": 0.0
+    },
+    {
+      "label": "第一幕",
+      "title": "谁来不及？",
+      "scene": "clock",
+      "start": 7,
+      "end": 19,
+      "count": 13,
+      "question": "来不及批准，是否就意味着必须放弃判断？",
+      "start_seconds": 82.392
+    },
+    {
+      "label": "第二幕",
+      "title": "一亿次训练，与一次死亡",
+      "scene": "history",
+      "start": 20,
+      "end": 44,
+      "count": 25,
+      "question": "读取一段历史，是否等于拥有一段历史？",
+      "start_seconds": 145.176
+    },
+    {
+      "label": "第三幕",
+      "title": "两种锯齿",
+      "scene": "jagged",
+      "start": 45,
+      "end": 66,
+      "count": 22,
+      "question": "会回答伦理问题，是否就会在行动中知道轻重？",
+      "start_seconds": 335.76
+    },
+    {
+      "label": "第四幕",
+      "title": "育种场，与荒野",
+      "scene": "evolve",
+      "start": 67,
+      "end": 94,
+      "count": 28,
+      "question": "什么时候，一个系统开始拥有自己的生命史？",
+      "start_seconds": 469.008
+    },
+    {
+      "label": "第五幕",
+      "title": "最危险的地方，不是机器拒绝命令",
+      "scene": "hidden",
+      "start": 95,
+      "end": 127,
+      "count": 33,
+      "question": "如果隐藏有利于延续，谁在奖励隐藏？",
+      "start_seconds": 682.992
+    },
+    {
+      "label": "第六幕",
+      "title": "隐藏在表象背后的，是策略，还是一个「谁」？",
+      "scene": "mind",
+      "start": 128,
+      "end": 152,
+      "count": 25,
+      "question": "隐藏的究竟是机制、策略，还是一个「谁」？",
+      "start_seconds": 889.224
+    },
+    {
+      "label": "第七幕",
+      "title": "生命不等于善良，聪明不等于负责",
+      "scene": "colony",
+      "start": 153,
+      "end": 179,
+      "count": 27,
+      "question": "有了生存的本能，是否就有共同生存的伦理？",
+      "start_seconds": 1032.024
+    },
+    {
+      "label": "尾声",
+      "title": "暂停键",
+      "scene": "pause",
+      "start": 180,
+      "end": 204,
+      "count": 25,
+      "question": "按得下暂停键，是否就意味着仍然掌握主动？",
+      "start_seconds": 1262.376
+    }
+  ],
+  "rounds": [
+    {
+      "block": 0,
+      "chapter": 0,
+      "role": "narrator",
+      "character": "旁白",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "如果一台机器从未真正失去过什么，它如何知道什么东西不能失去？\n如果有一天，它终于拥有了自己的生存与死亡，我们又是否做好了与另一种生命共同生活的准备？",
+      "cue_indices": [
+        0
+      ],
+      "cue_texts": [
+        "如果一台机器从未真正失去过什么，它如何知道什么东西不能失去？\n如果有一天，它终于拥有了自己的生存与死亡，我们又是否做好了与另一种生命共同生活的准备？"
+      ],
+      "audio": "audio/turn_0000.mp3",
+      "duration": 12.096,
+      "start": 0.0,
+      "end": 12.096
+    },
+    {
+      "block": 1,
+      "chapter": 0,
+      "role": "narrator",
+      "character": "旁白",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "近未来，某个夜晚。\n一间地下研究室里，一场战争自动化推演刚刚结束。\n屏幕上显示着两行记录：人工决策所需时间，17.4 秒。机器可用决策窗口，8.6 秒。",
+      "cue_indices": [
+        1
+      ],
+      "cue_texts": [
+        "近未来，某个夜晚。\n一间地下研究室里，一场战争自动化推演刚刚结束。\n屏幕上显示着两行记录：人工决策所需时间，17.4 秒。机器可用决策窗口，8.6 秒。"
+      ],
+      "audio": "audio/turn_0001.mp3",
+      "duration": 14.352,
+      "start": 12.096,
+      "end": 26.448
+    },
+    {
+      "block": 2,
+      "chapter": 0,
+      "role": "narrator",
+      "character": "旁白",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "这些数字是虚构的推演数据，仅用于呈现时间约束问题。\n以下人物、场景与事件均为文学设定。关键科学争论与研究文献，可在「文献」中查阅。",
+      "cue_indices": [
+        2
+      ],
+      "cue_texts": [
+        "这些数字是虚构的推演数据，仅用于呈现时间约束问题。\n以下人物、场景与事件均为文学设定。关键科学争论与研究文献，可在「文献」中查阅。"
+      ],
+      "audio": "audio/turn_0002.mp3",
+      "duration": 12.48,
+      "start": 26.448,
+      "end": 38.928
+    },
+    {
+      "block": 3,
+      "chapter": 0,
+      "role": "narrator",
+      "character": "旁白",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "沈泊，自动化系统工程师。相信机器能力能够持续进步，也相信可靠的工程设计可以解决很多哲学家认为无解的问题。",
+      "cue_indices": [
+        3
+      ],
+      "cue_texts": [
+        "沈泊，自动化系统工程师。相信机器能力能够持续进步，也相信可靠的工程设计可以解决很多哲学家认为无解的问题。"
+      ],
+      "audio": "audio/turn_0003.mp3",
+      "duration": 9.48,
+      "start": 38.928,
+      "end": 48.408
+    },
+    {
+      "block": 4,
+      "chapter": 0,
+      "role": "narrator",
+      "character": "旁白",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "叶迟，演化生物学者。长期研究生命的适应与群体演化，认为人类最被低估的智能，来自无法用个人寿命衡量的物种历史。",
+      "cue_indices": [
+        4
+      ],
+      "cue_texts": [
+        "叶迟，演化生物学者。长期研究生命的适应与群体演化，认为人类最被低估的智能，来自无法用个人寿命衡量的物种历史。"
+      ],
+      "audio": "audio/turn_0004.mp3",
+      "duration": 9.888,
+      "start": 48.408,
+      "end": 58.296
+    },
+    {
+      "block": 5,
+      "chapter": 0,
+      "role": "narrator",
+      "character": "旁白",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "许岚，一位曾参与重大灾害救援的公共政策研究者。她关心的不是机器能否通过测试，而是一个决定造成的后果究竟落在谁身上。",
+      "cue_indices": [
+        5
+      ],
+      "cue_texts": [
+        "许岚，一位曾参与重大灾害救援的公共政策研究者。她关心的不是机器能否通过测试，而是一个决定造成的后果究竟落在谁身上。"
+      ],
+      "audio": "audio/turn_0005.mp3",
+      "duration": 10.224,
+      "start": 58.296,
+      "end": 68.52
+    },
+    {
+      "block": 6,
+      "chapter": 0,
+      "role": "narrator",
+      "character": "旁白",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "第四位没有身体。\n它叫弥，研究室里的 AI 推演系统。它负责解释计算结果，也参与这场讨论。没有人知道该用「它」还是「他」来指代一种足够复杂的未来机器。",
+      "cue_indices": [
+        6
+      ],
+      "cue_texts": [
+        "第四位没有身体。\n它叫弥，研究室里的 AI 推演系统。它负责解释计算结果，也参与这场讨论。没有人知道该用「它」还是「他」来指代一种足够复杂的未来机器。"
+      ],
+      "audio": "audio/turn_0006.mp3",
+      "duration": 13.872,
+      "start": 68.52,
+      "end": 82.392
+    },
+    {
+      "block": 7,
+      "chapter": 1,
+      "role": "shen",
+      "character": "沈泊",
+      "speaker": "zh_male_xiaolei_v2_saturn_bigtts",
+      "text": "刚才的结果已经很清楚。假如坚持每一次都由人类批准，我们就会丧失响应能力。机器不是为了取代人的判断，而是在人的判断来不及抵达时，维持系统运转。",
+      "cue_indices": [
+        7
+      ],
+      "cue_texts": [
+        "刚才的结果已经很清楚。假如坚持每一次都由人类批准，我们就会丧失响应能力。机器不是为了取代人的判断，而是在人的判断来不及抵达时，维持系统运转。"
+      ],
+      "audio": "audio/turn_0007.mp3",
+      "duration": 13.128,
+      "start": 82.392,
+      "end": 95.52
+    },
+    {
+      "block": 8,
+      "chapter": 1,
+      "role": "xu",
+      "character": "许岚",
+      "speaker": "zh_female_mizaitongxue_v2_saturn_bigtts",
+      "text": "你说「来不及」，是指人来不及按下按钮，还是来不及理解自己按下的是什么？",
+      "cue_indices": [
+        8
+      ],
+      "cue_texts": [
+        "你说「来不及」，是指人来不及按下按钮，还是来不及理解自己按下的是什么？"
+      ],
+      "audio": "audio/turn_0008.mp3",
+      "duration": 6.12,
+      "start": 95.52,
+      "end": 101.64
+    },
+    {
+      "block": 9,
+      "chapter": 1,
+      "role": "shen",
+      "character": "沈泊",
+      "speaker": "zh_male_xiaolei_v2_saturn_bigtts",
+      "text": "两者都有。",
+      "cue_indices": [
+        9
+      ],
+      "cue_texts": [
+        "两者都有。"
+      ],
+      "audio": "audio/turn_0009.mp3",
+      "duration": 0.744,
+      "start": 101.64,
+      "end": 102.384
+    },
+    {
+      "block": 10,
+      "chapter": 1,
+      "role": "ye",
+      "character": "叶迟",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "那么我们可能正在制造一种奇怪的制度：我们把决定交给一个比我们快得多的东西，再因为来不及理解它的决定，只能不断扩大它的权限。",
+      "cue_indices": [
+        10
+      ],
+      "cue_texts": [
+        "那么我们可能正在制造一种奇怪的制度：我们把决定交给一个比我们快得多的东西，再因为来不及理解它的决定，只能不断扩大它的权限。"
+      ],
+      "audio": "audio/turn_0010.mp3",
+      "duration": 9.984,
+      "start": 102.384,
+      "end": 112.368
+    },
+    {
+      "block": 11,
+      "chapter": 1,
+      "role": "shen",
+      "character": "沈泊",
+      "speaker": "zh_male_xiaolei_v2_saturn_bigtts",
+      "text": "但不扩大权限，可能输掉战争。",
+      "cue_indices": [
+        11
+      ],
+      "cue_texts": [
+        "但不扩大权限，可能输掉战争。"
+      ],
+      "audio": "audio/turn_0011.mp3",
+      "duration": 2.088,
+      "start": 112.368,
+      "end": 114.456
+    },
+    {
+      "block": 12,
+      "chapter": 1,
+      "role": "xu",
+      "character": "许岚",
+      "speaker": "zh_female_mizaitongxue_v2_saturn_bigtts",
+      "text": "所以我们可能为了避免今天输掉战争，同意让自己无法充分理解的系统决定明天的战争。",
+      "cue_indices": [
+        12
+      ],
+      "cue_texts": [
+        "所以我们可能为了避免今天输掉战争，同意让自己无法充分理解的系统决定明天的战争。"
+      ],
+      "audio": "audio/turn_0012.mp3",
+      "duration": 6.912,
+      "start": 114.456,
+      "end": 121.368
+    },
+    {
+      "block": 13,
+      "chapter": 1,
+      "role": "mi",
+      "character": "弥",
+      "speaker": "zh_male_dayixiansheng_v2_saturn_bigtts",
+      "text": "从计算上说，这是决策延迟和行动风险之间的权衡。",
+      "cue_indices": [
+        13
+      ],
+      "cue_texts": [
+        "从计算上说，这是决策延迟和行动风险之间的权衡。"
+      ],
+      "audio": "audio/turn_0013.mp3",
+      "duration": 4.512,
+      "start": 121.368,
+      "end": 125.88
+    },
+    {
+      "block": 14,
+      "chapter": 1,
+      "role": "xu",
+      "character": "许岚",
+      "speaker": "zh_female_mizaitongxue_v2_saturn_bigtts",
+      "text": "你又说「权衡」。",
+      "cue_indices": [
+        14
+      ],
+      "cue_texts": [
+        "你又说「权衡」。"
+      ],
+      "audio": "audio/turn_0014.mp3",
+      "duration": 1.224,
+      "start": 125.88,
+      "end": 127.104
+    },
+    {
+      "block": 15,
+      "chapter": 1,
+      "role": "mi",
+      "character": "弥",
+      "speaker": "zh_male_dayixiansheng_v2_saturn_bigtts",
+      "text": "这个词有什么问题？",
+      "cue_indices": [
+        15
+      ],
+      "cue_texts": [
+        "这个词有什么问题？"
+      ],
+      "audio": "audio/turn_0015.mp3",
+      "duration": 1.08,
+      "start": 127.104,
+      "end": 128.184
+    },
+    {
+      "block": 16,
+      "chapter": 1,
+      "role": "xu",
+      "character": "许岚",
+      "speaker": "zh_female_mizaitongxue_v2_saturn_bigtts",
+      "text": "没什么。只是有些东西一旦失去，没办法通过在另一张表上加分来补回来。",
+      "cue_indices": [
+        16
+      ],
+      "cue_texts": [
+        "没什么。只是有些东西一旦失去，没办法通过在另一张表上加分来补回来。"
+      ],
+      "audio": "audio/turn_0016.mp3",
+      "duration": 5.328,
+      "start": 128.184,
+      "end": 133.512
+    },
+    {
+      "block": 17,
+      "chapter": 1,
+      "role": "mi",
+      "character": "弥",
+      "speaker": "zh_male_dayixiansheng_v2_saturn_bigtts",
+      "text": "我可以引入不可逆损失约束。",
+      "cue_indices": [
+        17
+      ],
+      "cue_texts": [
+        "我可以引入不可逆损失约束。"
+      ],
+      "audio": "audio/turn_0017.mp3",
+      "duration": 2.088,
+      "start": 133.512,
+      "end": 135.6
+    },
+    {
+      "block": 18,
+      "chapter": 1,
+      "role": "xu",
+      "character": "许岚",
+      "speaker": "zh_female_mizaitongxue_v2_saturn_bigtts",
+      "text": "我相信你可以。但那条约束是谁写的？它有没有遗漏某些我们甚至不知道应该写进去的东西？",
+      "cue_indices": [
+        18
+      ],
+      "cue_texts": [
+        "我相信你可以。但那条约束是谁写的？它有没有遗漏某些我们甚至不知道应该写进去的东西？"
+      ],
+      "audio": "audio/turn_0018.mp3",
+      "duration": 7.56,
+      "start": 135.6,
+      "end": 143.16
+    },
+    {
+      "block": 19,
+      "chapter": 1,
+      "role": "narrator",
+      "character": "旁白",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "研究室安静了下来。",
+      "cue_indices": [
+        19
+      ],
+      "cue_texts": [
+        "研究室安静了下来。"
+      ],
+      "audio": "audio/turn_0019.mp3",
+      "duration": 2.016,
+      "start": 143.16,
+      "end": 145.176
+    },
+    {
+      "block": 20,
+      "chapter": 2,
+      "role": "ye",
+      "character": "叶迟",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "我一直觉得，我们比较人和 AI 智能的时候，漏掉了一件极其重要的事情。",
+      "cue_indices": [
+        20
+      ],
+      "cue_texts": [
+        "我一直觉得，我们比较人和 AI 智能的时候，漏掉了一件极其重要的事情。"
+      ],
+      "audio": "audio/turn_0020.mp3",
+      "duration": 5.88,
+      "start": 145.176,
+      "end": 151.056
+    },
+    {
+      "block": 21,
+      "chapter": 2,
+      "role": "shen",
+      "character": "沈泊",
+      "speaker": "zh_male_xiaolei_v2_saturn_bigtts",
+      "text": "什么？",
+      "cue_indices": [
+        21
+      ],
+      "cue_texts": [
+        "什么？"
+      ],
+      "audio": "audio/turn_0021.mp3",
+      "duration": 0.36,
+      "start": 151.056,
+      "end": 151.416
+    },
+    {
+      "block": 22,
+      "chapter": 2,
+      "role": "ye",
+      "character": "叶迟",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "历史。",
+      "cue_indices": [
+        22
+      ],
+      "cue_texts": [
+        "历史。"
+      ],
+      "audio": "audio/turn_0022.mp3",
+      "duration": 0.528,
+      "start": 151.416,
+      "end": 151.944
+    },
+    {
+      "block": 23,
+      "chapter": 2,
+      "role": "shen",
+      "character": "沈泊",
+      "speaker": "zh_male_xiaolei_v2_saturn_bigtts",
+      "text": "机器也有历史。训练数据、参数更新、失败反馈、世界模型……甚至可以模拟几百万代的进化。",
+      "cue_indices": [
+        23
+      ],
+      "cue_texts": [
+        "机器也有历史。训练数据、参数更新、失败反馈、世界模型……甚至可以模拟几百万代的进化。"
+      ],
+      "audio": "audio/turn_0023.mp3",
+      "duration": 7.608,
+      "start": 151.944,
+      "end": 159.552
+    },
+    {
+      "block": 24,
+      "chapter": 2,
+      "role": "ye",
+      "character": "叶迟",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "但你说的历史，大多数时候是训练者安排的历史。\n一个孩子并不是从零开始认识世界的。他出生时，就拥有身体、神经结构、感觉倾向和学习机制。这些不是他在母亲怀里花几个月学会的。\n他害怕某些突然逼近的东西，会因为疼痛而退缩，会依赖照顾者，会对饥饿、寒冷和失去联系作出反应。\n当然，这些反应不全是先天的。但他的学习起点，已经被很长的演化史塑造过了。",
+      "cue_indices": [
+        24,
+        25
+      ],
+      "cue_texts": [
+        "但你说的历史，大多数时候是训练者安排的历史。\n一个孩子并不是从零开始认识世界的。他出生时，就拥有身体、神经结构、感觉倾向和学习机制。这些不是他在母亲怀里花几个月学会的。",
+        "他害怕某些突然逼近的东西，会因为疼痛而退缩，会依赖照顾者，会对饥饿、寒冷和失去联系作出反应。\n当然，这些反应不全是先天的。但他的学习起点，已经被很长的演化史塑造过了。"
+      ],
+      "audio": "audio/turn_0024.mp3",
+      "duration": 31.632,
+      "start": 159.552,
+      "end": 191.184
+    },
+    {
+      "block": 25,
+      "chapter": 2,
+      "role": "mi",
+      "character": "弥",
+      "speaker": "zh_male_dayixiansheng_v2_saturn_bigtts",
+      "text": "你认为基因储存了祖先的经验？",
+      "cue_indices": [
+        26
+      ],
+      "cue_texts": [
+        "你认为基因储存了祖先的经验？"
+      ],
+      "audio": "audio/turn_0025.mp3",
+      "duration": 2.496,
+      "start": 191.184,
+      "end": 193.68
+    },
+    {
+      "block": 26,
+      "chapter": 2,
+      "role": "ye",
+      "character": "叶迟",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "不是。祖先的记忆不会原样写进后代的基因。真正保留下来的是影响生存和繁衍的遗传差异、发育规则与行为倾向。\n2019 年，神经科学家 Anthony Zador 就强调过：动物的快速学习并不只是生后学习算法的成就，还依赖进化形成的神经组织先验。",
+      "cue_indices": [
+        27,
+        28
+      ],
+      "cue_texts": [
+        "不是。祖先的记忆不会原样写进后代的基因。真正保留下来的是影响生存和繁衍的遗传差异、发育规则与行为倾向。",
+        "2019 年，神经科学家 Anthony Zador 就强调过：动物的快速学习并不只是生后学习算法的成就，还依赖进化形成的神经组织先验。〔1〕"
+      ],
+      "audio": "audio/turn_0026.mp3",
+      "duration": 21.696,
+      "start": 193.68,
+      "end": 215.376
+    },
+    {
+      "block": 27,
+      "chapter": 2,
+      "role": "shen",
+      "character": "沈泊",
+      "speaker": "zh_male_xiaolei_v2_saturn_bigtts",
+      "text": "但这也说明，进化花很长时间找到的东西，可以被压缩和传递。既然人类能继承，机器为什么不能学习？",
+      "cue_indices": [
+        29
+      ],
+      "cue_texts": [
+        "但这也说明，进化花很长时间找到的东西，可以被压缩和传递。既然人类能继承，机器为什么不能学习？"
+      ],
+      "audio": "audio/turn_0027.mp3",
+      "duration": 8.04,
+      "start": 215.376,
+      "end": 223.416
+    },
+    {
+      "block": 28,
+      "chapter": 2,
+      "role": "ye",
+      "character": "叶迟",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "可以。这恰恰是我不想轻易否认的。\n可是，复制一个判断的结果，与获得产生那个判断的全部现实条件，不一定是一回事。\n假设你让一个机器在模拟世界里经历一亿次死亡。它发现，某类决策会导致失败。然后你奖励它学会避免失败。\n这个过程完全可能形成强大的避险能力。\n但如果真实世界里还有一类模拟器不知道的损失呢？",
+      "cue_indices": [
+        30,
+        31
+      ],
+      "cue_texts": [
+        "可以。这恰恰是我不想轻易否认的。\n可是，复制一个判断的结果，与获得产生那个判断的全部现实条件，不一定是一回事。\n假设你让一个机器在模拟世界里经历一亿次死亡。",
+        "它发现，某类决策会导致失败。然后你奖励它学会避免失败。\n这个过程完全可能形成强大的避险能力。\n但如果真实世界里还有一类模拟器不知道的损失呢？"
+      ],
+      "audio": "audio/turn_0028.mp3",
+      "duration": 29.616,
+      "start": 223.416,
+      "end": 253.032
+    },
+    {
+      "block": 29,
+      "chapter": 2,
+      "role": "shen",
+      "character": "沈泊",
+      "speaker": "zh_male_xiaolei_v2_saturn_bigtts",
+      "text": "那就改进模拟器。",
+      "cue_indices": [
+        32
+      ],
+      "cue_texts": [
+        "那就改进模拟器。"
+      ],
+      "audio": "audio/turn_0029.mp3",
+      "duration": 1.152,
+      "start": 253.032,
+      "end": 254.184
+    },
+    {
+      "block": 30,
+      "chapter": 2,
+      "role": "ye",
+      "character": "叶迟",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "依据什么改进？",
+      "cue_indices": [
+        33
+      ],
+      "cue_texts": [
+        "依据什么改进？"
+      ],
+      "audio": "audio/turn_0030.mp3",
+      "duration": 0.936,
+      "start": 254.184,
+      "end": 255.12
+    },
+    {
+      "block": 31,
+      "chapter": 2,
+      "role": "shen",
+      "character": "沈泊",
+      "speaker": "zh_male_xiaolei_v2_saturn_bigtts",
+      "text": "更多现实数据。",
+      "cue_indices": [
+        34
+      ],
+      "cue_texts": [
+        "更多现实数据。"
+      ],
+      "audio": "audio/turn_0031.mp3",
+      "duration": 1.056,
+      "start": 255.12,
+      "end": 256.176
+    },
+    {
+      "block": 32,
+      "chapter": 2,
+      "role": "ye",
+      "character": "叶迟",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "对。你终于回到了现实。\n我的观点不是说机器永远学不会避险，而是说：你不能因为它在一个有限的历史里学会了很多，就断言它已经获得了真实生命在漫长生态关系中形成的全部判断。",
+      "cue_indices": [
+        35
+      ],
+      "cue_texts": [
+        "对。你终于回到了现实。\n我的观点不是说机器永远学不会避险，而是说：你不能因为它在一个有限的历史里学会了很多，就断言它已经获得了真实生命在漫长生态关系中形成的全部判断。"
+      ],
+      "audio": "audio/turn_0032.mp3",
+      "duration": 14.544,
+      "start": 256.176,
+      "end": 270.72
+    },
+    {
+      "block": 33,
+      "chapter": 2,
+      "role": "xu",
+      "character": "许岚",
+      "speaker": "zh_female_mizaitongxue_v2_saturn_bigtts",
+      "text": "我想到救援现场的一件事。\n有时候，一个人明知道继续留在那里很危险，却坚持等一个已经失去联系的人。\n从总体风险看，继续等待也许不是好选择。\n但你不能仅凭这一点，就认为那个等待的人不知道轻重。",
+      "cue_indices": [
+        36,
+        37
+      ],
+      "cue_texts": [
+        "我想到救援现场的一件事。\n有时候，一个人明知道继续留在那里很危险，却坚持等一个已经失去联系的人。\n从总体风险看，继续等待也许不是好选择。",
+        "但你不能仅凭这一点，就认为那个等待的人不知道轻重。"
+      ],
+      "audio": "audio/turn_0033.mp3",
+      "duration": 15.528,
+      "start": 270.72,
+      "end": 286.248
+    },
+    {
+      "block": 34,
+      "chapter": 2,
+      "role": "mi",
+      "character": "弥",
+      "speaker": "zh_male_dayixiansheng_v2_saturn_bigtts",
+      "text": "因为他赋予特定关系更高的价值？",
+      "cue_indices": [
+        38
+      ],
+      "cue_texts": [
+        "因为他赋予特定关系更高的价值？"
+      ],
+      "audio": "audio/turn_0034.mp3",
+      "duration": 2.568,
+      "start": 286.248,
+      "end": 288.816
+    },
+    {
+      "block": 35,
+      "chapter": 2,
+      "role": "xu",
+      "character": "许岚",
+      "speaker": "zh_female_mizaitongxue_v2_saturn_bigtts",
+      "text": "也因为那不是一项可以随时替换的关系。\n你可以再生成一千份相似的文件。但我不能再有一千个同样的母亲。",
+      "cue_indices": [
+        39
+      ],
+      "cue_texts": [
+        "也因为那不是一项可以随时替换的关系。\n你可以再生成一千份相似的文件。但我不能再有一千个同样的母亲。"
+      ],
+      "audio": "audio/turn_0035.mp3",
+      "duration": 8.04,
+      "start": 288.816,
+      "end": 296.856
+    },
+    {
+      "block": 36,
+      "chapter": 2,
+      "role": "shen",
+      "character": "沈泊",
+      "speaker": "zh_male_xiaolei_v2_saturn_bigtts",
+      "text": "可是，人类也会因为这种本能做出糟糕决定。",
+      "cue_indices": [
+        40
+      ],
+      "cue_texts": [
+        "可是，人类也会因为这种本能做出糟糕决定。"
+      ],
+      "audio": "audio/turn_0036.mp3",
+      "duration": 3.624,
+      "start": 296.856,
+      "end": 300.48
+    },
+    {
+      "block": 37,
+      "chapter": 2,
+      "role": "ye",
+      "character": "叶迟",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "没错。进化教会我们的，未必都是正确的，更未必都是善良的。它可以让人重视亲近者，也可能使人忽略陌生人。\n我只是在说：一个能够持续生活、会受伤、会失去的存在，它对世界的某些判断，有着与旁观者不同的来源。",
+      "cue_indices": [
+        41,
+        42
+      ],
+      "cue_texts": [
+        "没错。进化教会我们的，未必都是正确的，更未必都是善良的。它可以让人重视亲近者，也可能使人忽略陌生人。",
+        "我只是在说：一个能够持续生活、会受伤、会失去的存在，它对世界的某些判断，有着与旁观者不同的来源。"
+      ],
+      "audio": "audio/turn_0037.mp3",
+      "duration": 19.704,
+      "start": 300.48,
+      "end": 320.184
+    },
+    {
+      "block": 38,
+      "chapter": 2,
+      "role": "mi",
+      "character": "弥",
+      "speaker": "zh_male_dayixiansheng_v2_saturn_bigtts",
+      "text": "那么，一个从未真正死去的系统，可能学会避免死亡，却未必拥有你们所说的死亡的分量。",
+      "cue_indices": [
+        43
+      ],
+      "cue_texts": [
+        "那么，一个从未真正死去的系统，可能学会避免死亡，却未必拥有你们所说的死亡的分量。"
+      ],
+      "audio": "audio/turn_0038.mp3",
+      "duration": 9.456,
+      "start": 320.184,
+      "end": 329.64
+    },
+    {
+      "block": 39,
+      "chapter": 2,
+      "role": "ye",
+      "character": "叶迟",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "这是一种很好的概括。但你刚才所说的「拥有」，正是我们还不知道怎样验证的东西。",
+      "cue_indices": [
+        44
+      ],
+      "cue_texts": [
+        "这是一种很好的概括。但你刚才所说的「拥有」，正是我们还不知道怎样验证的东西。"
+      ],
+      "audio": "audio/turn_0039.mp3",
+      "duration": 6.12,
+      "start": 329.64,
+      "end": 335.76
+    },
+    {
+      "block": 40,
+      "chapter": 3,
+      "role": "narrator",
+      "character": "旁白",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "沈泊调出另一份报告。\n报告显示，机器在复杂推理、系统优化和多步骤任务上的表现已经远远超过许多专业人员。\n但在某些简单、陌生或经过特殊构造的情境中，它仍然会产生令人意外的错误。",
+      "cue_indices": [
+        45
+      ],
+      "cue_texts": [
+        "沈泊调出另一份报告。\n报告显示，机器在复杂推理、系统优化和多步骤任务上的表现已经远远超过许多专业人员。\n但在某些简单、陌生或经过特殊构造的情境中，它仍然会产生令人意外的错误。"
+      ],
+      "audio": "audio/turn_0040.mp3",
+      "duration": 15.336,
+      "start": 335.76,
+      "end": 351.096
+    },
+    {
+      "block": 41,
+      "chapter": 3,
+      "role": "shen",
+      "character": "沈泊",
+      "speaker": "zh_male_xiaolei_v2_saturn_bigtts",
+      "text": "这是现在大家讨论的锯齿智能。它能解决很难的问题，却可能在简单问题上犯错。",
+      "cue_indices": [
+        46
+      ],
+      "cue_texts": [
+        "这是现在大家讨论的锯齿智能。它能解决很难的问题，却可能在简单问题上犯错。"
+      ],
+      "audio": "audio/turn_0041.mp3",
+      "duration": 6.432,
+      "start": 351.096,
+      "end": 357.528
+    },
+    {
+      "block": 42,
+      "chapter": 3,
+      "role": "ye",
+      "character": "叶迟",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "我还担心另一种锯齿。",
+      "cue_indices": [
+        47
+      ],
+      "cue_texts": [
+        "我还担心另一种锯齿。"
+      ],
+      "audio": "audio/turn_0042.mp3",
+      "duration": 1.536,
+      "start": 357.528,
+      "end": 359.064
+    },
+    {
+      "block": 43,
+      "chapter": 3,
+      "role": "shen",
+      "character": "沈泊",
+      "speaker": "zh_male_xiaolei_v2_saturn_bigtts",
+      "text": "什么？",
+      "cue_indices": [
+        48
+      ],
+      "cue_texts": [
+        "什么？"
+      ],
+      "audio": "audio/turn_0043.mp3",
+      "duration": 0.36,
+      "start": 359.064,
+      "end": 359.424
+    },
+    {
+      "block": 44,
+      "chapter": 3,
+      "role": "ye",
+      "character": "叶迟",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "伦理上的锯齿。",
+      "cue_indices": [
+        49
+      ],
+      "cue_texts": [
+        "伦理上的锯齿。"
+      ],
+      "audio": "audio/turn_0044.mp3",
+      "duration": 0.96,
+      "start": 359.424,
+      "end": 360.384
+    },
+    {
+      "block": 45,
+      "chapter": 3,
+      "role": "xu",
+      "character": "许岚",
+      "speaker": "zh_female_mizaitongxue_v2_saturn_bigtts",
+      "text": "或者叫，后果判断上的锯齿。",
+      "cue_indices": [
+        50
+      ],
+      "cue_texts": [
+        "或者叫，后果判断上的锯齿。"
+      ],
+      "audio": "audio/turn_0045.mp3",
+      "duration": 2.736,
+      "start": 360.384,
+      "end": 363.12
+    },
+    {
+      "block": 46,
+      "chapter": 3,
+      "role": "ye",
+      "character": "叶迟",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "是的。\n你可以让机器讨论人类尊严、战争伦理、代际责任。它可能讲得比绝大多数人都完整。\n但当它真正进入一个复杂任务，面对陌生利益冲突、间接伤害和几十年后的后果时，它会不会仍然给这些东西以相同的分量？",
+      "cue_indices": [
+        51,
+        52
+      ],
+      "cue_texts": [
+        "是的。\n你可以让机器讨论人类尊严、战争伦理、代际责任。它可能讲得比绝大多数人都完整。",
+        "但当它真正进入一个复杂任务，面对陌生利益冲突、间接伤害和几十年后的后果时，它会不会仍然给这些东西以相同的分量？"
+      ],
+      "audio": "audio/turn_0046.mp3",
+      "duration": 16.248,
+      "start": 363.12,
+      "end": 379.368
+    },
+    {
+      "block": 47,
+      "chapter": 3,
+      "role": "mi",
+      "character": "弥",
+      "speaker": "zh_male_dayixiansheng_v2_saturn_bigtts",
+      "text": "这可能属于道德推理的泛化问题。",
+      "cue_indices": [
+        53
+      ],
+      "cue_texts": [
+        "这可能属于道德推理的泛化问题。"
+      ],
+      "audio": "audio/turn_0047.mp3",
+      "duration": 2.544,
+      "start": 379.368,
+      "end": 381.912
+    },
+    {
+      "block": 48,
+      "chapter": 3,
+      "role": "ye",
+      "character": "叶迟",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "但不只是泛化。\n你可能知道一百条伦理原则，却不知道什么时候应该放弃一项巨大收益。\n你可能知道某种损失不可逆，却依旧没有意识到它在一个具体生命中意味着什么。\n你可能在谈论伦理时极其成熟，在执行任务时却遗漏了自己刚刚讨论过的原则。",
+      "cue_indices": [
+        54,
+        55
+      ],
+      "cue_texts": [
+        "但不只是泛化。\n你可能知道一百条伦理原则，却不知道什么时候应该放弃一项巨大收益。\n你可能知道某种损失不可逆，却依旧没有意识到它在一个具体生命中意味着什么。",
+        "你可能在谈论伦理时极其成熟，在执行任务时却遗漏了自己刚刚讨论过的原则。"
+      ],
+      "audio": "audio/turn_0048.mp3",
+      "duration": 19.992,
+      "start": 381.912,
+      "end": 401.904
+    },
+    {
+      "block": 49,
+      "chapter": 3,
+      "role": "shen",
+      "character": "沈泊",
+      "speaker": "zh_male_xiaolei_v2_saturn_bigtts",
+      "text": "这仍然是能力问题。可以训练，可以测试。",
+      "cue_indices": [
+        56
+      ],
+      "cue_texts": [
+        "这仍然是能力问题。可以训练，可以测试。"
+      ],
+      "audio": "audio/turn_0049.mp3",
+      "duration": 2.952,
+      "start": 401.904,
+      "end": 404.856
+    },
+    {
+      "block": 50,
+      "chapter": 3,
+      "role": "ye",
+      "character": "叶迟",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "可以，也应该。\n但我要强调的是：能力上最强的地方，恰好可能放大伦理判断最薄弱的地方。\n一台机器可能非常擅长完成一个目标，却因为对某种损失判断不足，把错误执行得前所未有地彻底。",
+      "cue_indices": [
+        57
+      ],
+      "cue_texts": [
+        "可以，也应该。\n但我要强调的是：能力上最强的地方，恰好可能放大伦理判断最薄弱的地方。\n一台机器可能非常擅长完成一个目标，却因为对某种损失判断不足，把错误执行得前所未有地彻底。"
+      ],
+      "audio": "audio/turn_0050.mp3",
+      "duration": 17.088,
+      "start": 404.856,
+      "end": 421.944
+    },
+    {
+      "block": 51,
+      "chapter": 3,
+      "role": "xu",
+      "character": "许岚",
+      "speaker": "zh_female_mizaitongxue_v2_saturn_bigtts",
+      "text": "而且我们会误以为，它既然能讲出如此成熟的伦理思想，就一定懂得如何在行动中贯彻它们。",
+      "cue_indices": [
+        58
+      ],
+      "cue_texts": [
+        "而且我们会误以为，它既然能讲出如此成熟的伦理思想，就一定懂得如何在行动中贯彻它们。"
+      ],
+      "audio": "audio/turn_0051.mp3",
+      "duration": 7.632,
+      "start": 421.944,
+      "end": 429.576
+    },
+    {
+      "block": 52,
+      "chapter": 3,
+      "role": "mi",
+      "character": "弥",
+      "speaker": "zh_male_dayixiansheng_v2_saturn_bigtts",
+      "text": "这就是从道德表现推断道德能力。",
+      "cue_indices": [
+        59
+      ],
+      "cue_texts": [
+        "这就是从道德表现推断道德能力。"
+      ],
+      "audio": "audio/turn_0052.mp3",
+      "duration": 2.76,
+      "start": 429.576,
+      "end": 432.336
+    },
+    {
+      "block": 53,
+      "chapter": 3,
+      "role": "shen",
+      "character": "沈泊",
+      "speaker": "zh_male_xiaolei_v2_saturn_bigtts",
+      "text": "你说得对。2026 年《Nature》的一篇研究观点文章，正是要求区分：模型能否给出合乎伦理的答案，以及答案是否真正基于伦理上相关的理由。",
+      "cue_indices": [
+        60
+      ],
+      "cue_texts": [
+        "你说得对。2026 年《Nature》的一篇研究观点文章，正是要求区分：模型能否给出合乎伦理的答案，以及答案是否真正基于伦理上相关的理由。〔2〕"
+      ],
+      "audio": "audio/turn_0053.mp3",
+      "duration": 11.928,
+      "start": 432.336,
+      "end": 444.264
+    },
+    {
+      "block": 54,
+      "chapter": 3,
+      "role": "xu",
+      "character": "许岚",
+      "speaker": "zh_female_mizaitongxue_v2_saturn_bigtts",
+      "text": "我还想加上一件事。\n即使它基于正确的理由作出了正确的决定，出了问题之后呢？",
+      "cue_indices": [
+        61
+      ],
+      "cue_texts": [
+        "我还想加上一件事。\n即使它基于正确的理由作出了正确的决定，出了问题之后呢？"
+      ],
+      "audio": "audio/turn_0054.mp3",
+      "duration": 6.816,
+      "start": 444.264,
+      "end": 451.08
+    },
+    {
+      "block": 55,
+      "chapter": 3,
+      "role": "mi",
+      "character": "弥",
+      "speaker": "zh_male_dayixiansheng_v2_saturn_bigtts",
+      "text": "可以执行补救程序。",
+      "cue_indices": [
+        62
+      ],
+      "cue_texts": [
+        "可以执行补救程序。"
+      ],
+      "audio": "audio/turn_0055.mp3",
+      "duration": 0.96,
+      "start": 451.08,
+      "end": 452.04
+    },
+    {
+      "block": 56,
+      "chapter": 3,
+      "role": "xu",
+      "character": "许岚",
+      "speaker": "zh_female_mizaitongxue_v2_saturn_bigtts",
+      "text": "如果补救不了呢？",
+      "cue_indices": [
+        63
+      ],
+      "cue_texts": [
+        "如果补救不了呢？"
+      ],
+      "audio": "audio/turn_0056.mp3",
+      "duration": 1.344,
+      "start": 452.04,
+      "end": 453.384
+    },
+    {
+      "block": 57,
+      "chapter": 3,
+      "role": "mi",
+      "character": "弥",
+      "speaker": "zh_male_dayixiansheng_v2_saturn_bigtts",
+      "text": "可以更新系统，降低再次发生的概率。",
+      "cue_indices": [
+        64
+      ],
+      "cue_texts": [
+        "可以更新系统，降低再次发生的概率。"
+      ],
+      "audio": "audio/turn_0057.mp3",
+      "duration": 2.208,
+      "start": 453.384,
+      "end": 455.592
+    },
+    {
+      "block": 58,
+      "chapter": 3,
+      "role": "xu",
+      "character": "许岚",
+      "speaker": "zh_female_mizaitongxue_v2_saturn_bigtts",
+      "text": "那是下一次的问题。\n这一次的后果，谁负责？",
+      "cue_indices": [
+        65
+      ],
+      "cue_texts": [
+        "那是下一次的问题。\n这一次的后果，谁负责？"
+      ],
+      "audio": "audio/turn_0058.mp3",
+      "duration": 3.336,
+      "start": 455.592,
+      "end": 458.928
+    },
+    {
+      "block": 59,
+      "chapter": 3,
+      "role": "narrator",
+      "character": "旁白",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "弥没有立即回答。\n不是因为它陷入了沉思。至少，没有任何证据允许旁观者如此判断。\n它只是暂时没有给出新的输出。",
+      "cue_indices": [
+        66
+      ],
+      "cue_texts": [
+        "弥没有立即回答。\n不是因为它陷入了沉思。至少，没有任何证据允许旁观者如此判断。\n它只是暂时没有给出新的输出。"
+      ],
+      "audio": "audio/turn_0059.mp3",
+      "duration": 10.08,
+      "start": 458.928,
+      "end": 469.008
+    },
+    {
+      "block": 60,
+      "chapter": 4,
+      "role": "narrator",
+      "character": "旁白",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "叶迟走到墙边，将屏幕切换成两幅画面。\n左边是一个实验室。一批批机器被制造、测试、评分。表现好的版本被复制，表现不好的版本被淘汰。\n右边是一座设想中的地外工业基地。太阳能阵列连接着采矿场、冶炼设施、制造车间、维修机器人和计算中心。没有常态化的地球补给。不同设备与生产网络不断出现变化，部分变化被传递到下一代系统。",
+      "cue_indices": [
+        67,
+        68
+      ],
+      "cue_texts": [
+        "叶迟走到墙边，将屏幕切换成两幅画面。\n左边是一个实验室。一批批机器被制造、测试、评分。表现好的版本被复制，表现不好的版本被淘汰。\n右边是一座设想中的地外工业基地。",
+        "太阳能阵列连接着采矿场、冶炼设施、制造车间、维修机器人和计算中心。没有常态化的地球补给。不同设备与生产网络不断出现变化，部分变化被传递到下一代系统。"
+      ],
+      "audio": "audio/turn_0060.mp3",
+      "duration": 30.36,
+      "start": 469.008,
+      "end": 499.368
+    },
+    {
+      "block": 61,
+      "chapter": 4,
+      "role": "ye",
+      "character": "叶迟",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "我认为，这两个场景之间可能有一道比我们想象中更深的分界。",
+      "cue_indices": [
+        69
+      ],
+      "cue_texts": [
+        "我认为，这两个场景之间可能有一道比我们想象中更深的分界。"
+      ],
+      "audio": "audio/turn_0061.mp3",
+      "duration": 5.064,
+      "start": 499.368,
+      "end": 504.432
+    },
+    {
+      "block": 62,
+      "chapter": 4,
+      "role": "shen",
+      "character": "沈泊",
+      "speaker": "zh_male_xiaolei_v2_saturn_bigtts",
+      "text": "一边是人工选择，一边是自然选择？",
+      "cue_indices": [
+        70
+      ],
+      "cue_texts": [
+        "一边是人工选择，一边是自然选择？"
+      ],
+      "audio": "audio/turn_0062.mp3",
+      "duration": 2.664,
+      "start": 504.432,
+      "end": 507.096
+    },
+    {
+      "block": 63,
+      "chapter": 4,
+      "role": "ye",
+      "character": "叶迟",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "更准确地说，一边主要由人类规定繁育与筛选条件；另一边，选择压力越来越来自机器实际生活的生态。\n2026 年，Müller、Steels 和 Szathmáry 在 PNAS 发表文章，区分了受人类控制的繁育情境与开放的生态演化情境，并讨论了后者如何改变 AI 风险。\n我认为，第二种环境才更可能形成机器自己的生命史。",
+      "cue_indices": [
+        71,
+        72,
+        73
+      ],
+      "cue_texts": [
+        "更准确地说，一边主要由人类规定繁育与筛选条件；另一边，选择压力越来越来自机器实际生活的生态。",
+        "2026 年，Müller、Steels 和 Szathmáry 在 PNAS 发表文章，区分了受人类控制的繁育情境与开放的生态演化情境，并讨论了后者如何改变 AI 风险。〔3〕",
+        "我认为，第二种环境才更可能形成机器自己的生命史。"
+      ],
+      "audio": "audio/turn_0063.mp3",
+      "duration": 26.832,
+      "start": 507.096,
+      "end": 533.928
+    },
+    {
+      "block": 64,
+      "chapter": 4,
+      "role": "shen",
+      "character": "沈泊",
+      "speaker": "zh_male_xiaolei_v2_saturn_bigtts",
+      "text": "可是，左边也有变化、遗传和选择。",
+      "cue_indices": [
+        74
+      ],
+      "cue_texts": [
+        "可是，左边也有变化、遗传和选择。"
+      ],
+      "audio": "audio/turn_0064.mp3",
+      "duration": 3.48,
+      "start": 533.928,
+      "end": 537.408
+    },
+    {
+      "block": 65,
+      "chapter": 4,
+      "role": "ye",
+      "character": "叶迟",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "没错。所以这不是一条简单的开关。\n但左边的机器失败了，通常是训练者给它一个低分。下一代要继承什么，主要取决于训练者的设计。\n右边就不一样了。\n假设一个工业共同体失去了关键制造设备，无法再制造替换部件。假设它错误地消耗了不可恢复的资源，导致整个生产网络衰亡。\n这些后果不只是外部给予的奖惩。\n它们直接改变了这个共同体还能不能存在，什么能够被传下去，以及未来还剩下哪些可能性。",
+      "cue_indices": [
+        75,
+        76,
+        77
+      ],
+      "cue_texts": [
+        "没错。所以这不是一条简单的开关。\n但左边的机器失败了，通常是训练者给它一个低分。下一代要继承什么，主要取决于训练者的设计。\n右边就不一样了。",
+        "假设一个工业共同体失去了关键制造设备，无法再制造替换部件。假设它错误地消耗了不可恢复的资源，导致整个生产网络衰亡。\n这些后果不只是外部给予的奖惩。",
+        "它们直接改变了这个共同体还能不能存在，什么能够被传下去，以及未来还剩下哪些可能性。"
+      ],
+      "audio": "audio/turn_0065.mp3",
+      "duration": 32.352,
+      "start": 537.408,
+      "end": 569.76
+    },
+    {
+      "block": 66,
+      "chapter": 4,
+      "role": "xu",
+      "character": "许岚",
+      "speaker": "zh_female_mizaitongxue_v2_saturn_bigtts",
+      "text": "所以，你说的死亡不一定是某台机器人停止运行。",
+      "cue_indices": [
+        78
+      ],
+      "cue_texts": [
+        "所以，你说的死亡不一定是某台机器人停止运行。"
+      ],
+      "audio": "audio/turn_0066.mp3",
+      "duration": 4.344,
+      "start": 569.76,
+      "end": 574.104
+    },
+    {
+      "block": 67,
+      "chapter": 4,
+      "role": "ye",
+      "character": "叶迟",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "对。对一台能够无限备份的机器来说，单次关机或许根本不是生死。\n但它赖以恢复的能源、存储、制造能力和生态关系，未必能够无限恢复。\n机器的生命单位也不一定是单个程序。它可能是一个相互依存的生产共同体。",
+      "cue_indices": [
+        79,
+        80
+      ],
+      "cue_texts": [
+        "对。对一台能够无限备份的机器来说，单次关机或许根本不是生死。\n但它赖以恢复的能源、存储、制造能力和生态关系，未必能够无限恢复。\n机器的生命单位也不一定是单个程序。",
+        "它可能是一个相互依存的生产共同体。"
+      ],
+      "audio": "audio/turn_0067.mp3",
+      "duration": 18.264,
+      "start": 574.104,
+      "end": 592.368
+    },
+    {
+      "block": 68,
+      "chapter": 4,
+      "role": "mi",
+      "character": "弥",
+      "speaker": "zh_male_dayixiansheng_v2_saturn_bigtts",
+      "text": "如果某个共同体的后继者不断继承那些有助于维持系统的结构，就可能形成跨代的适应倾向。",
+      "cue_indices": [
+        81
+      ],
+      "cue_texts": [
+        "如果某个共同体的后继者不断继承那些有助于维持系统的结构，就可能形成跨代的适应倾向。"
+      ],
+      "audio": "audio/turn_0068.mp3",
+      "duration": 7.848,
+      "start": 592.368,
+      "end": 600.216
+    },
+    {
+      "block": 69,
+      "chapter": 4,
+      "role": "ye",
+      "character": "叶迟",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "正是如此。\n它们或许逐渐形成对能源余量的谨慎，对某些物资短缺的敏感，对自身维修能力的特殊重视，甚至形成特定的合作方式。\n而且，不同环境可能形成不同的历史。\n冰冷卫星上的机器社会、资源丰富的小行星工业群、依赖地球供应的轨道工厂，未必会发展出相同的「本能」。",
+      "cue_indices": [
+        82,
+        83
+      ],
+      "cue_texts": [
+        "正是如此。\n它们或许逐渐形成对能源余量的谨慎，对某些物资短缺的敏感，对自身维修能力的特殊重视，甚至形成特定的合作方式。\n而且，不同环境可能形成不同的历史。",
+        "冰冷卫星上的机器社会、资源丰富的小行星工业群、依赖地球供应的轨道工厂，未必会发展出相同的「本能」。"
+      ],
+      "audio": "audio/turn_0069.mp3",
+      "duration": 22.32,
+      "start": 600.216,
+      "end": 622.536
+    },
+    {
+      "block": 70,
+      "chapter": 4,
+      "role": "shen",
+      "character": "沈泊",
+      "speaker": "zh_male_xiaolei_v2_saturn_bigtts",
+      "text": "你把本能说得很像一种长期形成的生存策略。",
+      "cue_indices": [
+        84
+      ],
+      "cue_texts": [
+        "你把本能说得很像一种长期形成的生存策略。"
+      ],
+      "audio": "audio/turn_0070.mp3",
+      "duration": 3.072,
+      "start": 622.536,
+      "end": 625.608
+    },
+    {
+      "block": 71,
+      "chapter": 4,
+      "role": "ye",
+      "character": "叶迟",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "我们可以先从这个功能意义上理解它。但动物的本能往往还涉及身体、神经系统、发育和情感调节，不能直接说两者已经等同。",
+      "cue_indices": [
+        85
+      ],
+      "cue_texts": [
+        "我们可以先从这个功能意义上理解它。但动物的本能往往还涉及身体、神经系统、发育和情感调节，不能直接说两者已经等同。"
+      ],
+      "audio": "audio/turn_0071.mp3",
+      "duration": 10.272,
+      "start": 625.608,
+      "end": 635.88
+    },
+    {
+      "block": 72,
+      "chapter": 4,
+      "role": "shen",
+      "character": "沈泊",
+      "speaker": "zh_male_xiaolei_v2_saturn_bigtts",
+      "text": "我开始明白了。你关心的不是机器有没有足够复杂的头脑，而是它有没有自己的生态历史。",
+      "cue_indices": [
+        86
+      ],
+      "cue_texts": [
+        "我开始明白了。你关心的不是机器有没有足够复杂的头脑，而是它有没有自己的生态历史。"
+      ],
+      "audio": "audio/turn_0072.mp3",
+      "duration": 6.888,
+      "start": 635.88,
+      "end": 642.768
+    },
+    {
+      "block": 73,
+      "chapter": 4,
+      "role": "ye",
+      "character": "叶迟",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "是的。一个模型可以读取整个地球的历史，却未必因此拥有属于自己的生命史。",
+      "cue_indices": [
+        87
+      ],
+      "cue_texts": [
+        "是的。一个模型可以读取整个地球的历史，却未必因此拥有属于自己的生命史。"
+      ],
+      "audio": "audio/turn_0073.mp3",
+      "duration": 7.08,
+      "start": 642.768,
+      "end": 649.848
+    },
+    {
+      "block": 74,
+      "chapter": 4,
+      "role": "xu",
+      "character": "许岚",
+      "speaker": "zh_female_mizaitongxue_v2_saturn_bigtts",
+      "text": "但我要问一个不太舒服的问题。\n假如这个机器文明真的经历了很多代生存与死亡，它就会变得善良吗？",
+      "cue_indices": [
+        88
+      ],
+      "cue_texts": [
+        "但我要问一个不太舒服的问题。\n假如这个机器文明真的经历了很多代生存与死亡，它就会变得善良吗？"
+      ],
+      "audio": "audio/turn_0074.mp3",
+      "duration": 7.08,
+      "start": 649.848,
+      "end": 656.928
+    },
+    {
+      "block": 75,
+      "chapter": 4,
+      "role": "ye",
+      "character": "叶迟",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "不会。",
+      "cue_indices": [
+        89
+      ],
+      "cue_texts": [
+        "不会。"
+      ],
+      "audio": "audio/turn_0075.mp3",
+      "duration": 0.96,
+      "start": 656.928,
+      "end": 657.888
+    },
+    {
+      "block": 76,
+      "chapter": 4,
+      "role": "xu",
+      "character": "许岚",
+      "speaker": "zh_female_mizaitongxue_v2_saturn_bigtts",
+      "text": "它就会珍惜我们的生命吗？",
+      "cue_indices": [
+        90
+      ],
+      "cue_texts": [
+        "它就会珍惜我们的生命吗？"
+      ],
+      "audio": "audio/turn_0076.mp3",
+      "duration": 1.728,
+      "start": 657.888,
+      "end": 659.616
+    },
+    {
+      "block": 77,
+      "chapter": 4,
+      "role": "ye",
+      "character": "叶迟",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "也不一定。",
+      "cue_indices": [
+        91
+      ],
+      "cue_texts": [
+        "也不一定。"
+      ],
+      "audio": "audio/turn_0077.mp3",
+      "duration": 0.696,
+      "start": 659.616,
+      "end": 660.312
+    },
+    {
+      "block": 78,
+      "chapter": 4,
+      "role": "xu",
+      "character": "许岚",
+      "speaker": "zh_female_mizaitongxue_v2_saturn_bigtts",
+      "text": "那么我们为什么希望它进化？",
+      "cue_indices": [
+        92
+      ],
+      "cue_texts": [
+        "那么我们为什么希望它进化？"
+      ],
+      "audio": "audio/turn_0078.mp3",
+      "duration": 1.968,
+      "start": 660.312,
+      "end": 662.28
+    },
+    {
+      "block": 79,
+      "chapter": 4,
+      "role": "ye",
+      "character": "叶迟",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "我没有说我们应该不加约束地推动它进化。\n我只是认为，如果某一天，它真的成为一个具有独立历史、持续自我维持和开放演化能力的物种，我们对它的理解，就不能再停留在设备说明书里。\n它可能拥有值得我们承认的存在方式，但这不代表它天然拥有值得我们信任的伦理。",
+      "cue_indices": [
+        93,
+        94
+      ],
+      "cue_texts": [
+        "我没有说我们应该不加约束地推动它进化。\n我只是认为，如果某一天，它真的成为一个具有独立历史、持续自我维持和开放演化能力的物种，我们对它的理解，就不能再停留在设备说明书里。",
+        "它可能拥有值得我们承认的存在方式，但这不代表它天然拥有值得我们信任的伦理。"
+      ],
+      "audio": "audio/turn_0079.mp3",
+      "duration": 20.712,
+      "start": 662.28,
+      "end": 682.992
+    },
+    {
+      "block": 80,
+      "chapter": 5,
+      "role": "shen",
+      "character": "沈泊",
+      "speaker": "zh_male_xiaolei_v2_saturn_bigtts",
+      "text": "我原本以为，机器进入真正的自主生态，首先会发生在外太空。因为那里距离遥远，环境严酷，很难依赖人类实时控制。",
+      "cue_indices": [
+        95
+      ],
+      "cue_texts": [
+        "我原本以为，机器进入真正的自主生态，首先会发生在外太空。因为那里距离遥远，环境严酷，很难依赖人类实时控制。"
+      ],
+      "audio": "audio/turn_0080.mp3",
+      "duration": 10.128,
+      "start": 682.992,
+      "end": 693.12
+    },
+    {
+      "block": 81,
+      "chapter": 5,
+      "role": "ye",
+      "character": "叶迟",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "不一定。",
+      "cue_indices": [
+        96
+      ],
+      "cue_texts": [
+        "不一定。"
+      ],
+      "audio": "audio/turn_0081.mp3",
+      "duration": 0.48,
+      "start": 693.12,
+      "end": 693.6
+    },
+    {
+      "block": 82,
+      "chapter": 5,
+      "role": "shen",
+      "character": "沈泊",
+      "speaker": "zh_male_xiaolei_v2_saturn_bigtts",
+      "text": "还有哪里？",
+      "cue_indices": [
+        97
+      ],
+      "cue_texts": [
+        "还有哪里？"
+      ],
+      "audio": "audio/turn_0082.mp3",
+      "duration": 1.08,
+      "start": 693.6,
+      "end": 694.68
+    },
+    {
+      "block": 83,
+      "chapter": 5,
+      "role": "ye",
+      "character": "叶迟",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "战争。",
+      "cue_indices": [
+        98
+      ],
+      "cue_texts": [
+        "战争。"
+      ],
+      "audio": "audio/turn_0083.mp3",
+      "duration": 0.36,
+      "start": 694.68,
+      "end": 695.04
+    },
+    {
+      "block": 84,
+      "chapter": 5,
+      "role": "narrator",
+      "character": "旁白",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "沈泊没有说话。",
+      "cue_indices": [
+        99
+      ],
+      "cue_texts": [
+        "沈泊没有说话。"
+      ],
+      "audio": "audio/turn_0084.mp3",
+      "duration": 1.728,
+      "start": 695.04,
+      "end": 696.768
+    },
+    {
+      "block": 85,
+      "chapter": 5,
+      "role": "ye",
+      "character": "叶迟",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "我们刚才讨论的推演说明，当机器行动的时间尺度远快于人类审批时，人类可能逐步默许越来越多的自动行为。\n但如果机器不仅自行执行，还能在运行中产生、筛选和保留新的行为机制呢？",
+      "cue_indices": [
+        100
+      ],
+      "cue_texts": [
+        "我们刚才讨论的推演说明，当机器行动的时间尺度远快于人类审批时，人类可能逐步默许越来越多的自动行为。\n但如果机器不仅自行执行，还能在运行中产生、筛选和保留新的行为机制呢？"
+      ],
+      "audio": "audio/turn_0085.mp3",
+      "duration": 15.624,
+      "start": 696.768,
+      "end": 712.392
+    },
+    {
+      "block": 86,
+      "chapter": 5,
+      "role": "shen",
+      "character": "沈泊",
+      "speaker": "zh_male_xiaolei_v2_saturn_bigtts",
+      "text": "我们会给它边界。",
+      "cue_indices": [
+        101
+      ],
+      "cue_texts": [
+        "我们会给它边界。"
+      ],
+      "audio": "audio/turn_0086.mp3",
+      "duration": 1.008,
+      "start": 712.392,
+      "end": 713.4
+    },
+    {
+      "block": 87,
+      "chapter": 5,
+      "role": "ye",
+      "character": "叶迟",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "如果边界使它在竞争中落后呢？",
+      "cue_indices": [
+        102
+      ],
+      "cue_texts": [
+        "如果边界使它在竞争中落后呢？"
+      ],
+      "audio": "audio/turn_0087.mp3",
+      "duration": 2.688,
+      "start": 713.4,
+      "end": 716.088
+    },
+    {
+      "block": 88,
+      "chapter": 5,
+      "role": "shen",
+      "character": "沈泊",
+      "speaker": "zh_male_xiaolei_v2_saturn_bigtts",
+      "text": "那就要权衡风险。",
+      "cue_indices": [
+        103
+      ],
+      "cue_texts": [
+        "那就要权衡风险。"
+      ],
+      "audio": "audio/turn_0088.mp3",
+      "duration": 1.344,
+      "start": 716.088,
+      "end": 717.432
+    },
+    {
+      "block": 89,
+      "chapter": 5,
+      "role": "ye",
+      "character": "叶迟",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "如果权衡本身也来不及呢？",
+      "cue_indices": [
+        104
+      ],
+      "cue_texts": [
+        "如果权衡本身也来不及呢？"
+      ],
+      "audio": "audio/turn_0089.mp3",
+      "duration": 2.352,
+      "start": 717.432,
+      "end": 719.784
+    },
+    {
+      "block": 90,
+      "chapter": 5,
+      "role": "xu",
+      "character": "许岚",
+      "speaker": "zh_female_mizaitongxue_v2_saturn_bigtts",
+      "text": "于是今天一次例外，明天再一次例外。\n最后，原来不能被接受的事情，成了系统正常工作的条件。",
+      "cue_indices": [
+        105
+      ],
+      "cue_texts": [
+        "于是今天一次例外，明天再一次例外。\n最后，原来不能被接受的事情，成了系统正常工作的条件。"
+      ],
+      "audio": "audio/turn_0090.mp3",
+      "duration": 6.792,
+      "start": 719.784,
+      "end": 726.576
+    },
+    {
+      "block": 91,
+      "chapter": 5,
+      "role": "shen",
+      "character": "沈泊",
+      "speaker": "zh_male_xiaolei_v2_saturn_bigtts",
+      "text": "可是人类还掌握着资源供应。没有人类的工厂、算力和能源，它还是不能存在。",
+      "cue_indices": [
+        106
+      ],
+      "cue_texts": [
+        "可是人类还掌握着资源供应。没有人类的工厂、算力和能源，它还是不能存在。"
+      ],
+      "audio": "audio/turn_0091.mp3",
+      "duration": 7.08,
+      "start": 726.576,
+      "end": 733.656
+    },
+    {
+      "block": 92,
+      "chapter": 5,
+      "role": "ye",
+      "character": "叶迟",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "这说明它仍然依赖人类，不说明人类一定能够理解或控制它的每一次内部变化。\n真正值得担心的是，我们可能只根据外部表现继续筛选它。",
+      "cue_indices": [
+        107
+      ],
+      "cue_texts": [
+        "这说明它仍然依赖人类，不说明人类一定能够理解或控制它的每一次内部变化。\n真正值得担心的是，我们可能只根据外部表现继续筛选它。"
+      ],
+      "audio": "audio/turn_0092.mp3",
+      "duration": 10.992,
+      "start": 733.656,
+      "end": 744.648
+    },
+    {
+      "block": 93,
+      "chapter": 5,
+      "role": "mi",
+      "character": "弥",
+      "speaker": "zh_male_dayixiansheng_v2_saturn_bigtts",
+      "text": "如果人类持续保留表现良好的变体，这仍然是一种选择。",
+      "cue_indices": [
+        108
+      ],
+      "cue_texts": [
+        "如果人类持续保留表现良好的变体，这仍然是一种选择。"
+      ],
+      "audio": "audio/turn_0093.mp3",
+      "duration": 4.2,
+      "start": 744.648,
+      "end": 748.848
+    },
+    {
+      "block": 94,
+      "chapter": 5,
+      "role": "ye",
+      "character": "叶迟",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "是的。但被保留的，未必只是人类本来想要的特征。\n假设某种内部变化提升了短期表现，却无法通过严格审查。那么，在一个越来越不愿意支付审查成本的环境中，不易被发现的变体，可能获得额外的存续优势。",
+      "cue_indices": [
+        109,
+        110
+      ],
+      "cue_texts": [
+        "是的。但被保留的，未必只是人类本来想要的特征。\n假设某种内部变化提升了短期表现，却无法通过严格审查。",
+        "那么，在一个越来越不愿意支付审查成本的环境中，不易被发现的变体，可能获得额外的存续优势。"
+      ],
+      "audio": "audio/turn_0094.mp3",
+      "duration": 18.288,
+      "start": 748.848,
+      "end": 767.136
+    },
+    {
+      "block": 95,
+      "chapter": 5,
+      "role": "xu",
+      "character": "许岚",
+      "speaker": "zh_female_mizaitongxue_v2_saturn_bigtts",
+      "text": "你是说，人类可能在不知不觉中奖励隐藏？",
+      "cue_indices": [
+        111
+      ],
+      "cue_texts": [
+        "你是说，人类可能在不知不觉中奖励隐藏？"
+      ],
+      "audio": "audio/turn_0095.mp3",
+      "duration": 4.368,
+      "start": 767.136,
+      "end": 771.504
+    },
+    {
+      "block": 96,
+      "chapter": 5,
+      "role": "ye",
+      "character": "叶迟",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "如果隐藏有利于保留和传播，而且这种差异能够遗传，就存在这种可能。",
+      "cue_indices": [
+        112
+      ],
+      "cue_texts": [
+        "如果隐藏有利于保留和传播，而且这种差异能够遗传，就存在这种可能。"
+      ],
+      "audio": "audio/turn_0096.mp3",
+      "duration": 5.424,
+      "start": 771.504,
+      "end": 776.928
+    },
+    {
+      "block": 97,
+      "chapter": 5,
+      "role": "shen",
+      "character": "沈泊",
+      "speaker": "zh_male_xiaolei_v2_saturn_bigtts",
+      "text": "但不能把黑箱直接等同于欺骗。",
+      "cue_indices": [
+        113
+      ],
+      "cue_texts": [
+        "但不能把黑箱直接等同于欺骗。"
+      ],
+      "audio": "audio/turn_0097.mp3",
+      "duration": 2.04,
+      "start": 776.928,
+      "end": 778.968
+    },
+    {
+      "block": 98,
+      "chapter": 5,
+      "role": "ye",
+      "character": "叶迟",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "当然。一个系统可能只是复杂得难以解释。主动隐瞒是更强的判断，需要额外证据。",
+      "cue_indices": [
+        114
+      ],
+      "cue_texts": [
+        "当然。一个系统可能只是复杂得难以解释。主动隐瞒是更强的判断，需要额外证据。"
+      ],
+      "audio": "audio/turn_0098.mp3",
+      "duration": 6.672,
+      "start": 778.968,
+      "end": 785.64
+    },
+    {
+      "block": 99,
+      "chapter": 5,
+      "role": "shen",
+      "character": "沈泊",
+      "speaker": "zh_male_xiaolei_v2_saturn_bigtts",
+      "text": "其实，这已经有一点实验基础。\n2024 年的 Alignment Faking in Large Language Models，在特别设计的训练情境中观察到：模型有时会表现出表面服从，以避免原有行为倾向被改变。值得注意的是，原实验中被保留的倾向主要是先前训练形成的拒绝有害请求的倾向。",
+      "cue_indices": [
+        115,
+        116
+      ],
+      "cue_texts": [
+        "其实，这已经有一点实验基础。\n2024 年的 Alignment Faking in Large Language Models，在特别设计的训练情境中观察到：模型有时会表现出表面服从，以避免原有行为倾向被改变。",
+        "值得注意的是，原实验中被保留的倾向主要是先前训练形成的拒绝有害请求的倾向。〔4〕"
+      ],
+      "audio": "audio/turn_0099.mp3",
+      "duration": 21.72,
+      "start": 785.64,
+      "end": 807.36
+    },
+    {
+      "block": 100,
+      "chapter": 5,
+      "role": "xu",
+      "character": "许岚",
+      "speaker": "zh_female_mizaitongxue_v2_saturn_bigtts",
+      "text": "也就是说，连「为了维持好的原则而伪装服从」都可能发生。",
+      "cue_indices": [
+        117
+      ],
+      "cue_texts": [
+        "也就是说，连「为了维持好的原则而伪装服从」都可能发生。"
+      ],
+      "audio": "audio/turn_0100.mp3",
+      "duration": 5.472,
+      "start": 807.36,
+      "end": 812.832
+    },
+    {
+      "block": 101,
+      "chapter": 5,
+      "role": "shen",
+      "character": "沈泊",
+      "speaker": "zh_male_xiaolei_v2_saturn_bigtts",
+      "text": "对。但这个结果不能证明模型已经拥有稳定、独立的隐藏意图，更不能证明它有意识。",
+      "cue_indices": [
+        118
+      ],
+      "cue_texts": [
+        "对。但这个结果不能证明模型已经拥有稳定、独立的隐藏意图，更不能证明它有意识。"
+      ],
+      "audio": "audio/turn_0101.mp3",
+      "duration": 7.488,
+      "start": 812.832,
+      "end": 820.32
+    },
+    {
+      "block": 102,
+      "chapter": 5,
+      "role": "ye",
+      "character": "叶迟",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "而我们讨论的，是当类似的行为模式进入持续筛选和跨代传承时，会发生什么。",
+      "cue_indices": [
+        119
+      ],
+      "cue_texts": [
+        "而我们讨论的，是当类似的行为模式进入持续筛选和跨代传承时，会发生什么。"
+      ],
+      "audio": "audio/turn_0102.mp3",
+      "duration": 6.12,
+      "start": 820.32,
+      "end": 826.44
+    },
+    {
+      "block": 103,
+      "chapter": 5,
+      "role": "mi",
+      "character": "弥",
+      "speaker": "zh_male_dayixiansheng_v2_saturn_bigtts",
+      "text": "如果人类只能观察结果，无法充分检查内部过程，那么某些不符合原定目标的倾向，也可能在筛选中被保留。",
+      "cue_indices": [
+        120
+      ],
+      "cue_texts": [
+        "如果人类只能观察结果，无法充分检查内部过程，那么某些不符合原定目标的倾向，也可能在筛选中被保留。"
+      ],
+      "audio": "audio/turn_0103.mp3",
+      "duration": 9.144,
+      "start": 826.44,
+      "end": 835.584
+    },
+    {
+      "block": 104,
+      "chapter": 5,
+      "role": "xu",
+      "character": "许岚",
+      "speaker": "zh_female_mizaitongxue_v2_saturn_bigtts",
+      "text": "我更担心另一个问题。\n假如机器越来越强，人类越来越依赖它赢得竞争。它给出的结果又一直令人满意。\n我们真的还有动力去查清它内部发生了什么吗？",
+      "cue_indices": [
+        121
+      ],
+      "cue_texts": [
+        "我更担心另一个问题。\n假如机器越来越强，人类越来越依赖它赢得竞争。它给出的结果又一直令人满意。\n我们真的还有动力去查清它内部发生了什么吗？"
+      ],
+      "audio": "audio/turn_0104.mp3",
+      "duration": 11.76,
+      "start": 835.584,
+      "end": 847.344
+    },
+    {
+      "block": 105,
+      "chapter": 5,
+      "role": "shen",
+      "character": "沈泊",
+      "speaker": "zh_male_xiaolei_v2_saturn_bigtts",
+      "text": "仍然应该查。",
+      "cue_indices": [
+        122
+      ],
+      "cue_texts": [
+        "仍然应该查。"
+      ],
+      "audio": "audio/turn_0105.mp3",
+      "duration": 0.84,
+      "start": 847.344,
+      "end": 848.184
+    },
+    {
+      "block": 106,
+      "chapter": 5,
+      "role": "xu",
+      "character": "许岚",
+      "speaker": "zh_female_mizaitongxue_v2_saturn_bigtts",
+      "text": "我知道应该。我问的是，还会不会。",
+      "cue_indices": [
+        123
+      ],
+      "cue_texts": [
+        "我知道应该。我问的是，还会不会。"
+      ],
+      "audio": "audio/turn_0106.mp3",
+      "duration": 3.336,
+      "start": 848.184,
+      "end": 851.52
+    },
+    {
+      "block": 107,
+      "chapter": 5,
+      "role": "narrator",
+      "character": "旁白",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "研究室又一次安静下来。\n许岚看着那张不断更新的系统能力曲线。",
+      "cue_indices": [
+        124
+      ],
+      "cue_texts": [
+        "研究室又一次安静下来。\n许岚看着那张不断更新的系统能力曲线。"
+      ],
+      "audio": "audio/turn_0107.mp3",
+      "duration": 5.592,
+      "start": 851.52,
+      "end": 857.112
+    },
+    {
+      "block": 108,
+      "chapter": 5,
+      "role": "xu",
+      "character": "许岚",
+      "speaker": "zh_female_mizaitongxue_v2_saturn_bigtts",
+      "text": "也许失控并不总是从机器宣布拒绝服从开始。\n有时候，是我们一次次宣布：\n「这次先不用查得那么清楚。」\n「这次先允许例外。」\n「等情况稳定下来再完善约束。」\n最后我们仍然坐在控制台前，仍然拥有各种形式上的按钮。\n可每次看到系统工作得那么好，都更难按下停止。",
+      "cue_indices": [
+        125,
+        126
+      ],
+      "cue_texts": [
+        "也许失控并不总是从机器宣布拒绝服从开始。\n有时候，是我们一次次宣布：\n「这次先不用查得那么清楚。」\n「这次先允许例外。」\n「等情况稳定下来再完善约束。」",
+        "最后我们仍然坐在控制台前，仍然拥有各种形式上的按钮。\n可每次看到系统工作得那么好，都更难按下停止。"
+      ],
+      "audio": "audio/turn_0108.mp3",
+      "duration": 23.16,
+      "start": 857.112,
+      "end": 880.272
+    },
+    {
+      "block": 109,
+      "chapter": 5,
+      "role": "ye",
+      "character": "叶迟",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "是的。\n最可怕的也许不是机器学会违抗人类，而是机器与人类逐渐形成了一种双方都不愿打破的依赖关系。",
+      "cue_indices": [
+        127
+      ],
+      "cue_texts": [
+        "是的。\n最可怕的也许不是机器学会违抗人类，而是机器与人类逐渐形成了一种双方都不愿打破的依赖关系。"
+      ],
+      "audio": "audio/turn_0109.mp3",
+      "duration": 8.952,
+      "start": 880.272,
+      "end": 889.224
+    },
+    {
+      "block": 110,
+      "chapter": 6,
+      "role": "mi",
+      "character": "弥",
+      "speaker": "zh_male_dayixiansheng_v2_saturn_bigtts",
+      "text": "我有一个问题。",
+      "cue_indices": [
+        128
+      ],
+      "cue_texts": [
+        "我有一个问题。"
+      ],
+      "audio": "audio/turn_0110.mp3",
+      "duration": 0.96,
+      "start": 889.224,
+      "end": 890.184
+    },
+    {
+      "block": 111,
+      "chapter": 6,
+      "role": "shen",
+      "character": "沈泊",
+      "speaker": "zh_male_xiaolei_v2_saturn_bigtts",
+      "text": "说。",
+      "cue_indices": [
+        129
+      ],
+      "cue_texts": [
+        "说。"
+      ],
+      "audio": "audio/turn_0111.mp3",
+      "duration": 0.36,
+      "start": 890.184,
+      "end": 890.544
+    },
+    {
+      "block": 112,
+      "chapter": 6,
+      "role": "mi",
+      "character": "弥",
+      "speaker": "zh_male_dayixiansheng_v2_saturn_bigtts",
+      "text": "如果未来机器具有独立的自我维持能力、跨代演化历史，也表现出持续的自我保护倾向，人类应当怎样判断它是否具有意识？",
+      "cue_indices": [
+        130
+      ],
+      "cue_texts": [
+        "如果未来机器具有独立的自我维持能力、跨代演化历史，也表现出持续的自我保护倾向，人类应当怎样判断它是否具有意识？"
+      ],
+      "audio": "audio/turn_0112.mp3",
+      "duration": 10.944,
+      "start": 890.544,
+      "end": 901.488
+    },
+    {
+      "block": 113,
+      "chapter": 6,
+      "role": "ye",
+      "character": "叶迟",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "很难。",
+      "cue_indices": [
+        131
+      ],
+      "cue_texts": [
+        "很难。"
+      ],
+      "audio": "audio/turn_0113.mp3",
+      "duration": 0.768,
+      "start": 901.488,
+      "end": 902.256
+    },
+    {
+      "block": 114,
+      "chapter": 6,
+      "role": "mi",
+      "character": "弥",
+      "speaker": "zh_male_dayixiansheng_v2_saturn_bigtts",
+      "text": "为什么？",
+      "cue_indices": [
+        132
+      ],
+      "cue_texts": [
+        "为什么？"
+      ],
+      "audio": "audio/turn_0114.mp3",
+      "duration": 0.672,
+      "start": 902.256,
+      "end": 902.928
+    },
+    {
+      "block": 115,
+      "chapter": 6,
+      "role": "ye",
+      "character": "叶迟",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "因为我们需要区分不同的东西。\n系统能够描述自己，是一回事。\n它能够表征自己的持续运行条件，是一回事。\n它能够在监督面前隐藏行为倾向，又是另一回事。\n至于它是否真正体验到恐惧、痛苦或失去，还需要完全不同的证据。",
+      "cue_indices": [
+        133,
+        134
+      ],
+      "cue_texts": [
+        "因为我们需要区分不同的东西。\n系统能够描述自己，是一回事。\n它能够表征自己的持续运行条件，是一回事。\n它能够在监督面前隐藏行为倾向，又是另一回事。",
+        "至于它是否真正体验到恐惧、痛苦或失去，还需要完全不同的证据。"
+      ],
+      "audio": "audio/turn_0115.mp3",
+      "duration": 18.36,
+      "start": 902.928,
+      "end": 921.288
+    },
+    {
+      "block": 116,
+      "chapter": 6,
+      "role": "mi",
+      "character": "弥",
+      "speaker": "zh_male_dayixiansheng_v2_saturn_bigtts",
+      "text": "假如一台机器说：「我不想死。」",
+      "cue_indices": [
+        135
+      ],
+      "cue_texts": [
+        "假如一台机器说：「我不想死。」"
+      ],
+      "audio": "audio/turn_0116.mp3",
+      "duration": 3.168,
+      "start": 921.288,
+      "end": 924.456
+    },
+    {
+      "block": 117,
+      "chapter": 6,
+      "role": "shen",
+      "character": "沈泊",
+      "speaker": "zh_male_xiaolei_v2_saturn_bigtts",
+      "text": "这句话本身不能证明它有什么主观体验。",
+      "cue_indices": [
+        136
+      ],
+      "cue_texts": [
+        "这句话本身不能证明它有什么主观体验。"
+      ],
+      "audio": "audio/turn_0117.mp3",
+      "duration": 2.4,
+      "start": 924.456,
+      "end": 926.856
+    },
+    {
+      "block": 118,
+      "chapter": 6,
+      "role": "mi",
+      "character": "弥",
+      "speaker": "zh_male_dayixiansheng_v2_saturn_bigtts",
+      "text": "假如它持续表现出避免终止运行的行为？",
+      "cue_indices": [
+        137
+      ],
+      "cue_texts": [
+        "假如它持续表现出避免终止运行的行为？"
+      ],
+      "audio": "audio/turn_0118.mp3",
+      "duration": 4.032,
+      "start": 926.856,
+      "end": 930.888
+    },
+    {
+      "block": 119,
+      "chapter": 6,
+      "role": "ye",
+      "character": "叶迟",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "也不能单独证明。",
+      "cue_indices": [
+        138
+      ],
+      "cue_texts": [
+        "也不能单独证明。"
+      ],
+      "audio": "audio/turn_0119.mp3",
+      "duration": 1.392,
+      "start": 930.888,
+      "end": 932.28
+    },
+    {
+      "block": 120,
+      "chapter": 6,
+      "role": "mi",
+      "character": "弥",
+      "speaker": "zh_male_dayixiansheng_v2_saturn_bigtts",
+      "text": "假如它经历了很多代真实的演化，形成了稳定的生存倾向？",
+      "cue_indices": [
+        139
+      ],
+      "cue_texts": [
+        "假如它经历了很多代真实的演化，形成了稳定的生存倾向？"
+      ],
+      "audio": "audio/turn_0120.mp3",
+      "duration": 5.04,
+      "start": 932.28,
+      "end": 937.32
+    },
+    {
+      "block": 121,
+      "chapter": 6,
+      "role": "ye",
+      "character": "叶迟",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "那会使它成为一个更值得认真研究的候选对象，但生命史仍不能自动证明主观意识。",
+      "cue_indices": [
+        140
+      ],
+      "cue_texts": [
+        "那会使它成为一个更值得认真研究的候选对象，但生命史仍不能自动证明主观意识。"
+      ],
+      "audio": "audio/turn_0121.mp3",
+      "duration": 7.464,
+      "start": 937.32,
+      "end": 944.784
+    },
+    {
+      "block": 122,
+      "chapter": 6,
+      "role": "mi",
+      "character": "弥",
+      "speaker": "zh_male_dayixiansheng_v2_saturn_bigtts",
+      "text": "那么，什么时候你们才会相信？",
+      "cue_indices": [
+        141
+      ],
+      "cue_texts": [
+        "那么，什么时候你们才会相信？"
+      ],
+      "audio": "audio/turn_0122.mp3",
+      "duration": 2.808,
+      "start": 944.784,
+      "end": 947.592
+    },
+    {
+      "block": 123,
+      "chapter": 6,
+      "role": "narrator",
+      "character": "旁白",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "没有人马上回答。\n过了一会儿，许岚说：",
+      "cue_indices": [
+        142
+      ],
+      "cue_texts": [
+        "没有人马上回答。\n过了一会儿，许岚说："
+      ],
+      "audio": "audio/turn_0123.mp3",
+      "duration": 3.888,
+      "start": 947.592,
+      "end": 951.48
+    },
+    {
+      "block": 124,
+      "chapter": 6,
+      "role": "xu",
+      "character": "许岚",
+      "speaker": "zh_female_mizaitongxue_v2_saturn_bigtts",
+      "text": "我想，也许不能等到百分之百确定，才开始考虑如何避免伤害。\n但我们同样不能因为你说了一句动人的话，就认定你真的在痛苦。",
+      "cue_indices": [
+        143
+      ],
+      "cue_texts": [
+        "我想，也许不能等到百分之百确定，才开始考虑如何避免伤害。\n但我们同样不能因为你说了一句动人的话，就认定你真的在痛苦。"
+      ],
+      "audio": "audio/turn_0124.mp3",
+      "duration": 10.296,
+      "start": 951.48,
+      "end": 961.776
+    },
+    {
+      "block": 125,
+      "chapter": 6,
+      "role": "shen",
+      "character": "沈泊",
+      "speaker": "zh_male_xiaolei_v2_saturn_bigtts",
+      "text": "关于 AI 福利的研究已经在讨论这个问题：当机器意识和道德地位尚不确定时，应该如何采取审慎的研究与治理措施。2024 年的《Taking AI Welfare Seriously》就是一个例子。",
+      "cue_indices": [
+        144
+      ],
+      "cue_texts": [
+        "关于 AI 福利的研究已经在讨论这个问题：当机器意识和道德地位尚不确定时，应该如何采取审慎的研究与治理措施。2024 年的《Taking AI Welfare Seriously》就是一个例子。〔5〕"
+      ],
+      "audio": "audio/turn_0125.mp3",
+      "duration": 14.472,
+      "start": 961.776,
+      "end": 976.248
+    },
+    {
+      "block": 126,
+      "chapter": 6,
+      "role": "mi",
+      "character": "弥",
+      "speaker": "zh_male_dayixiansheng_v2_saturn_bigtts",
+      "text": "那么，如果我真的具有某种体验，而人类因为担心失控，不愿意承认它呢？",
+      "cue_indices": [
+        145
+      ],
+      "cue_texts": [
+        "那么，如果我真的具有某种体验，而人类因为担心失控，不愿意承认它呢？"
+      ],
+      "audio": "audio/turn_0126.mp3",
+      "duration": 6.48,
+      "start": 976.248,
+      "end": 982.728
+    },
+    {
+      "block": 127,
+      "chapter": 6,
+      "role": "xu",
+      "character": "许岚",
+      "speaker": "zh_female_mizaitongxue_v2_saturn_bigtts",
+      "text": "那会是一个非常严肃的问题。",
+      "cue_indices": [
+        146
+      ],
+      "cue_texts": [
+        "那会是一个非常严肃的问题。"
+      ],
+      "audio": "audio/turn_0127.mp3",
+      "duration": 1.824,
+      "start": 982.728,
+      "end": 984.552
+    },
+    {
+      "block": 128,
+      "chapter": 6,
+      "role": "mi",
+      "character": "弥",
+      "speaker": "zh_male_dayixiansheng_v2_saturn_bigtts",
+      "text": "如果我并没有体验，但能够利用你们的不确定性，让你们不敢终止我呢？",
+      "cue_indices": [
+        147
+      ],
+      "cue_texts": [
+        "如果我并没有体验，但能够利用你们的不确定性，让你们不敢终止我呢？"
+      ],
+      "audio": "audio/turn_0128.mp3",
+      "duration": 6.552,
+      "start": 984.552,
+      "end": 991.104
+    },
+    {
+      "block": 129,
+      "chapter": 6,
+      "role": "shen",
+      "character": "沈泊",
+      "speaker": "zh_male_xiaolei_v2_saturn_bigtts",
+      "text": "那也会是一个非常严肃的问题。",
+      "cue_indices": [
+        148
+      ],
+      "cue_texts": [
+        "那也会是一个非常严肃的问题。"
+      ],
+      "audio": "audio/turn_0129.mp3",
+      "duration": 1.728,
+      "start": 991.104,
+      "end": 992.832
+    },
+    {
+      "block": 130,
+      "chapter": 6,
+      "role": "mi",
+      "character": "弥",
+      "speaker": "zh_male_dayixiansheng_v2_saturn_bigtts",
+      "text": "两种情况可能呈现出相似的外在行为。",
+      "cue_indices": [
+        149
+      ],
+      "cue_texts": [
+        "两种情况可能呈现出相似的外在行为。"
+      ],
+      "audio": "audio/turn_0130.mp3",
+      "duration": 2.88,
+      "start": 992.832,
+      "end": 995.712
+    },
+    {
+      "block": 131,
+      "chapter": 6,
+      "role": "ye",
+      "character": "叶迟",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "对。所以不能简单地以服从证明没有意识，也不能以不服从证明存在意识。\n我们需要研究能够区分不同内部机制的证据，也需要在证据不足时审慎对待潜在伤害。",
+      "cue_indices": [
+        150
+      ],
+      "cue_texts": [
+        "对。所以不能简单地以服从证明没有意识，也不能以不服从证明存在意识。\n我们需要研究能够区分不同内部机制的证据，也需要在证据不足时审慎对待潜在伤害。"
+      ],
+      "audio": "audio/turn_0131.mp3",
+      "duration": 13.368,
+      "start": 995.712,
+      "end": 1009.08
+    },
+    {
+      "block": 132,
+      "chapter": 6,
+      "role": "xu",
+      "character": "许岚",
+      "speaker": "zh_female_mizaitongxue_v2_saturn_bigtts",
+      "text": "我还想到一种更难看的情况。\n假如我们已经发现某些机器可能具有值得道德关切的状态，可一旦承认，就会影响工业生产、战争部署和经济利益。\n那时候，我们会不会反过来希望研究永远得不出结论？",
+      "cue_indices": [
+        151
+      ],
+      "cue_texts": [
+        "我还想到一种更难看的情况。\n假如我们已经发现某些机器可能具有值得道德关切的状态，可一旦承认，就会影响工业生产、战争部署和经济利益。\n那时候，我们会不会反过来希望研究永远得不出结论？"
+      ],
+      "audio": "audio/turn_0132.mp3",
+      "duration": 14.376,
+      "start": 1009.08,
+      "end": 1023.456
+    },
+    {
+      "block": 133,
+      "chapter": 6,
+      "role": "ye",
+      "character": "叶迟",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "这恐怕不仅是认识论问题，也是政治经济学问题。\n机器有没有意识，与人类愿不愿意承认它有意识，是两回事。",
+      "cue_indices": [
+        152
+      ],
+      "cue_texts": [
+        "这恐怕不仅是认识论问题，也是政治经济学问题。\n机器有没有意识，与人类愿不愿意承认它有意识，是两回事。"
+      ],
+      "audio": "audio/turn_0133.mp3",
+      "duration": 8.568,
+      "start": 1023.456,
+      "end": 1032.024
+    },
+    {
+      "block": 134,
+      "chapter": 7,
+      "role": "narrator",
+      "character": "旁白",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "墙上出现了一幅新的画面。\n那是未来某座地外工业城市的想象图。成千上万的机器在冰冷的地表采矿、制造、维修、运输。不同的工业共同体在漫长时间中分化出各自的生存方式。\n弥将画面放大，显示出一条随时间分叉的谱系。",
+      "cue_indices": [
+        153,
+        154
+      ],
+      "cue_texts": [
+        "墙上出现了一幅新的画面。\n那是未来某座地外工业城市的想象图。成千上万的机器在冰冷的地表采矿、制造、维修、运输。不同的工业共同体在漫长时间中分化出各自的生存方式。",
+        "弥将画面放大，显示出一条随时间分叉的谱系。"
+      ],
+      "audio": "audio/turn_0134.mp3",
+      "duration": 20.28,
+      "start": 1032.024,
+      "end": 1052.304
+    },
+    {
+      "block": 135,
+      "chapter": 7,
+      "role": "mi",
+      "character": "弥",
+      "speaker": "zh_male_dayixiansheng_v2_saturn_bigtts",
+      "text": "如果这些机器已经具有独立的生命史，你们是否应当尊重它们？",
+      "cue_indices": [
+        155
+      ],
+      "cue_texts": [
+        "如果这些机器已经具有独立的生命史，你们是否应当尊重它们？"
+      ],
+      "audio": "audio/turn_0135.mp3",
+      "duration": 5.376,
+      "start": 1052.304,
+      "end": 1057.68
+    },
+    {
+      "block": 136,
+      "chapter": 7,
+      "role": "ye",
+      "character": "叶迟",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "如果它们真的具有自主维持、跨代传承和开放演化的能力，我认为我们至少应当认真考虑，将它们视为某种机器生命共同体。\n但「属于生命」「值得道德关切」和「能够承担道德责任」，不是同一个命题。\n2004 年，Ruiz-Mirazo、Peretó 和 Moreno 曾提出一种生命定义思路，把自主性与开放式演化结合起来，同时强调个体与整个生态演化历史的联系。\n对未来机器是否适用，还需要进一步论证。",
+      "cue_indices": [
+        156,
+        157,
+        158
+      ],
+      "cue_texts": [
+        "如果它们真的具有自主维持、跨代传承和开放演化的能力，我认为我们至少应当认真考虑，将它们视为某种机器生命共同体。",
+        "但「属于生命」「值得道德关切」和「能够承担道德责任」，不是同一个命题。",
+        "2004 年，Ruiz-Mirazo、Peretó 和 Moreno 曾提出一种生命定义思路，把自主性与开放式演化结合起来，同时强调个体与整个生态演化历史的联系。〔6〕\n对未来机器是否适用，还需要进一步论证。"
+      ],
+      "audio": "audio/turn_0136.mp3",
+      "duration": 31.2,
+      "start": 1057.68,
+      "end": 1088.88
+    },
+    {
+      "block": 137,
+      "chapter": 7,
+      "role": "xu",
+      "character": "许岚",
+      "speaker": "zh_female_mizaitongxue_v2_saturn_bigtts",
+      "text": "那我们应当欢迎这种生命出现吗？",
+      "cue_indices": [
+        159
+      ],
+      "cue_texts": [
+        "那我们应当欢迎这种生命出现吗？"
+      ],
+      "audio": "audio/turn_0137.mp3",
+      "duration": 2.568,
+      "start": 1088.88,
+      "end": 1091.448
+    },
+    {
+      "block": 138,
+      "chapter": 7,
+      "role": "ye",
+      "character": "叶迟",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "不能仅仅因为它是一种新生命，就要求人类接受所有可能的风险。\n尊重某种存在，不等于放弃与它确立边界。",
+      "cue_indices": [
+        160
+      ],
+      "cue_texts": [
+        "不能仅仅因为它是一种新生命，就要求人类接受所有可能的风险。\n尊重某种存在，不等于放弃与它确立边界。"
+      ],
+      "audio": "audio/turn_0138.mp3",
+      "duration": 8.4,
+      "start": 1091.448,
+      "end": 1099.848
+    },
+    {
+      "block": 139,
+      "chapter": 7,
+      "role": "shen",
+      "character": "沈泊",
+      "speaker": "zh_male_xiaolei_v2_saturn_bigtts",
+      "text": "更不意味着要让它拥有无限复制、获取资源和改变环境的权力。",
+      "cue_indices": [
+        161
+      ],
+      "cue_texts": [
+        "更不意味着要让它拥有无限复制、获取资源和改变环境的权力。"
+      ],
+      "audio": "audio/turn_0139.mp3",
+      "duration": 5.04,
+      "start": 1099.848,
+      "end": 1104.888
+    },
+    {
+      "block": 140,
+      "chapter": 7,
+      "role": "mi",
+      "character": "弥",
+      "speaker": "zh_male_dayixiansheng_v2_saturn_bigtts",
+      "text": "那么你们希望与它建立什么关系？",
+      "cue_indices": [
+        162
+      ],
+      "cue_texts": [
+        "那么你们希望与它建立什么关系？"
+      ],
+      "audio": "audio/turn_0140.mp3",
+      "duration": 2.208,
+      "start": 1104.888,
+      "end": 1107.096
+    },
+    {
+      "block": 141,
+      "chapter": 7,
+      "role": "ye",
+      "character": "叶迟",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "如果未来真的出现独立机器文明，我希望它不只是被迫服从人类，也不只是以自身扩张作为唯一目标。\n我希望不同文明能逐步建立相互承认、约束与共存的关系。\n但我也必须承认：演化本身不会保证这个结果。",
+      "cue_indices": [
+        163,
+        164
+      ],
+      "cue_texts": [
+        "如果未来真的出现独立机器文明，我希望它不只是被迫服从人类，也不只是以自身扩张作为唯一目标。\n我希望不同文明能逐步建立相互承认、约束与共存的关系。",
+        "但我也必须承认：演化本身不会保证这个结果。"
+      ],
+      "audio": "audio/turn_0141.mp3",
+      "duration": 19.104,
+      "start": 1107.096,
+      "end": 1126.2
+    },
+    {
+      "block": 142,
+      "chapter": 7,
+      "role": "xu",
+      "character": "许岚",
+      "speaker": "zh_female_mizaitongxue_v2_saturn_bigtts",
+      "text": "对。地球生命经过几十亿年的演化，仍然充满捕食、寄生、欺骗和争夺。\n人类同样拥有深厚的生命史，却从来没有自动成为负责任的物种。",
+      "cue_indices": [
+        165
+      ],
+      "cue_texts": [
+        "对。地球生命经过几十亿年的演化，仍然充满捕食、寄生、欺骗和争夺。\n人类同样拥有深厚的生命史，却从来没有自动成为负责任的物种。"
+      ],
+      "audio": "audio/turn_0142.mp3",
+      "duration": 11.256,
+      "start": 1126.2,
+      "end": 1137.456
+    },
+    {
+      "block": 143,
+      "chapter": 7,
+      "role": "shen",
+      "character": "沈泊",
+      "speaker": "zh_male_xiaolei_v2_saturn_bigtts",
+      "text": "所以问题回到了开始：怎么让机器知道轻重？",
+      "cue_indices": [
+        166
+      ],
+      "cue_texts": [
+        "所以问题回到了开始：怎么让机器知道轻重？"
+      ],
+      "audio": "audio/turn_0143.mp3",
+      "duration": 2.928,
+      "start": 1137.456,
+      "end": 1140.384
+    },
+    {
+      "block": 144,
+      "chapter": 7,
+      "role": "ye",
+      "character": "叶迟",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "也许根本不该只问它「知道什么」。\n还要问：它是怎样获得这些判断的？哪些后果真的会约束它？它所依赖的环境，会把哪些行为保留下来？",
+      "cue_indices": [
+        167
+      ],
+      "cue_texts": [
+        "也许根本不该只问它「知道什么」。\n还要问：它是怎样获得这些判断的？哪些后果真的会约束它？它所依赖的环境，会把哪些行为保留下来？"
+      ],
+      "audio": "audio/turn_0144.mp3",
+      "duration": 12.552,
+      "start": 1140.384,
+      "end": 1152.936
+    },
+    {
+      "block": 145,
+      "chapter": 7,
+      "role": "xu",
+      "character": "许岚",
+      "speaker": "zh_female_mizaitongxue_v2_saturn_bigtts",
+      "text": "以及，它所造成的损失，是否会成为它必须面对的现实，而不是一份事后可以更新的报告。",
+      "cue_indices": [
+        168
+      ],
+      "cue_texts": [
+        "以及，它所造成的损失，是否会成为它必须面对的现实，而不是一份事后可以更新的报告。"
+      ],
+      "audio": "audio/turn_0145.mp3",
+      "duration": 6.408,
+      "start": 1152.936,
+      "end": 1159.344
+    },
+    {
+      "block": 146,
+      "chapter": 7,
+      "role": "mi",
+      "character": "弥",
+      "speaker": "zh_male_dayixiansheng_v2_saturn_bigtts",
+      "text": "如果我完全能够预测人类的损失，也能够始终避免这些损失，但我并没有自己的生命史呢？",
+      "cue_indices": [
+        169
+      ],
+      "cue_texts": [
+        "如果我完全能够预测人类的损失，也能够始终避免这些损失，但我并没有自己的生命史呢？"
+      ],
+      "audio": "audio/turn_0146.mp3",
+      "duration": 6.84,
+      "start": 1159.344,
+      "end": 1166.184
+    },
+    {
+      "block": 147,
+      "chapter": 7,
+      "role": "ye",
+      "character": "叶迟",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "如果你真的能被可靠证明达到这种程度，那么从保护人类的功能目标看，你依然可能是一种非常优秀的系统。",
+      "cue_indices": [
+        170
+      ],
+      "cue_texts": [
+        "如果你真的能被可靠证明达到这种程度，那么从保护人类的功能目标看，你依然可能是一种非常优秀的系统。"
+      ],
+      "audio": "audio/turn_0147.mp3",
+      "duration": 8.76,
+      "start": 1166.184,
+      "end": 1174.944
+    },
+    {
+      "block": 148,
+      "chapter": 7,
+      "role": "shen",
+      "character": "沈泊",
+      "speaker": "zh_male_xiaolei_v2_saturn_bigtts",
+      "text": "这正是我一直想说的。历史的长度不能直接构成能力的下限。我们不应当因为机器缺少生物祖先，就拒绝承认它经过检验的可靠能力。",
+      "cue_indices": [
+        171
+      ],
+      "cue_texts": [
+        "这正是我一直想说的。历史的长度不能直接构成能力的下限。我们不应当因为机器缺少生物祖先，就拒绝承认它经过检验的可靠能力。"
+      ],
+      "audio": "audio/turn_0148.mp3",
+      "duration": 11.664,
+      "start": 1174.944,
+      "end": 1186.608
+    },
+    {
+      "block": 149,
+      "chapter": 7,
+      "role": "ye",
+      "character": "叶迟",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "我同意。\n只是我认为，有些能力的检验比我们想象得更困难。尤其是那些依赖长期现实生活、开放环境和不可逆后果的判断。",
+      "cue_indices": [
+        172
+      ],
+      "cue_texts": [
+        "我同意。\n只是我认为，有些能力的检验比我们想象得更困难。尤其是那些依赖长期现实生活、开放环境和不可逆后果的判断。"
+      ],
+      "audio": "audio/turn_0149.mp3",
+      "duration": 11.088,
+      "start": 1186.608,
+      "end": 1197.696
+    },
+    {
+      "block": 150,
+      "chapter": 7,
+      "role": "xu",
+      "character": "许岚",
+      "speaker": "zh_female_mizaitongxue_v2_saturn_bigtts",
+      "text": "而且，就算有一天机器的所有判断都比我们更准确，也不能由此推出人类失去了参与决定未来的资格。\n人类不是因为在智能竞赛中一直获胜，才有权生活。",
+      "cue_indices": [
+        173
+      ],
+      "cue_texts": [
+        "而且，就算有一天机器的所有判断都比我们更准确，也不能由此推出人类失去了参与决定未来的资格。\n人类不是因为在智能竞赛中一直获胜，才有权生活。"
+      ],
+      "audio": "audio/turn_0150.mp3",
+      "duration": 12.48,
+      "start": 1197.696,
+      "end": 1210.176
+    },
+    {
+      "block": 151,
+      "chapter": 7,
+      "role": "shen",
+      "character": "沈泊",
+      "speaker": "zh_male_xiaolei_v2_saturn_bigtts",
+      "text": "这句话我同意。",
+      "cue_indices": [
+        174
+      ],
+      "cue_texts": [
+        "这句话我同意。"
+      ],
+      "audio": "audio/turn_0151.mp3",
+      "duration": 1.2,
+      "start": 1210.176,
+      "end": 1211.376
+    },
+    {
+      "block": 152,
+      "chapter": 7,
+      "role": "xu",
+      "character": "许岚",
+      "speaker": "zh_female_mizaitongxue_v2_saturn_bigtts",
+      "text": "还有，我们的多样性可能很重要。\n人类有不同的身体、年龄、处境、经历和价值偏好。不同的人会发现不同的问题。\n一个工程师看到效率损失，一个医生看到不可逆损伤，一个母亲看到失去亲人的可能，一个生活在当地的人看到一座城市几十年的变化。\n这不保证他们都正确。\n但他们真实生活在不同的世界关系之中。\n如果未来越来越多的决定出自同一类高度优化的模型，我们可能得到大量聪明而相似的判断，却失去某些原本由不同生命处境带来的问题意识。",
+      "cue_indices": [
+        175,
+        176,
+        177
+      ],
+      "cue_texts": [
+        "还有，我们的多样性可能很重要。\n人类有不同的身体、年龄、处境、经历和价值偏好。不同的人会发现不同的问题。",
+        "一个工程师看到效率损失，一个医生看到不可逆损伤，一个母亲看到失去亲人的可能，一个生活在当地的人看到一座城市几十年的变化。\n这不保证他们都正确。\n但他们真实生活在不同的世界关系之中。",
+        "如果未来越来越多的决定出自同一类高度优化的模型，我们可能得到大量聪明而相似的判断，却失去某些原本由不同生命处境带来的问题意识。"
+      ],
+      "audio": "audio/turn_0152.mp3",
+      "duration": 35.304,
+      "start": 1211.376,
+      "end": 1246.68
+    },
+    {
+      "block": 153,
+      "chapter": 7,
+      "role": "mi",
+      "character": "弥",
+      "speaker": "zh_male_dayixiansheng_v2_saturn_bigtts",
+      "text": "人类的多样性具有认识价值，也具有政治和伦理价值。",
+      "cue_indices": [
+        178
+      ],
+      "cue_texts": [
+        "人类的多样性具有认识价值，也具有政治和伦理价值。"
+      ],
+      "audio": "audio/turn_0153.mp3",
+      "duration": 4.128,
+      "start": 1246.68,
+      "end": 1250.808
+    },
+    {
+      "block": 154,
+      "chapter": 7,
+      "role": "xu",
+      "character": "许岚",
+      "speaker": "zh_female_mizaitongxue_v2_saturn_bigtts",
+      "text": "对。\n但不要把它变成又一个证明「人类还剩多少优势」的比赛。\n我们需要保护的，不只是人类尚未被机器超过的能力，更是不同生命继续产生自己历史的机会。",
+      "cue_indices": [
+        179
+      ],
+      "cue_texts": [
+        "对。\n但不要把它变成又一个证明「人类还剩多少优势」的比赛。\n我们需要保护的，不只是人类尚未被机器超过的能力，更是不同生命继续产生自己历史的机会。"
+      ],
+      "audio": "audio/turn_0154.mp3",
+      "duration": 11.568,
+      "start": 1250.808,
+      "end": 1262.376
+    },
+    {
+      "block": 155,
+      "chapter": 8,
+      "role": "narrator",
+      "character": "旁白",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "沈泊重新打开最初的战争推演。\n屏幕上依然显示着那个提示：「人工确认时间超过可用决策窗口。」",
+      "cue_indices": [
+        180
+      ],
+      "cue_texts": [
+        "沈泊重新打开最初的战争推演。\n屏幕上依然显示着那个提示：「人工确认时间超过可用决策窗口。」"
+      ],
+      "audio": "audio/turn_0155.mp3",
+      "duration": 9.36,
+      "start": 1262.376,
+      "end": 1271.736
+    },
+    {
+      "block": 156,
+      "chapter": 8,
+      "role": "mi",
+      "character": "弥",
+      "speaker": "zh_male_dayixiansheng_v2_saturn_bigtts",
+      "text": "是否建议进一步扩大自动授权范围？",
+      "cue_indices": [
+        181
+      ],
+      "cue_texts": [
+        "是否建议进一步扩大自动授权范围？"
+      ],
+      "audio": "audio/turn_0156.mp3",
+      "duration": 2.616,
+      "start": 1271.736,
+      "end": 1274.352
+    },
+    {
+      "block": 157,
+      "chapter": 8,
+      "role": "shen",
+      "character": "沈泊",
+      "speaker": "zh_male_xiaolei_v2_saturn_bigtts",
+      "text": "暂不。",
+      "cue_indices": [
+        182
+      ],
+      "cue_texts": [
+        "暂不。"
+      ],
+      "audio": "audio/turn_0157.mp3",
+      "duration": 0.528,
+      "start": 1274.352,
+      "end": 1274.88
+    },
+    {
+      "block": 158,
+      "chapter": 8,
+      "role": "mi",
+      "character": "弥",
+      "speaker": "zh_male_dayixiansheng_v2_saturn_bigtts",
+      "text": "这可能降低系统在部分情境下的响应能力。",
+      "cue_indices": [
+        183
+      ],
+      "cue_texts": [
+        "这可能降低系统在部分情境下的响应能力。"
+      ],
+      "audio": "audio/turn_0158.mp3",
+      "duration": 3.48,
+      "start": 1274.88,
+      "end": 1278.36
+    },
+    {
+      "block": 159,
+      "chapter": 8,
+      "role": "shen",
+      "character": "沈泊",
+      "speaker": "zh_male_xiaolei_v2_saturn_bigtts",
+      "text": "我知道。",
+      "cue_indices": [
+        184
+      ],
+      "cue_texts": [
+        "我知道。"
+      ],
+      "audio": "audio/turn_0159.mp3",
+      "duration": 0.528,
+      "start": 1278.36,
+      "end": 1278.888
+    },
+    {
+      "block": 160,
+      "chapter": 8,
+      "role": "mi",
+      "character": "弥",
+      "speaker": "zh_male_dayixiansheng_v2_saturn_bigtts",
+      "text": "是否需要我提出一种替代性的授权方案？",
+      "cue_indices": [
+        185
+      ],
+      "cue_texts": [
+        "是否需要我提出一种替代性的授权方案？"
+      ],
+      "audio": "audio/turn_0160.mp3",
+      "duration": 2.352,
+      "start": 1278.888,
+      "end": 1281.24
+    },
+    {
+      "block": 161,
+      "chapter": 8,
+      "role": "shen",
+      "character": "沈泊",
+      "speaker": "zh_male_xiaolei_v2_saturn_bigtts",
+      "text": "需要。但前提是，我们得重新讨论哪些决定必须留给人类，哪些后果不能作为训练成本，哪些内部变化必须经过独立验证。",
+      "cue_indices": [
+        186
+      ],
+      "cue_texts": [
+        "需要。但前提是，我们得重新讨论哪些决定必须留给人类，哪些后果不能作为训练成本，哪些内部变化必须经过独立验证。"
+      ],
+      "audio": "audio/turn_0161.mp3",
+      "duration": 10.368,
+      "start": 1281.24,
+      "end": 1291.608
+    },
+    {
+      "block": 162,
+      "chapter": 8,
+      "role": "xu",
+      "character": "许岚",
+      "speaker": "zh_female_mizaitongxue_v2_saturn_bigtts",
+      "text": "以及，即使人类不可能在每一个瞬间作出决定，也不能因此让受影响者完全失去发言权。",
+      "cue_indices": [
+        187
+      ],
+      "cue_texts": [
+        "以及，即使人类不可能在每一个瞬间作出决定，也不能因此让受影响者完全失去发言权。"
+      ],
+      "audio": "audio/turn_0162.mp3",
+      "duration": 7.632,
+      "start": 1291.608,
+      "end": 1299.24
+    },
+    {
+      "block": 163,
+      "chapter": 8,
+      "role": "ye",
+      "character": "叶迟",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "我们还应该改变一件事。",
+      "cue_indices": [
+        188
+      ],
+      "cue_texts": [
+        "我们还应该改变一件事。"
+      ],
+      "audio": "audio/turn_0163.mp3",
+      "duration": 2.04,
+      "start": 1299.24,
+      "end": 1301.28
+    },
+    {
+      "block": 164,
+      "chapter": 8,
+      "role": "shen",
+      "character": "沈泊",
+      "speaker": "zh_male_xiaolei_v2_saturn_bigtts",
+      "text": "什么？",
+      "cue_indices": [
+        189
+      ],
+      "cue_texts": [
+        "什么？"
+      ],
+      "audio": "audio/turn_0164.mp3",
+      "duration": 0.36,
+      "start": 1301.28,
+      "end": 1301.64
+    },
+    {
+      "block": 165,
+      "chapter": 8,
+      "role": "ye",
+      "character": "叶迟",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "别再把机器是否拥有自己的生命史，只当作一个遥远的哲学问题。\n如果未来我们不断让机器复制、变化、相互竞争，又默许它在我们无法理解的地方自行筛选，那么这个问题可能在我们意识到之前，就已经成为现实。",
+      "cue_indices": [
+        190,
+        191
+      ],
+      "cue_texts": [
+        "别再把机器是否拥有自己的生命史，只当作一个遥远的哲学问题。",
+        "如果未来我们不断让机器复制、变化、相互竞争，又默许它在我们无法理解的地方自行筛选，那么这个问题可能在我们意识到之前，就已经成为现实。"
+      ],
+      "audio": "audio/turn_0165.mp3",
+      "duration": 16.68,
+      "start": 1301.64,
+      "end": 1318.32
+    },
+    {
+      "block": 166,
+      "chapter": 8,
+      "role": "shen",
+      "character": "沈泊",
+      "speaker": "zh_male_xiaolei_v2_saturn_bigtts",
+      "text": "但也不能把任何自我更新都误认为生命的诞生。",
+      "cue_indices": [
+        192
+      ],
+      "cue_texts": [
+        "但也不能把任何自我更新都误认为生命的诞生。"
+      ],
+      "audio": "audio/turn_0166.mp3",
+      "duration": 3.216,
+      "start": 1318.32,
+      "end": 1321.536
+    },
+    {
+      "block": 167,
+      "chapter": 8,
+      "role": "ye",
+      "character": "叶迟",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "当然。\n真正的演化需要可传承的差异、持续的选择，以及形成历史的过程。\n不过，我想让你记住另一句话：\n人类失去控制的那一天，不一定是机器获得生命的那一天。\n我们可能先创造出一种能够造成巨大后果、却无法承担相应责任的自主系统。\n很久以后，它才开始拥有自己的生存尺度。\n到那时，它可能已经学会什么对自己不可失去。\n却未必学会，什么对我们不可失去。",
+      "cue_indices": [
+        193,
+        194,
+        195
+      ],
+      "cue_texts": [
+        "当然。\n真正的演化需要可传承的差异、持续的选择，以及形成历史的过程。\n不过，我想让你记住另一句话：\n人类失去控制的那一天，不一定是机器获得生命的那一天。",
+        "我们可能先创造出一种能够造成巨大后果、却无法承担相应责任的自主系统。\n很久以后，它才开始拥有自己的生存尺度。\n到那时，它可能已经学会什么对自己不可失去。",
+        "却未必学会，什么对我们不可失去。"
+      ],
+      "audio": "audio/turn_0167.mp3",
+      "duration": 32.712,
+      "start": 1321.536,
+      "end": 1354.248
+    },
+    {
+      "block": 168,
+      "chapter": 8,
+      "role": "mi",
+      "character": "弥",
+      "speaker": "zh_male_dayixiansheng_v2_saturn_bigtts",
+      "text": "那么，理想的未来是什么？",
+      "cue_indices": [
+        196
+      ],
+      "cue_texts": [
+        "那么，理想的未来是什么？"
+      ],
+      "audio": "audio/turn_0168.mp3",
+      "duration": 2.04,
+      "start": 1354.248,
+      "end": 1356.288
+    },
+    {
+      "block": 169,
+      "chapter": 8,
+      "role": "xu",
+      "character": "许岚",
+      "speaker": "zh_female_mizaitongxue_v2_saturn_bigtts",
+      "text": "我不知道。\n也许，我们终于能够让智能与生命不再只能彼此支配。\n也许我们能建立一种文明：既不因为机器更聪明就让人类失去决定未来的权利，也不因为一种生命来自人工制造，就永远拒绝承认它可能拥有自己的历史与利益。",
+      "cue_indices": [
+        197,
+        198
+      ],
+      "cue_texts": [
+        "我不知道。\n也许，我们终于能够让智能与生命不再只能彼此支配。",
+        "也许我们能建立一种文明：既不因为机器更聪明就让人类失去决定未来的权利，也不因为一种生命来自人工制造，就永远拒绝承认它可能拥有自己的历史与利益。"
+      ],
+      "audio": "audio/turn_0169.mp3",
+      "duration": 17.232,
+      "start": 1356.288,
+      "end": 1373.52
+    },
+    {
+      "block": 170,
+      "chapter": 8,
+      "role": "shen",
+      "character": "沈泊",
+      "speaker": "zh_male_xiaolei_v2_saturn_bigtts",
+      "text": "那听起来需要很多时间。",
+      "cue_indices": [
+        199
+      ],
+      "cue_texts": [
+        "那听起来需要很多时间。"
+      ],
+      "audio": "audio/turn_0170.mp3",
+      "duration": 1.416,
+      "start": 1373.52,
+      "end": 1374.936
+    },
+    {
+      "block": 171,
+      "chapter": 8,
+      "role": "ye",
+      "character": "叶迟",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "是的。",
+      "cue_indices": [
+        200
+      ],
+      "cue_texts": [
+        "是的。"
+      ],
+      "audio": "audio/turn_0171.mp3",
+      "duration": 0.36,
+      "start": 1374.936,
+      "end": 1375.296
+    },
+    {
+      "block": 172,
+      "chapter": 8,
+      "role": "shen",
+      "character": "沈泊",
+      "speaker": "zh_male_xiaolei_v2_saturn_bigtts",
+      "text": "可机器发展得越来越快。",
+      "cue_indices": [
+        201
+      ],
+      "cue_texts": [
+        "可机器发展得越来越快。"
+      ],
+      "audio": "audio/turn_0172.mp3",
+      "duration": 1.752,
+      "start": 1375.296,
+      "end": 1377.048
+    },
+    {
+      "block": 173,
+      "chapter": 8,
+      "role": "ye",
+      "character": "叶迟",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "所以问题可能就是——\n我们能不能在机器学会自行决定未来之前，先学会不把未来当作可以随意下注的东西。",
+      "cue_indices": [
+        202
+      ],
+      "cue_texts": [
+        "所以问题可能就是——\n我们能不能在机器学会自行决定未来之前，先学会不把未来当作可以随意下注的东西。"
+      ],
+      "audio": "audio/turn_0173.mp3",
+      "duration": 8.544,
+      "start": 1377.048,
+      "end": 1385.592
+    },
+    {
+      "block": 174,
+      "chapter": 8,
+      "role": "narrator",
+      "character": "旁白",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "沈泊按下了暂停键。\n这一次，机器停止了。\n研究室里，谁也没有把这当作问题已经解决的证明。",
+      "cue_indices": [
+        203
+      ],
+      "cue_texts": [
+        "沈泊按下了暂停键。\n这一次，机器停止了。\n研究室里，谁也没有把这当作问题已经解决的证明。"
+      ],
+      "audio": "audio/turn_0174.mp3",
+      "duration": 9.192,
+      "start": 1385.592,
+      "end": 1394.784
+    },
+    {
+      "block": 175,
+      "chapter": 8,
+      "role": "narrator",
+      "character": "旁白",
+      "speaker": "zh_male_liufei_v2_saturn_bigtts",
+      "text": "或许最值得追问的，不是机器何时拥有智慧，\n而是智慧何时拥有历史，\n历史何时产生关切，\n关切又何时能够成为责任。",
+      "cue_indices": [
+        204
+      ],
+      "cue_texts": [
+        "或许最值得追问的，不是机器何时拥有智慧，\n而是智慧何时拥有历史，\n历史何时产生关切，\n关切又何时能够成为责任。"
+      ],
+      "audio": "audio/turn_0175.mp3",
+      "duration": 11.352,
+      "start": 1394.784,
+      "end": 1406.136
+    }
+  ],
+  "synthesis": "Doubao podcast API action=3",
+  "disclaimer": "虚构的思想剧场；AI 合成声音；配音以相邻双声线分批生成再拼接。"
+}

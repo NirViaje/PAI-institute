@@ -1,0 +1,13 @@
+{
+  "version": "1.0",
+  "research_snapshot": "2026-10-23",
+  "html_bytes": 654702,
+  "html_sha256": "9e457659aade3c627a68b01316ac9edf14034a887893ebce8195e5b2546a5779",
+  "model_assertions": 30856,
+  "browser_checks": 48,
+  "model_tests_passed": true,
+  "browser_tests_passed": true,
+  "offline_runtime_dependencies": [],
+  "original_workbooks": "indexed text recovered; original binaries not included",
+  "browser_test_scope": "Chromium document injection; network navigation unavailable by environment policy"
+}

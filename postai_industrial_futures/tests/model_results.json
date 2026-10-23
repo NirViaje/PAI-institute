@@ -1,0 +1,55 @@
+{
+  "test": "postai-industrial-model-regression",
+  "checks": 30856,
+  "passed": true,
+  "baseline": [
+    {
+      "id": "CU",
+      "name": "中南非铜矿—农业型",
+      "expected": 0.3242700268704231,
+      "actual": 0.3242700268704231,
+      "debt": 0
+    },
+    {
+      "id": "WA",
+      "name": "西非矿业—农业型",
+      "expected": 0.2834858765634922,
+      "actual": 0.28348587656349217,
+      "debt": 0
+    },
+    {
+      "id": "EA",
+      "name": "东非农业—服务型",
+      "expected": 0.19275256709303842,
+      "actual": 0.19275256709303848,
+      "debt": 0
+    },
+    {
+      "id": "LAND",
+      "name": "低收入内陆型",
+      "expected": 0.05457958283408967,
+      "actual": 0.05457958283408967,
+      "debt": 9.164351417582822
+    },
+    {
+      "id": "SA",
+      "name": "南亚制造—农业型",
+      "expected": 0.659956398008777,
+      "actual": 0.6599563980087774,
+      "debt": 0
+    },
+    {
+      "id": "SEA",
+      "name": "东南亚加工—出口型",
+      "expected": 1,
+      "actual": 0.9999999999999997,
+      "debt": 0
+    }
+  ],
+  "defaultEnergy": {
+    "servedShare": 0.7173778180292694,
+    "pvMW": 1297.2187629721875,
+    "batteryMWh": 1200
+  },
+  "scope": "Pure model regression, conservation identities and 200 deterministic randomized parameter stress tests; no empirical validation claimed."
+}

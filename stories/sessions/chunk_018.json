@@ -1,0 +1,22 @@
+{
+  "batch": 18,
+  "hash": "f0fc307eabd02845c58fec746af65256ee4c233f4396da7cacd6dc61de1dd8ba",
+  "turn_count": 1,
+  "files": [
+    "turn_0059.mp3"
+  ],
+  "roles": [
+    "narrator"
+  ],
+  "voices": [
+    "zh_male_liufei_v2_saturn_bigtts"
+  ],
+  "seconds": 10.08,
+  "usage": [
+    {
+      "input_text_tokens": 0,
+      "output_audio_tokens": 250,
+      "total_tokens": 250
+    }
+  ]
+}

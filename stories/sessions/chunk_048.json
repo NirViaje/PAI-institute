@@ -1,0 +1,38 @@
+{
+  "batch": 48,
+  "hash": "3c2c6489e37cda9309591a89b795374ffaf25a4725239bc64670243e5ec8d152",
+  "turn_count": 3,
+  "files": [
+    "turn_0150.mp3",
+    "turn_0151.mp3",
+    "turn_0152.mp3"
+  ],
+  "roles": [
+    "xu",
+    "shen",
+    "xu"
+  ],
+  "voices": [
+    "zh_female_mizaitongxue_v2_saturn_bigtts",
+    "zh_male_xiaolei_v2_saturn_bigtts",
+    "zh_female_mizaitongxue_v2_saturn_bigtts"
+  ],
+  "seconds": 48.98,
+  "usage": [
+    {
+      "input_text_tokens": 0,
+      "output_audio_tokens": 310,
+      "total_tokens": 310
+    },
+    {
+      "input_text_tokens": 0,
+      "output_audio_tokens": 28,
+      "total_tokens": 28
+    },
+    {
+      "input_text_tokens": 0,
+      "output_audio_tokens": 881,
+      "total_tokens": 881
+    }
+  ]
+}
